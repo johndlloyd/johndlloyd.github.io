@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi I am John D. Lloyd, welcome to my site!
 
 ### More Information
 
