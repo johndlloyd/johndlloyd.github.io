@@ -8,8 +8,8 @@ Hi I am John D. Lloyd, welcome to my site!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+This site is a collection of my work both personal and professional. The content on this site does not reflect the opinion of my employer.
 
-### Contact me
+### Email me
 
-[email@domain.com](mailto:email@domain.com)
+###[email@domain.com](mailto:email@domain.com)
