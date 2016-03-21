@@ -4,4 +4,4 @@ title: On living simply
 ---
 
 “I live simply. I hate waste and excess. I have a good apartment, a good laptop, and a few other basics. But the less I own, the happier I am. The lack of possessions gives me the priceless freedom to live anywhere anytime.”
-— Very inspiring story on why Derek Sivers, founder of CD Baby, (gave away his company to charity)[http://sivers.org/trust]
+— Very inspiring story on why Derek Sivers, founder of [CD Baby](https://cdbaby.com), [gave away his company to charity](http://sivers.org/trust)
