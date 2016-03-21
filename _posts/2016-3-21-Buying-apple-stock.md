@@ -16,6 +16,7 @@ A 360.26% return! Would I have held the stock long enough to realize those gains
 
 The one thing for sure, the 160 GB was overkill, I never even used half the capacity the iPod.
 
+![My iPod Classic](/images/ipod-classic.jpg)
 
 
 
