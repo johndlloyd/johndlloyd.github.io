@@ -16,5 +16,5 @@ This site is a collection just some of my personal and professional work. The co
 
 ### About this site
 
-Created with [Jekyll] (https://jekyllrb.com)hosted by great folks at [GitHub] (https://pages.github.com).
+Created with [Jekyll](https://jekyllrb.com)hosted by great folks at [GitHub](https://pages.github.com).
 
