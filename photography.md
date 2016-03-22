@@ -5,5 +5,5 @@ layout: page
 sitemap: false
 ---
 
-This is a place for my photos
+photos are now exclusively on [Instragram](https://www.instagram.com/johndlloyd/) 
 
