@@ -10,4 +10,4 @@ I know [NYC](http://www1.nyc.gov/assets/dsny/zerowaste/residents/electronics.sht
 
 "Apple contracts with Sims Recycling Solutions to responsibly recycle computers and displays from any manufacturer. Generate a prepaid shipping label by going to [www.applepoweredbysims.com](http://www.applepoweredbysims.com). Then pack up your equipment using your own box and send it off. For more information about Sims Recycling Solutions or questions about this program call 800-966-4135."
 
-If you have some old electronics that can not be donated should check out this program.
+If you have some old electronics that can not be donated check out this program.
