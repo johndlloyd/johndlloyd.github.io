@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Apple's Liam sounds great, did you know about this other not so secret free ewaste recycling program?
