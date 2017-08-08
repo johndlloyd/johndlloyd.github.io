@@ -8,7 +8,7 @@ Hi I am John D. Lloyd! I live and work in New York City.
 
 By day I enjoy building hardware and software products for mission driven organizations. By night I spend my time reading, taking pictures, and dreaming about my next adventure.
 
-I get excited about good bbq, premium dairy products, fresh air, and bikes!
+I get excited about automation, great bbq, hard cheeses, fresh air, and bikes!
 
 ### More Information
 
