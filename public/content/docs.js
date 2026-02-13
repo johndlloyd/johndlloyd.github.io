@@ -31,15 +31,18 @@ I enjoy working with cross-functional teams to move from rough ideas to clear de
     command: "cat work/EXPERIENCE.md",
     markdown: `
 # EXPERIENCE.md
-##
-**Clover (Fiserv)** | Fintech / Payments | Owns the product roadmap for gift card and prepaid platform 
+##Professional Experience
+**Clover (Fiserv)** | Fintech / Payments | Owns the product roadmap for gift card and prepaid platform. 
 **Shake Shack** | QSR / Payments | Built payment platform infrastructure powering kiosk, POS, and mobile ordering across 500+ locations with multi-processor integrations.
 **Scholastic** | EdTech / Payments | Owned POS and payment platform deployed at 100K+ annual retail pop-up events, integrating loyalty, eGift, and eWallet capabilities.
 **Amplify** | EdTech | Built Android mobile applications on custom hardware for K-12 Students and Educators
-**Work Market (acquired by ADP)** | Enterprise SaaS / Workforce Management | Built and maintained test automation frameworks for web and mobile applications, managing CI/CD deployments for an enterprise SaaS platform.
+**Work Market (acquired by ADP)** | Marketplace / Workforce Management | Built and maintained test automation frameworks for web and mobile applications, managing CI/CD deployments for an enterprise SaaS platform.
 **Columbia University** | Higher Education / IT | Led a 15-person technical team supporting 2,500+ users in academic computing and research.
-**Lowe's Companies** | Retail / Supply Chain | Drove process improvements in distribution operations as an Industrial Engineer, including engineered standards and facility operations.
+**Lowe's Companies** | Supply Chain | Drove process improvements in distribution operations as an Industrial Engineer, including engineered standards and facility operations.
 **GE** | Industrial Automation | Designed and supported industrial instrumentation and control systems within GE's Automation & Controls group.
+
+##Education
+**Virginia Tech
 
 `,
   },
@@ -47,9 +50,9 @@ I enjoy working with cross-functional teams to move from rough ideas to clear de
     command: "cat projects/INDEX.md",
     markdown: `
 # INDEX.md
-## Ongoing Work
-- **Book It:** Books and Pizza!
-- **ReloRides: Peer-to-Peer Vehicle Relocation Made Simple.
+## Current Projects
+- **Book It:** Reading is magic, Pizza is motivating.
+- **[ReloRides][https://relorides.com]: Peer-to-Peer Vehicle Relocation Made Simple.
 
 
 \`\`\`txt
