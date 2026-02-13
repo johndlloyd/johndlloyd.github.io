@@ -3,28 +3,36 @@ const DOCS = {
     command: "cat README.md",
     markdown: `
 # John D. Lloyd
-Senior Product Manager delivering measurable fintech outcomes.
+I build product and technology experiences, mostly in fintech.
 
-## Hiring Snapshot
-- Product leader with end-to-end ownership from strategy through launch.
-- Strong in regulated environments where trust, risk, and speed must coexist.
-- Known for clear prioritization, stakeholder alignment, and execution discipline.
+## About This Site
+This is home base for my digital presence. It is intentionally simple and not super active.
 
 ## Current Focus
-Leading customer-first financial product initiatives that improve growth and reliability.
+- I love technology and practical systems that make work better.
+- I spend most of my time turning ambiguous problems into useful shipped products.
+- I care about clear thinking, good execution, and steady progress.
 `,
   },
   about: {
     command: "cat about/PROFILE.md",
     markdown: `
 # PROFILE.md
-I lead with structured thinking, direct communication, and accountability for outcomes.
+I am a Senior Product Manager who loves technology and building useful products.
+
+## Career Summary
+I have spent my career working across strategy, discovery, delivery, and post-launch iteration. Most of my work has been in fintech, where trust and reliability matter as much as speed.
+
+I enjoy working with cross-functional teams to move from rough ideas to clear decisions and shipped outcomes. I care most about work that is useful, measurable, and durable.
 
 ## How I Work
-- Start with customer pain and business context.
-- Define success metrics before implementation.
-- Partner tightly with engineering, design, compliance, and operations.
-- Ship in increments, measure results, and iterate quickly.
+- Start with the user problem, then connect it to business goals.
+- Keep scope practical and execution focused.
+- Make decisions explicit so teams can move with confidence.
+- Stay close to the work after launch and improve what matters.
+
+## Notes
+This site is a small personal corner of the internet. It is more of a stable home than a daily feed.
 
 ## Outside Work
 Cycling, photography, BBQ, and finding very good pizza.
@@ -35,21 +43,21 @@ Cycling, photography, BBQ, and finding very good pizza.
     markdown: `
 # EXPERIENCE.md
 ## Senior Product Manager | FinTech
-- Led roadmap programs tied to conversion, retention, and risk outcomes.
-- Partnered with compliance and operations to deliver safely at speed.
-- Drove alignment across senior stakeholders through clear tradeoffs and decision framing.
+- Built and led roadmap work across discovery, delivery, and iteration.
+- Partnered with engineering, design, compliance, and operations.
+- Focused on practical outcomes like customer value, reliability, and growth.
 
-## Strengths
-- Product strategy grounded in measurable business outcomes.
-- Discovery that blends customer insight, analytics, and operational feedback.
-- Consistent execution from concept, to launch, to post-launch optimization.
+## Areas I Enjoy Most
+- Product strategy with clear priorities.
+- Discovery grounded in customer and operational reality.
+- Shipping, learning, and improving in tight loops.
 `,
   },
   projects: {
     command: "cat projects/INDEX.md",
     markdown: `
 # INDEX.md
-## Recruiter-Relevant Work
+## Ongoing Work
 - **Book It:** one book per month plus one small technical artifact.
 - **Automation Workflows:** lightweight scripts and recurring checks.
 - **Personal Systems:** tools that reduce friction and improve decision quality.
@@ -67,10 +75,14 @@ skills/
     command: "cat contact/CONNECT.md",
     markdown: `
 # CONNECT.md
+- X: [@johndlloyd](https://x.com/johndlloyd)
 - LinkedIn: [linkedin.com/in/johndlloyd](https://www.linkedin.com/in/johndlloyd)
 
-## Open To
-Senior product roles where customer impact, business metrics, and execution quality all matter.
+## Consulting
+I am available for consulting services. I like helping businesses with payment integrations and PSP decisions.
+
+## Reach Out
+Please reach out via LinkedIn.
 `,
   },
 };
