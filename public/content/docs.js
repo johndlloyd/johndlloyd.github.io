@@ -5,12 +5,12 @@ export const DOCS = {
 # John D. Lloyd
 I build product and technology experiences.
 
-## About This Site
-This is home base for my digital presence. 
-Note: I like to tinker and this site is often out of date or broken. 
+## About
+This is my home base on the internet.  
+I tinker a lot, so parts of this site may be outdated, broken, or mid-experiment.
 
 ## Current Focus
-- I'm experimenting with Ai and how it can help businessses with their payments.
+Exploring how AI can be applied in practical ways to payments and business workflows.
 `,
   },
   about: {
@@ -20,7 +20,7 @@ Note: I like to tinker and this site is often out of date or broken.
 I am a Product Manager who loves technology and building useful products.
 
 ## Career Summary
-I have spent my career working across strategy, discovery, delivery, and post-launch iteration. Most of my work has been in fintech, where trust and reliability matter as much as speed.
+I have spent my career working across strategy, discovery, delivery, and post-launch iteration. Most of my work has been in regulated industries, where trust and reliability matter as much as speed.
 
 I enjoy working with cross-functional teams to move from rough ideas to clear decisions and shipped outcomes. I care most about work that is useful, measurable, and durable.
 
@@ -42,7 +42,7 @@ I enjoy working with cross-functional teams to move from rough ideas to clear de
 **GE** | Industrial Automation | Designed and supported industrial instrumentation and control systems within GE's Automation & Controls group.
 
 ##Education
-**Virginia Tech
+**Virginia Tech** | Industrial and Systems Engineering
 
 `,
   },
@@ -51,8 +51,8 @@ I enjoy working with cross-functional teams to move from rough ideas to clear de
     markdown: `
 # INDEX.md
 ## Current Projects
-- **Book It:** Reading is magic, Pizza is motivating.
-- **[ReloRides][https://relorides.com]: Peer-to-Peer Vehicle Relocation Made Simple.
+- **BOOK IT:** Reading is magic, pizza is motivating!
+- [ReloRides](https://relorides.com): Peer-to-Peer vehicle relocation made aimple.
 
 
 \`\`\`txt
