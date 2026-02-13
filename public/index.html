@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>John D. Lloyd | Paper Terminal Portfolio</title>
+    <meta
+      name="description"
+      content="John D. Lloyd personal site styled as a modern paper terminal with AI skill folder navigation."
+    />
+    <meta property="og:title" content="John D. Lloyd | Paper Terminal Portfolio" />
+    <meta
+      property="og:description"
+      content="Modern personal website themed after AI skills folder structures and markdown docs with a paper terminal aesthetic."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://johndlloyd.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="John D. Lloyd | Paper Terminal Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Explore John's profile through a markdown-driven folder interface."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+    <main class="frame" id="top">
+      <header class="titlebar reveal">
+        <div class="lights" aria-hidden="true">
+          <span class="light light-close"></span>
+          <span class="light light-min"></span>
+          <span class="light light-max"></span>
+        </div>
+        <p class="window-title">john@portfolio: ~/skills</p>
+        <p class="runtime"><span id="runtimeClock">--:--:--</span> local</p>
+      </header>
+
+      <section class="console reveal">
+        <aside class="tree-pane" aria-label="Skill folder structure">
+          <p class="pane-title">/skills</p>
+          <ul class="tree" id="skillTree">
+            <li><button class="tree-item active" data-doc="readme">README.md</button></li>
+            <li><button class="tree-item" data-doc="about">about/PROFILE.md</button></li>
+            <li><button class="tree-item" data-doc="work">work/EXPERIENCE.md</button></li>
+            <li><button class="tree-item" data-doc="projects">projects/INDEX.md</button></li>
+            <li><button class="tree-item" data-doc="contact">contact/CONNECT.md</button></li>
+            <li><button class="tree-item" data-doc="cloudfront">deploy/CLOUDFRONT.md</button></li>
+          </ul>
+        </aside>
+
+        <article class="doc-pane">
+          <div class="prompt-line">
+            <span class="prompt-user">john@portfolio</span>
+            <span class="prompt-symbol">:</span>
+            <span class="prompt-path">~/skills</span>
+            <span class="prompt-symbol">$</span>
+            <span id="typedCommand" class="typed"></span><span class="cursor" aria-hidden="true"></span>
+          </div>
+          <div id="docContent" class="markdown-body" aria-live="polite"></div>
+        </article>
+      </section>
+
+      <footer class="status reveal">
+        <a href="mailto:john@johndlloyd.com">john@johndlloyd.com</a>
+        <a href="https://www.linkedin.com/in/johndlloyd" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span>© <span id="year"></span> John D. Lloyd</span>
+      </footer>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
