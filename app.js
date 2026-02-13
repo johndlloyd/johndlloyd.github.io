@@ -59,8 +59,7 @@ Cycling, photography, BBQ, and finding very good pizza.
 skills/
 ├── about/
 ├── work/
-├── projects/
-└── deploy/
+└── projects/
 \`\`\`
 `,
   },
@@ -68,30 +67,10 @@ skills/
     command: "cat contact/CONNECT.md",
     markdown: `
 # CONNECT.md
-- Email: [john@johndlloyd.com](mailto:john@johndlloyd.com)
 - LinkedIn: [linkedin.com/in/johndlloyd](https://www.linkedin.com/in/johndlloyd)
 
 ## Open To
 Senior product roles where customer impact, business metrics, and execution quality all matter.
-`,
-  },
-  cloudfront: {
-    command: "cat deploy/CLOUDFRONT.md",
-    markdown: `
-# CLOUDFRONT.md
-This site is static and ready for CloudFront + S3 hosting.
-
-## Deployment Outline
-1. Build or prepare static assets.
-2. Sync files to an S3 origin bucket.
-3. Configure CloudFront with that bucket as origin.
-4. Connect \`johndlloyd.com\` using Route 53 + ACM certificate.
-
-## Invalidation
-Invalidate after deployments:
-\`\`\`bash
-aws cloudfront create-invalidation --distribution-id <id> --paths "/*"
-\`\`\`
 `,
   },
 };
