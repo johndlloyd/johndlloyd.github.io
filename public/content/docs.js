@@ -8,9 +8,6 @@ I build product and technology experiences.
 ## About
 This is my home base on the internet.  
 I tinker a lot, so parts of this site may be outdated, broken, or mid-experiment.
-
-## Current Focus
-Exploring how AI can be applied in practical ways to payments and business workflows.
 `,
   },
   about: {
@@ -35,7 +32,7 @@ I enjoy working with cross-functional teams to move from rough ideas to clear de
 **Clover (Fiserv)** | Fintech / Payments | Owns the product roadmap for gift card and prepaid platform. 
 **Shake Shack** | QSR / Payments | Built payment platform infrastructure powering kiosk, POS, and mobile ordering across 500+ locations with multi-processor integrations.
 **Scholastic** | EdTech / Payments | Owned POS and payment platform deployed at 100K+ annual retail pop-up events, integrating loyalty, eGift, and eWallet capabilities.
-**Amplify** | EdTech | Built Android mobile applications on custom hardware for K-12 Students and Educators
+**Amplify (acquired by News Corp)** | EdTech | Built Android mobile applications on custom hardware for K-12 students and educators.
 **Work Market (acquired by ADP)** | Marketplace / Workforce Management | Built and maintained test automation frameworks for web and mobile applications, managing CI/CD deployments for an enterprise SaaS platform.
 **Columbia University** | Higher Education / IT | Led a 15-person technical team supporting 2,500+ users in academic computing and research.
 **Lowe's Companies** | Supply Chain | Drove process improvements in distribution operations as an Industrial Engineer, including engineered standards and facility operations.
@@ -51,16 +48,11 @@ I enjoy working with cross-functional teams to move from rough ideas to clear de
     markdown: `
 # INDEX.md
 ## Current Projects
+## Current Focus
+Exploring how AI can be applied in practical ways to payments and business workflows.
+
 - **BOOK IT:** Reading is magic, pizza is motivating!
-- [ReloRides](https://relorides.com): Peer-to-Peer vehicle relocation made aimple.
-
-
-\`\`\`txt
-skills/
-├── about/
-├── work/
-└── projects/
-\`\`\`
+- [ReloRides](https://relorides.com): Peer-to-peer vehicle relocation made simple.
 `,
   },
   contact: {
