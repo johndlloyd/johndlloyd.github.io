@@ -3,9 +3,7 @@ export const DOCS = {
     command: "cat README.md",
     markdown: `
 # John D. Lloyd
-I build product and technology experiences.
 
-## About
 This is my home base on the internet.  
 I tinker a lot, so parts of this site may be outdated, broken, or mid-experiment.
 `,
@@ -29,29 +27,28 @@ I enjoy working with cross-functional teams to move from rough ideas to clear de
     markdown: `
 # EXPERIENCE.md
 ##Professional Experience
-**Clover (Fiserv)** | Fintech / Payments | Owns the product roadmap for gift card and prepaid platform. 
-**Shake Shack** | QSR / Payments | Built payment platform infrastructure powering kiosk, POS, and mobile ordering across 500+ locations with multi-processor integrations.
-**Scholastic** | EdTech / Payments | Owned POS and payment platform deployed at 100K+ annual retail pop-up events, integrating loyalty, eGift, and eWallet capabilities.
+**Clover (Fiserv)** | Fintech, Payments | Owns the product roadmap for gift card and prepaid platform. 
+**Shake Shack** | POS, Payments | Built payment platform infrastructure powering kiosk, POS, and mobile ordering across 500+ locations with multi-processor integrations.
+**Scholastic** | EdTech, Payments | Owned POS and payment platform deployed at 100K+ annual retail pop-up events, integrating loyalty, eGift, and eWallet capabilities.
 **Amplify (acquired by News Corp)** | EdTech | Built Android mobile applications on custom hardware for K-12 students and educators.
-**Work Market (acquired by ADP)** | Marketplace / Workforce Management | Built and maintained test automation frameworks for web and mobile applications, managing CI/CD deployments for an enterprise SaaS platform.
-**Columbia University** | Higher Education / IT | Led a 15-person technical team supporting 2,500+ users in academic computing and research.
-**Lowe's Companies** | Supply Chain | Drove process improvements in distribution operations as an Industrial Engineer, including engineered standards and facility operations.
+**Work Market (acquired by ADP)** | Two-sided marketplace, Enterprise SaaS | Built and maintained test automation frameworks for web and mobile applications, managing CI/CD deployments for an enterprise SaaS platform.
+**Columbia University** | Higher Education, EdTech | Led a 15-person technical team supporting 2,500+ users in academic computing and research.
+**Lowe's Companies** | LMS, WMS, Supply Chain | Drove process improvements in distribution operations as an Industrial Engineer, including engineered standards and facility operations.
 **GE** | Industrial Automation | Designed and supported industrial instrumentation and control systems within GE's Automation & Controls group.
 
 ##Education
 **Virginia Tech** | Industrial and Systems Engineering
-
 `,
   },
   projects: {
     command: "cat projects/INDEX.md",
     markdown: `
 # INDEX.md
-## Current Projects
+
 ## Current Focus
 Exploring how AI can be applied in practical ways to payments and business workflows.
 
-- **BOOK IT:** Reading is magic, pizza is motivating!
+## Current Projects
 - [ReloRides](https://relorides.com): Peer-to-peer vehicle relocation made simple.
 `,
   },
@@ -61,10 +58,6 @@ Exploring how AI can be applied in practical ways to payments and business workf
 # CONNECT.md
 - X: [@johndlloyd](https://x.com/johndlloyd)
 - LinkedIn: [linkedin.com/in/johndlloyd](https://www.linkedin.com/in/johndlloyd)
-
-
-## Reach Out
-Please reach out via LinkedIn.
 `,
   },
 };
