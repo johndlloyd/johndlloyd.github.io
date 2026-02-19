@@ -46,10 +46,23 @@ I enjoy working with cross-functional teams to move from rough ideas to clear de
 # INDEX.md
 
 ## Current Focus
-Exploring how AI can be applied in practical ways to payments and business workflows.
+Building practical products and sharing the process, especially where open source can make everyday tools more accessible.
 
 ## Current Projects
 - [ReloRides](https://relorides.com): Peer-to-peer vehicle relocation made simple.
+- **iCompris (macOS Edition)**: A modern macOS-focused fork of [GCompris](https://www.gcompris.net/), built for Apple Silicon and current Qt6 workflows.
+
+## Why iCompris
+I was inspired by [@meimakes](https://x.com/meimakes). After trying a few of their creations, I went looking for a project where I could contribute meaningful value and learn by shipping.
+
+I found GCompris, which is an incredible educational suite. My family is all-in on Mac, and I noticed the macOS release path had not been updated in a while, so I decided to focus on bringing that experience forward.
+
+## What I shipped
+- Reproducible macOS arm64 build + DMG workflow
+- Packaging/signing fixes to avoid modern macOS launch failures
+- Updated documentation so others can repeat the release process
+
+Project repo: [github.com/johndlloyd/icompris](https://github.com/johndlloyd/icompris)
 `,
   },
   contact: {
