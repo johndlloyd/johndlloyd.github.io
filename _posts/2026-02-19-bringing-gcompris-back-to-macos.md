@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bringing GCompris Back to macOS with iCompris
+permalink: /bringing-gcompris-back-to-macos/
 ---
 
 I was inspired by [@meimakes](https://x.com/meimakes) and wanted a meaningful open-source project where I could learn by shipping.
