@@ -1,6 +1,6 @@
-import { DOCS } from "./public/content/docs.js";
-import { PROJECTS } from "./public/content/projects.js";
-import { ARTICLES } from "./public/content/articles.js";
+import { DOCS } from "./content/docs.js";
+import { PROJECTS } from "./content/projects.js";
+import { ARTICLES } from "./content/articles.js";
 
 const year = document.getElementById("year");
 if (year) {
