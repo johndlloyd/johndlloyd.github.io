@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     id: "relorides",
     title: "ReloRides",
-    status: "Active",
+    status: "In Development",
     tags: ["Marketplace", "Mobility", "Operations"],
     summary: "Peer-to-peer vehicle relocation made simple.",
     detail:
@@ -10,29 +10,9 @@ export const PROJECTS = [
     link: "https://relorides.com",
   },
   {
-    id: "book-it",
-    title: "Book It",
-    status: "Ongoing",
-    tags: ["Learning System", "Personal Ops"],
-    summary: "One book per month plus one practical artifact.",
-    detail:
-      "Book It is a personal cadence for continuous learning: each month includes one book and one output (template, script, write-up, or lightweight tool) inspired by what was learned.",
-    link: "",
-  },
-  {
-    id: "ai-workflows",
-    title: "AI Workflow Experiments",
-    status: "Active",
-    tags: ["AI", "Automation", "Productivity"],
-    summary: "Practical AI workflows for payments and business operations.",
-    detail:
-      "A growing set of experiments that test where AI provides measurable leverage in day-to-day business workflows. Focus is on quality, reliability, and repeatability over novelty.",
-    link: "",
-  },
-  {
     id: "icompris",
     title: "iCompris",
-    status: "Ongoing",
+    status: "Live",
     tags: ["EdTech", "Children"],
     summary: "A modern macOS-focused fork of GCompris, built for Apple Silicon and current Qt6 workflows.",
     detail:
@@ -40,11 +20,11 @@ export const PROJECTS = [
     link: "https://github.com/johndlloyd/icompris",
   },
   {
-    id: "monitor-the-situation",
-    title: "Monitor The Situation",
-    status: "Active",
+    id: "monitor-the-skituation",
+    title: "Monitor The Skituation",
+    status: "Live",
     tags: ["AI", "Monitoring", "Web App"],
-    summary: "A lightweight app for tracking and summarizing important developments in one place.",
+    summary: "A lightweight app for tracking and summarizing important weather developments in one place.",
     detail:
       "Monitor The Situation is a focused monitoring app built to make it easier to follow fast-moving topics. The core idea is simple: reduce noise, keep signal high, and give a clear view of what changed and why it matters. We built it as a fast, modern web app with an emphasis on readability and quick scanning.",
     link: "https://monitor-the-situation.vercel.app",
