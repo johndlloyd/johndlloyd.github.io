@@ -39,4 +39,14 @@ export const PROJECTS = [
       "I was inspired by @meimakes. After trying a few of their creations, I went looking for a project where I could contribute meaningful value and learn by shipping.\n\nI found GCompris, which is an incredible educational suite. My family is all-in on Mac, and I noticed the macOS release path had not been updated in a while, so I decided to focus on bringing that experience forward.\n\nWhat I shipped:\n- Reproducible macOS arm64 build + DMG workflow\n- Packaging/signing fixes to avoid modern macOS launch failures\n- Updated documentation so others can repeat the release process\n\nProject repo: github.com/johndlloyd/icompris",
     link: "https://github.com/johndlloyd/icompris",
   },
+  {
+    id: "monitor-the-situation",
+    title: "Monitor The Situation",
+    status: "Active",
+    tags: ["AI", "Monitoring", "Web App"],
+    summary: "A lightweight app for tracking and summarizing important developments in one place.",
+    detail:
+      "Monitor The Situation is a focused monitoring app built to make it easier to follow fast-moving topics. The core idea is simple: reduce noise, keep signal high, and give a clear view of what changed and why it matters. We built it as a fast, modern web app with an emphasis on readability and quick scanning.",
+    link: "https://monitor-the-situation.vercel.app",
+  },
 ];
