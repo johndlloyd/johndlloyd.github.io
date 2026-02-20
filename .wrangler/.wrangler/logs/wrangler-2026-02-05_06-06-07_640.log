@@ -1,0 +1,53 @@
+
+--- 2026-02-05T06:06:07.713Z debug
+🪵  Writing logs to "/Users/jlloyd/Codex/.wrangler/.wrangler/logs/wrangler-2026-02-05_06-06-07_640.log"
+---
+
+--- 2026-02-05T06:06:07.713Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command started","timestamp":1770271567713,"properties":{"amplitude_session_id":1770271567711,"amplitude_event_id":0,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages dev","args":{}}}
+---
+
+--- 2026-02-05T06:06:07.721Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T06:06:07.750Z log
+
+ ⛅️ wrangler 3.114.17 (update available 4.62.0)
+---------------------------------------------------------
+
+---
+
+--- 2026-02-05T06:06:07.802Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical errors.
+  Run `npm install --save-dev wrangler@4` to update to the latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2026-02-05T06:06:07.807Z debug
+Compiling worker to "/Users/jlloyd/Codex/.wrangler/tmp/pages-4HSm8Z/functionsWorker-0.6679941342614304.mjs"...
+---
+
+--- 2026-02-05T06:06:07.826Z log
+
+---
+
+--- 2026-02-05T06:06:07.827Z error
+✘ [ERROR] Failed to build Functions at ./functions.
+
+
+---
+
+--- 2026-02-05T06:06:07.838Z debug
+Error: Failed to build Functions at ./functions.
+    at Object.Handler [as handler] (/Users/jlloyd/Codex/node_modules/wrangler/wrangler-dist/cli.js:128190:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+---
+
+--- 2026-02-05T06:06:07.839Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command errored","timestamp":1770271567839,"properties":{"amplitude_session_id":1770271567711,"amplitude_event_id":1,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages dev","args":{},"durationMs":142,"durationSeconds":0.142,"durationMinutes":0.0023666666666666667,"errorType":"FatalError"}}
+---

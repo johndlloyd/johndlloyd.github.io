@@ -1,0 +1,172 @@
+
+--- 2026-02-13T07:04:23.782Z debug
+🪵  Writing logs to "/Users/jlloyd/Codex/.wrangler/.wrangler/logs/wrangler-2026-02-13_07-04-23_711.log"
+---
+
+--- 2026-02-13T07:04:23.782Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command started","timestamp":1770966263782,"properties":{"amplitude_session_id":1770966263780,"amplitude_event_id":0,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages dev","args":{}}}
+---
+
+--- 2026-02-13T07:04:23.790Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-13T07:04:23.821Z log
+
+ ⛅️ wrangler 3.114.17 (update available 4.65.0)
+-----------------------------------------------
+
+---
+
+--- 2026-02-13T07:04:23.869Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical errors.
+  Run `npm install --save-dev wrangler@4` to update to the latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2026-02-13T07:04:23.873Z debug
+Compiling worker to "/Users/jlloyd/Codex/.wrangler/tmp/pages-LZ0dsd/functionsWorker-0.40747395998704905.mjs"...
+---
+
+--- 2026-02-13T07:04:23.894Z debug
+No experimental flag store instantiated
+---
+
+--- 2026-02-13T07:04:23.894Z debug
+Attempted to use flag "MULTIWORKER" which has not been instantiated
+---
+
+--- 2026-02-13T07:04:23.915Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-02-13T07:04:23.916Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"build pages functions","timestamp":1770966263916,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-13T07:04:24.034Z debug
+.env file not found at ".dev.vars". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-13T07:04:24.035Z log
+No bindings found.
+---
+
+--- 2026-02-13T07:04:24.041Z debug
+DevEnv teardown beginning...
+---
+
+--- 2026-02-13T07:04:24.041Z debug
+ConfigController teardown beginning...
+---
+
+--- 2026-02-13T07:04:24.041Z debug
+BundlerController teardown beginning...
+---
+
+--- 2026-02-13T07:04:24.042Z debug
+LocalRuntimeController teardown beginning...
+---
+
+--- 2026-02-13T07:04:24.042Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-13T07:04:24.042Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-02-13T07:04:24.042Z debug
+ProxyController teardown beginning...
+---
+
+--- 2026-02-13T07:04:24.043Z debug
+ConfigController teardown complete
+---
+
+--- 2026-02-13T07:04:24.043Z debug
+LocalRuntimeController teardown complete
+---
+
+--- 2026-02-13T07:04:24.043Z debug
+BundlerController teardown complete
+---
+
+--- 2026-02-13T07:04:24.043Z debug
+ProxyController teardown complete
+---
+
+--- 2026-02-13T07:04:24.043Z debug
+DevEnv teardown complete
+---
+
+--- 2026-02-13T07:04:24.045Z log
+
+---
+
+--- 2026-02-13T07:04:24.046Z error
+✘ [ERROR] Unexpected options passed to `new Miniflare()` constructor:
+
+  {
+    ...,
+    port: [ 8788, 8790 ],
+          ^ Expected number, received array
+    ...,
+  }
+
+
+---
+
+--- 2026-02-13T07:04:24.048Z debug
+MiniflareCoreError [ERR_VALIDATION]: Unexpected options passed to `new Miniflare()` constructor:
+{
+  ...,
+  port: [ 8788, 8790 ],
+        ^ Expected number, received array
+  ...,
+}
+    at validateOptions (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:16137:21)
+    at new Miniflare2 (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:16497:38)
+    at ProxyController.createProxyWorker (/Users/jlloyd/Codex/node_modules/wrangler/wrangler-dist/cli.js:96610:26)
+    at ProxyController.onConfigUpdate (/Users/jlloyd/Codex/node_modules/wrangler/wrangler-dist/cli.js:96765:10)
+    at ConfigController.<anonymous> (/Users/jlloyd/Codex/node_modules/wrangler/wrangler-dist/cli.js:158514:14)
+    at ConfigController.emit (node:events:508:20)
+    at ConfigController.emit (node:domain:489:12)
+    at ConfigController.emitConfigUpdateEvent (/Users/jlloyd/Codex/node_modules/wrangler/wrangler-dist/cli.js:157856:10)
+    at #updateConfig (/Users/jlloyd/Codex/node_modules/wrangler/wrangler-dist/cli.js:157828:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+---
+
+--- 2026-02-13T07:04:24.048Z log
+If you think this is a bug then please create an issue at https://github.com/cloudflare/workers-sdk/issues/new/choose
+---
+
+--- 2026-02-13T07:04:24.048Z log
+Note that there is a newer version of Wrangler available (4.65.0). Consider checking whether upgrading resolves this error.
+---
+
+--- 2026-02-13T07:04:24.048Z log
+? Would you like to report this error to Cloudflare? Wrangler's output and the error details will be shared with the Wrangler team to help us diagnose and fix the issue.
+---
+
+--- 2026-02-13T07:04:24.048Z log
+🤖 Using fallback value in non-interactive context: no
+---
+
+--- 2026-02-13T07:04:24.048Z debug
+Sentry: Reporting disabled - would have sent MiniflareCoreError [ERR_VALIDATION]: Unexpected options passed to `new Miniflare()` constructor:
+{
+  ...,
+  port: [ 8788, 8790 ],
+        ^ Expected number, received array
+  ...,
+}.
+---
+
+--- 2026-02-13T07:04:24.048Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command errored","timestamp":1770966264048,"properties":{"amplitude_session_id":1770966263780,"amplitude_event_id":1,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages dev","args":{},"durationMs":283,"durationSeconds":0.283,"durationMinutes":0.004716666666666666,"errorType":"MiniflareCoreError"}}
+---

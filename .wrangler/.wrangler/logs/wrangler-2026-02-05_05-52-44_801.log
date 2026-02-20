@@ -1,0 +1,1084 @@
+
+--- 2026-02-05T05:52:44.869Z debug
+🪵  Writing logs to "/Users/jlloyd/Codex/.wrangler/.wrangler/logs/wrangler-2026-02-05_05-52-44_801.log"
+---
+
+--- 2026-02-05T05:52:44.869Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command started","timestamp":1770270764869,"properties":{"amplitude_session_id":1770270764867,"amplitude_event_id":0,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages dev","args":{}}}
+---
+
+--- 2026-02-05T05:52:44.877Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T05:52:44.905Z log
+
+ ⛅️ wrangler 3.114.17 (update available 4.62.0)
+---------------------------------------------------------
+
+---
+
+--- 2026-02-05T05:52:44.941Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical errors.
+  Run `npm install --save-dev wrangler@4` to update to the latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2026-02-05T05:52:44.946Z debug
+Compiling worker to "/Users/jlloyd/Codex/.wrangler/tmp/pages-Jwf5bJ/functionsWorker-0.6150363308958633.mjs"...
+---
+
+--- 2026-02-05T05:52:44.964Z debug
+No experimental flag store instantiated
+---
+
+--- 2026-02-05T05:52:44.964Z debug
+Attempted to use flag "MULTIWORKER" which has not been instantiated
+---
+
+--- 2026-02-05T05:52:44.980Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-02-05T05:52:44.981Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"build pages functions","timestamp":1770270764981,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-05T05:52:45.073Z debug
+.env file not found at ".dev.vars". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T05:52:45.074Z log
+No bindings found.
+---
+
+--- 2026-02-05T05:52:45.081Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"run pages dev","timestamp":1770270765081,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-05T05:52:45.114Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-05T05:52:45.115Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-02-05T05:52:45.115Z log
+⎔ Starting local server...
+---
+
+--- 2026-02-05T05:52:45.170Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-02-05T05:52:45.198Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"50614"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"50611","pathname":"/core:user:cityevents"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"076c109b-9045-4b2c-8d17-81759b503774"},"liveReload":false,"proxyLogsToController":false,"internalDurableObjects":[],"entrypointAddresses":{"__INTERNAL_WRANGLER_MIDDLEWARE__":{"host":"127.0.0.1","port":50615},"default":{"host":"127.0.0.1","port":50616}}}}
+---
+
+--- 2026-02-05T05:52:45.198Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-02-05T05:52:45.199Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-02-05T05:52:45.200Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 283013665,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '8581386824434393693.-6400176781548050273'
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:52:45.201Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:50611/core:user:cityevents
+---
+
+--- 2026-02-05T05:52:45.201Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-02-05T05:52:45.202Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000001}
+---
+
+--- 2026-02-05T05:52:45.202Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Debugger.enable","id":100000002}
+---
+
+--- 2026-02-05T05:52:45.202Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Network.enable","id":100000003}
+---
+
+--- 2026-02-05T05:52:45.203Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000001, result: {} }
+---
+
+--- 2026-02-05T05:52:45.203Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Debugger.scriptParsed',
+  params: {
+    scriptId: '3',
+    url: 'file:///Users/jlloyd/Codex/.wrangler/tmp/dev-HciMTq/functionsWorker-0.6150363308958633.js',
+    startLine: 0,
+    startColumn: 0,
+    endLine: 3080,
+    endColumn: 103,
+    executionContextId: 283013665,
+    hash: 'f077e04ae62b105707dbc79bb11f58eda410bfe57d52c405d34f0f416d194b69',
+    buildId: '',
+    isLiveEdit: false,
+    sourceMapURL: 'functionsWorker-0.6150363308958633.js.map',
+    hasSourceURL: true,
+    isModule: true,
+    length: 114108,
+    scriptLanguage: 'JavaScript',
+    embedderName: 'functionsWorker-0.6150363308958633.js'
+  }
+}
+---
+
+--- 2026-02-05T05:52:45.204Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  id: 100000002,
+  result: { debuggerId: '3415969536604255722.6420929919462912450' }
+}
+---
+
+--- 2026-02-05T05:52:45.207Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000003, method: 'Network.enable', result: {} }
+---
+
+--- 2026-02-05T05:52:52.876Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '0',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261293.346,
+    wallTime: 1770270772.862,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:52:52.879Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.responseReceived',
+  params: {
+    requestId: '0',
+    timestamp: 261293.358,
+    type: 'Document',
+    response: {
+      status: 200,
+      statusText: 'OK',
+      headers: [Object],
+      mimeType: 'text/html',
+      connectionReused: false,
+      connectionId: 0,
+      remotePort: 0,
+      fromDiskCache: false,
+      fromServiceWorker: false,
+      encodedDataLength: 0,
+      protocol: 'http/1.1',
+      securityState: 'unknown'
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:52:52.881Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '0',
+    timestamp: 261293.359,
+    dataLength: 1014,
+    encodedDataLength: 1014
+  }
+}
+---
+
+--- 2026-02-05T05:52:52.882Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.loadingFinished',
+  params: {
+    requestId: '0',
+    timestamp: 261293.361,
+    encodedDataLength: 1014,
+    cfResponse: {
+      body: 'PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KICA8aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04IiAvPgogICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIiAvPgogICAgPHRpdGxlPkNpdHlFdmVudHM8L3RpdGxlPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSIvc3R5bGVzLmNzcyIgLz4KICA8L2hlYWQ+CiAgPGJvZHk+CiAgICA8bWFpbiBjbGFzcz0iYXBwIj4KICAgICAgPGhlYWRlciBjbGFzcz0iaGVybyI+CiAgICAgICAgPGRpdj4KICAgICAgICAgIDxwIGNsYXNzPSJleWVicm93Ij5FdmVudHMgdGhhdCBmZWVsIGxvY2FsPC9wPgogICAgICAgICAgPGgxPkNpdHlFdmVudHM8L2gxPgogICAgICAgICAgPHAgY2xhc3M9InN1YmhlYWQiPkZhc3QsIGxpZ2h0d2VpZ2h0IGV2ZW50IHBpY2tzIHN0cmFpZ2h0IGZyb20gdHJ1c3RlZCBsb2NhbCBjYWxlbmRhcnMuPC9wPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImNvbnRyb2xzIj4KICAgICAgICAgIDxsYWJlbCBjbGFzcz0iY29udHJvbCI+CiAgICAgICAgICAgIDxzcGFuPkNhdGVnb3J5PC9zcGFuPgogICAgICAgICAgICA8c2VsZWN0IGlkPSJjYXRlZ29yeVNlbGVjdCI+PC9zZWxlY3Q+CiAgICAgICAgICA8L2xhYmVsPgogICAgICAgIDwvZGl2PgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJzdGF0dXMiIGlkPSJzdGF0dXMiPjwvc2VjdGlvbj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJjYXJkcyIgaWQ9ImNhcmRzIj48L3NlY3Rpb24+CiAgICA8L21haW4+CgogICAgPGZvb3RlciBjbGFzcz0iZm9vdGVyIj4KICAgICAgPHA+UG93ZXJlZCBieSBsb2NhbCBSU1MgZmVlZHMuIEJ1aWx0IGZvciBlYXN5IG1vYmlsZSBicm93c2luZy48L3A+CiAgICA8L2Zvb3Rlcj4KCiAgICA8c2NyaXB0IHR5cGU9Im1vZHVsZSIgc3JjPSIvYXBwLmpzIj48L3NjcmlwdD4KICA8L2JvZHk+CjwvaHRtbD4K',
+      base64Encoded: true
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:52:52.914Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '1',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/styles.css',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261293.396,
+    wallTime: 1770270772.911,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:52:52.915Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '2',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/app.js',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261293.397,
+    wallTime: 1770270772.913,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:52:52.925Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '3',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/apple-touch-icon-precomposed.png',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261293.409,
+    wallTime: 1770270772.924,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:52:52.928Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.responseReceived',
+  params: {
+    requestId: '3',
+    timestamp: 261293.411,
+    type: 'Document',
+    response: {
+      status: 200,
+      statusText: 'OK',
+      headers: [Object],
+      mimeType: 'text/html',
+      connectionReused: false,
+      connectionId: 0,
+      remotePort: 0,
+      fromDiskCache: false,
+      fromServiceWorker: false,
+      encodedDataLength: 0,
+      protocol: 'http/1.1',
+      securityState: 'unknown'
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:52:52.928Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '3',
+    timestamp: 261293.411,
+    dataLength: 1014,
+    encodedDataLength: 1014
+  }
+}
+---
+
+--- 2026-02-05T05:52:52.929Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.loadingFinished',
+  params: {
+    requestId: '3',
+    timestamp: 261293.412,
+    encodedDataLength: 1014,
+    cfResponse: {
+      body: 'PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KICA8aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04IiAvPgogICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIiAvPgogICAgPHRpdGxlPkNpdHlFdmVudHM8L3RpdGxlPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSIvc3R5bGVzLmNzcyIgLz4KICA8L2hlYWQ+CiAgPGJvZHk+CiAgICA8bWFpbiBjbGFzcz0iYXBwIj4KICAgICAgPGhlYWRlciBjbGFzcz0iaGVybyI+CiAgICAgICAgPGRpdj4KICAgICAgICAgIDxwIGNsYXNzPSJleWVicm93Ij5FdmVudHMgdGhhdCBmZWVsIGxvY2FsPC9wPgogICAgICAgICAgPGgxPkNpdHlFdmVudHM8L2gxPgogICAgICAgICAgPHAgY2xhc3M9InN1YmhlYWQiPkZhc3QsIGxpZ2h0d2VpZ2h0IGV2ZW50IHBpY2tzIHN0cmFpZ2h0IGZyb20gdHJ1c3RlZCBsb2NhbCBjYWxlbmRhcnMuPC9wPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImNvbnRyb2xzIj4KICAgICAgICAgIDxsYWJlbCBjbGFzcz0iY29udHJvbCI+CiAgICAgICAgICAgIDxzcGFuPkNhdGVnb3J5PC9zcGFuPgogICAgICAgICAgICA8c2VsZWN0IGlkPSJjYXRlZ29yeVNlbGVjdCI+PC9zZWxlY3Q+CiAgICAgICAgICA8L2xhYmVsPgogICAgICAgIDwvZGl2PgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJzdGF0dXMiIGlkPSJzdGF0dXMiPjwvc2VjdGlvbj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJjYXJkcyIgaWQ9ImNhcmRzIj48L3NlY3Rpb24+CiAgICA8L21haW4+CgogICAgPGZvb3RlciBjbGFzcz0iZm9vdGVyIj4KICAgICAgPHA+UG93ZXJlZCBieSBsb2NhbCBSU1MgZmVlZHMuIEJ1aWx0IGZvciBlYXN5IG1vYmlsZSBicm93c2luZy48L3A+CiAgICA8L2Zvb3Rlcj4KCiAgICA8c2NyaXB0IHR5cGU9Im1vZHVsZSIgc3JjPSIvYXBwLmpzIj48L3NjcmlwdD4KICA8L2JvZHk+CjwvaHRtbD4K',
+      base64Encoded: true
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:52:53.020Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '4',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/apple-touch-icon.png',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261293.501,
+    wallTime: 1770270773.016,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:52:53.021Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.responseReceived',
+  params: {
+    requestId: '4',
+    timestamp: 261293.504,
+    type: 'Document',
+    response: {
+      status: 200,
+      statusText: 'OK',
+      headers: [Object],
+      mimeType: 'text/html',
+      connectionReused: false,
+      connectionId: 0,
+      remotePort: 0,
+      fromDiskCache: false,
+      fromServiceWorker: false,
+      encodedDataLength: 0,
+      protocol: 'http/1.1',
+      securityState: 'unknown'
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:52:53.022Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '4',
+    timestamp: 261293.504,
+    dataLength: 1014,
+    encodedDataLength: 1014
+  }
+}
+---
+
+--- 2026-02-05T05:52:53.023Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.loadingFinished',
+  params: {
+    requestId: '4',
+    timestamp: 261293.504,
+    encodedDataLength: 1014,
+    cfResponse: {
+      body: 'PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KICA8aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04IiAvPgogICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIiAvPgogICAgPHRpdGxlPkNpdHlFdmVudHM8L3RpdGxlPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSIvc3R5bGVzLmNzcyIgLz4KICA8L2hlYWQ+CiAgPGJvZHk+CiAgICA8bWFpbiBjbGFzcz0iYXBwIj4KICAgICAgPGhlYWRlciBjbGFzcz0iaGVybyI+CiAgICAgICAgPGRpdj4KICAgICAgICAgIDxwIGNsYXNzPSJleWVicm93Ij5FdmVudHMgdGhhdCBmZWVsIGxvY2FsPC9wPgogICAgICAgICAgPGgxPkNpdHlFdmVudHM8L2gxPgogICAgICAgICAgPHAgY2xhc3M9InN1YmhlYWQiPkZhc3QsIGxpZ2h0d2VpZ2h0IGV2ZW50IHBpY2tzIHN0cmFpZ2h0IGZyb20gdHJ1c3RlZCBsb2NhbCBjYWxlbmRhcnMuPC9wPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImNvbnRyb2xzIj4KICAgICAgICAgIDxsYWJlbCBjbGFzcz0iY29udHJvbCI+CiAgICAgICAgICAgIDxzcGFuPkNhdGVnb3J5PC9zcGFuPgogICAgICAgICAgICA8c2VsZWN0IGlkPSJjYXRlZ29yeVNlbGVjdCI+PC9zZWxlY3Q+CiAgICAgICAgICA8L2xhYmVsPgogICAgICAgIDwvZGl2PgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJzdGF0dXMiIGlkPSJzdGF0dXMiPjwvc2VjdGlvbj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJjYXJkcyIgaWQ9ImNhcmRzIj48L3NlY3Rpb24+CiAgICA8L21haW4+CgogICAgPGZvb3RlciBjbGFzcz0iZm9vdGVyIj4KICAgICAgPHA+UG93ZXJlZCBieSBsb2NhbCBSU1MgZmVlZHMuIEJ1aWx0IGZvciBlYXN5IG1vYmlsZSBicm93c2luZy48L3A+CiAgICA8L2Zvb3Rlcj4KCiAgICA8c2NyaXB0IHR5cGU9Im1vZHVsZSIgc3JjPSIvYXBwLmpzIj48L3NjcmlwdD4KICA8L2JvZHk+CjwvaHRtbD4K',
+      base64Encoded: true
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:52:55.202Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000004}
+---
+
+--- 2026-02-05T05:52:55.205Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000004, result: { id: 'e66fa27603c3b9ea' } }
+---
+
+--- 2026-02-05T05:53:05.204Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000005}
+---
+
+--- 2026-02-05T05:53:05.208Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000005, result: { id: 'e66fa27603c3b9ea' } }
+---
+
+--- 2026-02-05T05:53:07.803Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '5',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261308.286,
+    wallTime: 1770270787.802,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:53:07.832Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '6',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/styles.css',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261308.315,
+    wallTime: 1770270787.83,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:53:07.833Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '7',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/app.js',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261308.316,
+    wallTime: 1770270787.831,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:53:11.726Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '8',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/apple-touch-icon-precomposed.png',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261312.203,
+    wallTime: 1770270791.719,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:53:11.732Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '9',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/apple-touch-icon.png',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261312.205,
+    wallTime: 1770270791.721,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:53:11.735Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '10',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/favicon.ico',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261312.206,
+    wallTime: 1770270791.722,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:53:11.736Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.responseReceived',
+  params: {
+    requestId: '9',
+    timestamp: 261312.216,
+    type: 'Document',
+    response: {
+      status: 200,
+      statusText: 'OK',
+      headers: [Object],
+      mimeType: 'text/html',
+      connectionReused: false,
+      connectionId: 0,
+      remotePort: 0,
+      fromDiskCache: false,
+      fromServiceWorker: false,
+      encodedDataLength: 0,
+      protocol: 'http/1.1',
+      securityState: 'unknown'
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:53:11.737Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '9',
+    timestamp: 261312.216,
+    dataLength: 1014,
+    encodedDataLength: 1014
+  }
+}
+---
+
+--- 2026-02-05T05:53:11.741Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.responseReceived',
+  params: {
+    requestId: '8',
+    timestamp: 261312.21,
+    type: 'Document',
+    response: {
+      status: 200,
+      statusText: 'OK',
+      headers: [Object],
+      mimeType: 'text/html',
+      connectionReused: false,
+      connectionId: 0,
+      remotePort: 0,
+      fromDiskCache: false,
+      fromServiceWorker: false,
+      encodedDataLength: 0,
+      protocol: 'http/1.1',
+      securityState: 'unknown'
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:53:11.743Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.responseReceived',
+  params: {
+    requestId: '10',
+    timestamp: 261312.225,
+    type: 'Document',
+    response: {
+      status: 200,
+      statusText: 'OK',
+      headers: [Object],
+      mimeType: 'text/html',
+      connectionReused: false,
+      connectionId: 0,
+      remotePort: 0,
+      fromDiskCache: false,
+      fromServiceWorker: false,
+      encodedDataLength: 0,
+      protocol: 'http/1.1',
+      securityState: 'unknown'
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:53:11.744Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '8',
+    timestamp: 261312.21,
+    dataLength: 1014,
+    encodedDataLength: 1014
+  }
+}
+---
+
+--- 2026-02-05T05:53:11.745Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.loadingFinished',
+  params: {
+    requestId: '10',
+    timestamp: 261312.226,
+    encodedDataLength: 1014,
+    cfResponse: {
+      body: 'PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KICA8aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04IiAvPgogICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIiAvPgogICAgPHRpdGxlPkNpdHlFdmVudHM8L3RpdGxlPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSIvc3R5bGVzLmNzcyIgLz4KICA8L2hlYWQ+CiAgPGJvZHk+CiAgICA8bWFpbiBjbGFzcz0iYXBwIj4KICAgICAgPGhlYWRlciBjbGFzcz0iaGVybyI+CiAgICAgICAgPGRpdj4KICAgICAgICAgIDxwIGNsYXNzPSJleWVicm93Ij5FdmVudHMgdGhhdCBmZWVsIGxvY2FsPC9wPgogICAgICAgICAgPGgxPkNpdHlFdmVudHM8L2gxPgogICAgICAgICAgPHAgY2xhc3M9InN1YmhlYWQiPkZhc3QsIGxpZ2h0d2VpZ2h0IGV2ZW50IHBpY2tzIHN0cmFpZ2h0IGZyb20gdHJ1c3RlZCBsb2NhbCBjYWxlbmRhcnMuPC9wPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImNvbnRyb2xzIj4KICAgICAgICAgIDxsYWJlbCBjbGFzcz0iY29udHJvbCI+CiAgICAgICAgICAgIDxzcGFuPkNhdGVnb3J5PC9zcGFuPgogICAgICAgICAgICA8c2VsZWN0IGlkPSJjYXRlZ29yeVNlbGVjdCI+PC9zZWxlY3Q+CiAgICAgICAgICA8L2xhYmVsPgogICAgICAgIDwvZGl2PgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJzdGF0dXMiIGlkPSJzdGF0dXMiPjwvc2VjdGlvbj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJjYXJkcyIgaWQ9ImNhcmRzIj48L3NlY3Rpb24+CiAgICA8L21haW4+CgogICAgPGZvb3RlciBjbGFzcz0iZm9vdGVyIj4KICAgICAgPHA+UG93ZXJlZCBieSBsb2NhbCBSU1MgZmVlZHMuIEJ1aWx0IGZvciBlYXN5IG1vYmlsZSBicm93c2luZy48L3A+CiAgICA8L2Zvb3Rlcj4KCiAgICA8c2NyaXB0IHR5cGU9Im1vZHVsZSIgc3JjPSIvYXBwLmpzIj48L3NjcmlwdD4KICA8L2JvZHk+CjwvaHRtbD4K',
+      base64Encoded: true
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:53:11.746Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '10',
+    timestamp: 261312.225,
+    dataLength: 1014,
+    encodedDataLength: 1014
+  }
+}
+---
+
+--- 2026-02-05T05:53:11.748Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.loadingFinished',
+  params: {
+    requestId: '8',
+    timestamp: 261312.21,
+    encodedDataLength: 1014,
+    cfResponse: {
+      body: 'PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KICA8aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04IiAvPgogICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIiAvPgogICAgPHRpdGxlPkNpdHlFdmVudHM8L3RpdGxlPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSIvc3R5bGVzLmNzcyIgLz4KICA8L2hlYWQ+CiAgPGJvZHk+CiAgICA8bWFpbiBjbGFzcz0iYXBwIj4KICAgICAgPGhlYWRlciBjbGFzcz0iaGVybyI+CiAgICAgICAgPGRpdj4KICAgICAgICAgIDxwIGNsYXNzPSJleWVicm93Ij5FdmVudHMgdGhhdCBmZWVsIGxvY2FsPC9wPgogICAgICAgICAgPGgxPkNpdHlFdmVudHM8L2gxPgogICAgICAgICAgPHAgY2xhc3M9InN1YmhlYWQiPkZhc3QsIGxpZ2h0d2VpZ2h0IGV2ZW50IHBpY2tzIHN0cmFpZ2h0IGZyb20gdHJ1c3RlZCBsb2NhbCBjYWxlbmRhcnMuPC9wPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImNvbnRyb2xzIj4KICAgICAgICAgIDxsYWJlbCBjbGFzcz0iY29udHJvbCI+CiAgICAgICAgICAgIDxzcGFuPkNhdGVnb3J5PC9zcGFuPgogICAgICAgICAgICA8c2VsZWN0IGlkPSJjYXRlZ29yeVNlbGVjdCI+PC9zZWxlY3Q+CiAgICAgICAgICA8L2xhYmVsPgogICAgICAgIDwvZGl2PgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJzdGF0dXMiIGlkPSJzdGF0dXMiPjwvc2VjdGlvbj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJjYXJkcyIgaWQ9ImNhcmRzIj48L3NlY3Rpb24+CiAgICA8L21haW4+CgogICAgPGZvb3RlciBjbGFzcz0iZm9vdGVyIj4KICAgICAgPHA+UG93ZXJlZCBieSBsb2NhbCBSU1MgZmVlZHMuIEJ1aWx0IGZvciBlYXN5IG1vYmlsZSBicm93c2luZy48L3A+CiAgICA8L2Zvb3Rlcj4KCiAgICA8c2NyaXB0IHR5cGU9Im1vZHVsZSIgc3JjPSIvYXBwLmpzIj48L3NjcmlwdD4KICA8L2JvZHk+CjwvaHRtbD4K',
+      base64Encoded: true
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:53:11.750Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.loadingFinished',
+  params: {
+    requestId: '9',
+    timestamp: 261312.217,
+    encodedDataLength: 1014,
+    cfResponse: {
+      body: 'PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KICA8aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04IiAvPgogICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIiAvPgogICAgPHRpdGxlPkNpdHlFdmVudHM8L3RpdGxlPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSIvc3R5bGVzLmNzcyIgLz4KICA8L2hlYWQ+CiAgPGJvZHk+CiAgICA8bWFpbiBjbGFzcz0iYXBwIj4KICAgICAgPGhlYWRlciBjbGFzcz0iaGVybyI+CiAgICAgICAgPGRpdj4KICAgICAgICAgIDxwIGNsYXNzPSJleWVicm93Ij5FdmVudHMgdGhhdCBmZWVsIGxvY2FsPC9wPgogICAgICAgICAgPGgxPkNpdHlFdmVudHM8L2gxPgogICAgICAgICAgPHAgY2xhc3M9InN1YmhlYWQiPkZhc3QsIGxpZ2h0d2VpZ2h0IGV2ZW50IHBpY2tzIHN0cmFpZ2h0IGZyb20gdHJ1c3RlZCBsb2NhbCBjYWxlbmRhcnMuPC9wPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImNvbnRyb2xzIj4KICAgICAgICAgIDxsYWJlbCBjbGFzcz0iY29udHJvbCI+CiAgICAgICAgICAgIDxzcGFuPkNhdGVnb3J5PC9zcGFuPgogICAgICAgICAgICA8c2VsZWN0IGlkPSJjYXRlZ29yeVNlbGVjdCI+PC9zZWxlY3Q+CiAgICAgICAgICA8L2xhYmVsPgogICAgICAgIDwvZGl2PgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJzdGF0dXMiIGlkPSJzdGF0dXMiPjwvc2VjdGlvbj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJjYXJkcyIgaWQ9ImNhcmRzIj48L3NlY3Rpb24+CiAgICA8L21haW4+CgogICAgPGZvb3RlciBjbGFzcz0iZm9vdGVyIj4KICAgICAgPHA+UG93ZXJlZCBieSBsb2NhbCBSU1MgZmVlZHMuIEJ1aWx0IGZvciBlYXN5IG1vYmlsZSBicm93c2luZy48L3A+CiAgICA8L2Zvb3Rlcj4KCiAgICA8c2NyaXB0IHR5cGU9Im1vZHVsZSIgc3JjPSIvYXBwLmpzIj48L3NjcmlwdD4KICA8L2JvZHk+CjwvaHRtbD4K',
+      base64Encoded: true
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:53:15.199Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000006}
+---
+
+--- 2026-02-05T05:53:15.201Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000006, result: { id: 'e66fa27603c3b9ea' } }
+---
+
+--- 2026-02-05T05:53:15.230Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '11',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261315.712,
+    wallTime: 1770270795.227,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:53:15.245Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '12',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/app.js',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261315.727,
+    wallTime: 1770270795.242,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:53:15.249Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '13',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/styles.css',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261315.729,
+    wallTime: 1770270795.245,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:53:15.341Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '14',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/favicon.ico',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 261315.821,
+    wallTime: 1770270795.337,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:53:25.202Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000007}
+---
+
+--- 2026-02-05T05:53:25.205Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000007, result: { id: 'e66fa27603c3b9ea' } }
+---
+
+--- 2026-02-05T05:53:35.201Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000008}
+---
+
+--- 2026-02-05T05:53:35.203Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000008, result: { id: 'e66fa27603c3b9ea' } }
+---
+
+--- 2026-02-05T05:53:45.200Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000009}
+---
+
+--- 2026-02-05T05:53:45.202Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000009, result: { id: 'e66fa27603c3b9ea' } }
+---
+
+--- 2026-02-05T05:53:55.201Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000010}
+---
+
+--- 2026-02-05T05:53:55.203Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000010, result: { id: 'e66fa27603c3b9ea' } }
+---
+
+--- 2026-02-05T05:54:05.201Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000011}
+---
+
+--- 2026-02-05T05:54:05.203Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000011, result: { id: 'e66fa27603c3b9ea' } }
+---
+
+--- 2026-02-05T05:54:06.593Z debug
+🌀 "change" event detected at functions/api/events.ts.
+---
+
+--- 2026-02-05T05:54:06.659Z debug
+No experimental flag store instantiated
+---
+
+--- 2026-02-05T05:54:06.659Z debug
+Attempted to use flag "MULTIWORKER" which has not been instantiated
+---
+
+--- 2026-02-05T05:54:06.681Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-02-05T05:54:06.683Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"build pages functions","timestamp":1770270846683,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-05T05:54:06.878Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-05T05:54:06.878Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-02-05T05:54:06.879Z debug
+No experimental flag store instantiated
+---
+
+--- 2026-02-05T05:54:06.879Z debug
+Attempted to use flag "ASSETS_RPC" which has not been instantiated
+---
+
+--- 2026-02-05T05:54:06.879Z log
+⎔ Reloading local server...
+---
+
+--- 2026-02-05T05:54:06.884Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-02-05T05:54:06.884Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.discardConsoleEntries","id":100000012}
+---
+
+--- 2026-02-05T05:54:06.885Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000012, result: {} }
+---
+
+--- 2026-02-05T05:54:06.897Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET CLOSED 1006 WebSocket disconnected without sending Close frame.
+---
+
+--- 2026-02-05T05:54:06.943Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"50698"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"50611","pathname":"/core:user:cityevents"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"076c109b-9045-4b2c-8d17-81759b503774"},"liveReload":false,"proxyLogsToController":false,"internalDurableObjects":[],"entrypointAddresses":{"__INTERNAL_WRANGLER_MIDDLEWARE__":{"host":"127.0.0.1","port":50615},"default":{"host":"127.0.0.1","port":50616}}}}
+---
+
+--- 2026-02-05T05:54:06.944Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-02-05T05:54:06.944Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:50611/core:user:cityevents
+---
+
+--- 2026-02-05T05:54:06.944Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 316456961,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '-3979844947717340521.-4447164606653132687'
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:54:06.945Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-02-05T05:54:06.945Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-02-05T05:54:06.946Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000013}
+---
+
+--- 2026-02-05T05:54:06.946Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Debugger.enable","id":100000014}
+---
+
+--- 2026-02-05T05:54:06.947Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Network.enable","id":100000015}
+---
+
+--- 2026-02-05T05:54:06.947Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000013, result: {} }
+---
+
+--- 2026-02-05T05:54:06.950Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Debugger.scriptParsed',
+  params: {
+    scriptId: '3',
+    url: 'file:///Users/jlloyd/Codex/.wrangler/tmp/dev-HciMTq/functionsWorker-0.6150363308958633.js',
+    startLine: 0,
+    startColumn: 0,
+    endLine: 3089,
+    endColumn: 103,
+    executionContextId: 316456961,
+    hash: '06de5c7a1bf37ebd9c69268276f023dad05f3dc7606967cc0a790d9d6e5cf3d0',
+    buildId: '',
+    isLiveEdit: false,
+    sourceMapURL: 'functionsWorker-0.6150363308958633.js.map',
+    hasSourceURL: true,
+    isModule: true,
+    length: 114428,
+    scriptLanguage: 'JavaScript',
+    embedderName: 'functionsWorker-0.6150363308958633.js'
+  }
+}
+---
+
+--- 2026-02-05T05:54:06.950Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  id: 100000014,
+  result: { debuggerId: '8548893551034036259.3593506611528651674' }
+}
+---
+
+--- 2026-02-05T05:54:06.950Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000015, method: 'Network.enable', result: {} }
+---
+
+--- 2026-02-05T05:54:16.947Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000016}
+---
+
+--- 2026-02-05T05:54:16.949Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000016, result: { id: '5f8c099caa1ca2e7' } }
+---
+
+--- 2026-02-05T05:54:26.945Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000017}
+---
+
+--- 2026-02-05T05:54:26.947Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000017, result: { id: '5f8c099caa1ca2e7' } }
+---
+
+--- 2026-02-05T05:54:29.958Z debug
+DevEnv teardown beginning...
+---
+
+--- 2026-02-05T05:54:29.959Z debug
+ConfigController teardown beginning...
+---
+
+--- 2026-02-05T05:54:29.960Z debug
+BundlerController teardown beginning...
+---
+
+--- 2026-02-05T05:54:29.962Z debug
+LocalRuntimeController teardown beginning...
+---
+
+--- 2026-02-05T05:54:29.963Z log
+⎔ Shutting down local server...
+---
+
+--- 2026-02-05T05:54:29.963Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-05T05:54:29.963Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-02-05T05:54:29.963Z debug
+ProxyController teardown beginning...
+---
+
+--- 2026-02-05T05:54:29.964Z debug
+ConfigController teardown complete
+---
+
+--- 2026-02-05T05:54:29.972Z debug
+LocalRuntimeController teardown complete
+---
+
+--- 2026-02-05T05:54:29.973Z debug
+ProxyController teardown complete
+---

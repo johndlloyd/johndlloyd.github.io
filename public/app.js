@@ -1,4 +1,6 @@
 import { DOCS } from "./content/docs.js";
+import { PROJECTS } from "./content/projects.js";
+import { ARTICLES } from "./content/articles.js";
 
 const year = document.getElementById("year");
 if (year) {
@@ -17,6 +19,7 @@ if (clock) {
 const treeButtons = Array.from(document.querySelectorAll(".tree-item"));
 const docContent = document.getElementById("docContent");
 const typedCommand = document.getElementById("typedCommand");
+let activeDocKey = "readme";
 
 function escapeHtml(value) {
   return value
@@ -163,21 +166,133 @@ function typeCommand(command) {
     if (index >= command.length) {
       window.clearInterval(typeCommand.timer);
     }
-  }, 28);
+  }, 24);
 }
 
-function setActiveDoc(docKey) {
-  const doc = DOCS[docKey];
-  if (!doc || !docContent) return;
-  docContent.innerHTML = markdownToHtml(doc.markdown);
-  typeCommand(doc.command);
+function setActiveNav(docKey) {
   treeButtons.forEach((button) => {
     button.classList.toggle("active", button.dataset.doc === docKey);
   });
 }
 
+function renderDocMarkdown(docKey) {
+  const doc = DOCS[docKey];
+  if (!doc || !docContent) return;
+  docContent.innerHTML = markdownToHtml(doc.markdown);
+  typeCommand(doc.command);
+}
+
+function renderProjectsIndex() {
+  const doc = DOCS.projects;
+  if (!doc || !docContent) return;
+  const cards = PROJECTS.map(
+    (project) => `
+      <article class="content-card">
+        <h3>${escapeHtml(project.title)}</h3>
+        <p>${escapeHtml(project.summary)}</p>
+        <p><small>${escapeHtml(project.status)} • ${escapeHtml(project.tags.join(", "))}</small></p>
+        <button class="content-link" data-project-id="${escapeHtml(project.id)}">View Project</button>
+      </article>
+    `
+  ).join("");
+
+  docContent.innerHTML = `${markdownToHtml(doc.markdown)}<div class="content-grid">${cards}</div>`;
+  typeCommand(doc.command);
+}
+
+function renderProjectDetail(projectId) {
+  const project = PROJECTS.find((item) => item.id === projectId);
+  if (!project || !docContent) return;
+  const link = project.link
+    ? `<p><a href="${escapeHtml(project.link)}" target="_blank" rel="noreferrer">Visit project</a></p>`
+    : "";
+  docContent.innerHTML = `
+    <div class="markdown-body-inner">
+      <button class="content-link secondary" data-action="back-projects">← Back to projects</button>
+      <h1>${escapeHtml(project.title)}</h1>
+      <p><strong>Status:</strong> ${escapeHtml(project.status)}</p>
+      <p><strong>Tags:</strong> ${escapeHtml(project.tags.join(", "))}</p>
+      <p>${escapeHtml(project.detail)}</p>
+      ${link}
+    </div>
+  `;
+  typeCommand(`cat projects/${project.id}.md`);
+}
+
+function renderArticlesIndex() {
+  const doc = DOCS.articles;
+  if (!doc || !docContent) return;
+  const cards = ARTICLES.map(
+    (article) => `
+      <article class="content-card">
+        <h3>${escapeHtml(article.title)}</h3>
+        <p>${escapeHtml(article.summary)}</p>
+        <p><small>${escapeHtml(article.published)}</small></p>
+        <button class="content-link" data-article-id="${escapeHtml(article.id)}">Read Article</button>
+      </article>
+    `
+  ).join("");
+
+  docContent.innerHTML = `${markdownToHtml(doc.markdown)}<div class="content-grid">${cards}</div>`;
+  typeCommand(doc.command);
+}
+
+function renderArticleDetail(articleId) {
+  const article = ARTICLES.find((item) => item.id === articleId);
+  if (!article || !docContent) return;
+  docContent.innerHTML = `
+    <div class="markdown-body-inner">
+      <button class="content-link secondary" data-action="back-articles">← Back to articles</button>
+      ${markdownToHtml(article.markdown)}
+      <p><small>Published: ${escapeHtml(article.published)}</small></p>
+    </div>
+  `;
+  typeCommand(`cat articles/${article.id}.md`);
+}
+
+function setActiveDoc(docKey) {
+  activeDocKey = docKey;
+  setActiveNav(docKey);
+  if (docKey === "projects") {
+    renderProjectsIndex();
+    return;
+  }
+  if (docKey === "articles") {
+    renderArticlesIndex();
+    return;
+  }
+  renderDocMarkdown(docKey);
+}
+
 treeButtons.forEach((button) => {
   button.addEventListener("click", () => setActiveDoc(button.dataset.doc));
 });
+
+if (docContent) {
+  docContent.addEventListener("click", (event) => {
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) return;
+
+    const projectId = target.dataset.projectId;
+    if (projectId) {
+      renderProjectDetail(projectId);
+      return;
+    }
+
+    const articleId = target.dataset.articleId;
+    if (articleId) {
+      renderArticleDetail(articleId);
+      return;
+    }
+
+    const action = target.dataset.action;
+    if (action === "back-projects" && activeDocKey === "projects") {
+      renderProjectsIndex();
+    }
+    if (action === "back-articles" && activeDocKey === "articles") {
+      renderArticlesIndex();
+    }
+  });
+}
 
 setActiveDoc("readme");

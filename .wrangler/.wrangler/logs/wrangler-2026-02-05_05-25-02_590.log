@@ -1,0 +1,646 @@
+
+--- 2026-02-05T05:25:02.662Z debug
+🪵  Writing logs to "/Users/jlloyd/Codex/.wrangler/.wrangler/logs/wrangler-2026-02-05_05-25-02_590.log"
+---
+
+--- 2026-02-05T05:25:02.662Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command started","timestamp":1770269102661,"properties":{"amplitude_session_id":1770269102659,"amplitude_event_id":0,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages dev","args":{}}}
+---
+
+--- 2026-02-05T05:25:02.669Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T05:25:02.697Z log
+
+ ⛅️ wrangler 3.114.17 (update available 4.62.0)
+---------------------------------------------------------
+
+---
+
+--- 2026-02-05T05:25:02.734Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical errors.
+  Run `npm install --save-dev wrangler@4` to update to the latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2026-02-05T05:25:02.738Z debug
+Compiling worker to "/Users/jlloyd/Codex/.wrangler/tmp/pages-wHaBzR/functionsWorker-0.02168368895650563.mjs"...
+---
+
+--- 2026-02-05T05:25:02.756Z debug
+No experimental flag store instantiated
+---
+
+--- 2026-02-05T05:25:02.756Z debug
+Attempted to use flag "MULTIWORKER" which has not been instantiated
+---
+
+--- 2026-02-05T05:25:02.775Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-02-05T05:25:02.776Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"build pages functions","timestamp":1770269102775,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-05T05:25:02.866Z debug
+.env file not found at ".dev.vars". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T05:25:02.866Z log
+No bindings found.
+---
+
+--- 2026-02-05T05:25:02.874Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"run pages dev","timestamp":1770269102874,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-05T05:25:02.919Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-05T05:25:02.919Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-02-05T05:25:02.920Z log
+⎔ Starting local server...
+---
+
+--- 2026-02-05T05:25:02.953Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-02-05T05:25:02.993Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"49905"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"49902","pathname":"/core:user:cityevents"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"fca74855-00a5-4ef9-9097-dd7d0cb9c24f"},"liveReload":false,"proxyLogsToController":false,"internalDurableObjects":[],"entrypointAddresses":{"__INTERNAL_WRANGLER_MIDDLEWARE__":{"host":"127.0.0.1","port":49906},"default":{"host":"127.0.0.1","port":49907}}}}
+---
+
+--- 2026-02-05T05:25:02.994Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-02-05T05:25:02.995Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:49902/core:user:cityevents
+---
+
+--- 2026-02-05T05:25:02.995Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-02-05T05:25:02.997Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 384835169,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '8244053114960571173.-264479926933361049'
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:25:02.998Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-02-05T05:25:02.998Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000001}
+---
+
+--- 2026-02-05T05:25:02.998Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Debugger.enable","id":100000002}
+---
+
+--- 2026-02-05T05:25:02.999Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Network.enable","id":100000003}
+---
+
+--- 2026-02-05T05:25:02.999Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000001, result: {} }
+---
+
+--- 2026-02-05T05:25:03.000Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Debugger.scriptParsed',
+  params: {
+    scriptId: '3',
+    url: 'file:///Users/jlloyd/Codex/.wrangler/tmp/dev-vF8vQ1/functionsWorker-0.02168368895650563.js',
+    startLine: 0,
+    startColumn: 0,
+    endLine: 2957,
+    endColumn: 104,
+    executionContextId: 384835169,
+    hash: '8c618ac3fe6dd280a3268c2a0b8037d96c5fdcd349f71ae001ceb3790710b117',
+    buildId: '',
+    isLiveEdit: false,
+    sourceMapURL: 'functionsWorker-0.02168368895650563.js.map',
+    hasSourceURL: true,
+    isModule: true,
+    length: 110451,
+    scriptLanguage: 'JavaScript',
+    embedderName: 'functionsWorker-0.02168368895650563.js'
+  }
+}
+---
+
+--- 2026-02-05T05:25:03.000Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  id: 100000002,
+  result: { debuggerId: '-5238395226520648192.-949887981218094397' }
+}
+---
+
+--- 2026-02-05T05:25:03.003Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000003, method: 'Network.enable', result: {} }
+---
+
+--- 2026-02-05T05:25:05.475Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '0',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 259625.957,
+    wallTime: 1770269105.473,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:25:05.520Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '1',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/styles.css',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 259626.001,
+    wallTime: 1770269105.517,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:25:05.522Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '2',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/app.js',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 259626.004,
+    wallTime: 1770269105.519,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:25:08.826Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '3',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 259629.301,
+    wallTime: 1770269108.816,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:25:08.828Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.responseReceived',
+  params: {
+    requestId: '3',
+    timestamp: 259629.309,
+    type: 'Document',
+    response: {
+      status: 200,
+      statusText: 'OK',
+      headers: [Object],
+      mimeType: 'text/html',
+      connectionReused: false,
+      connectionId: 0,
+      remotePort: 0,
+      fromDiskCache: false,
+      fromServiceWorker: false,
+      encodedDataLength: 0,
+      protocol: 'http/1.1',
+      securityState: 'unknown'
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:25:08.830Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '3',
+    timestamp: 259629.31,
+    dataLength: 1014,
+    encodedDataLength: 1014
+  }
+}
+---
+
+--- 2026-02-05T05:25:08.832Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.loadingFinished',
+  params: {
+    requestId: '3',
+    timestamp: 259629.31,
+    encodedDataLength: 1014,
+    cfResponse: {
+      body: 'PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KICA8aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04IiAvPgogICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIiAvPgogICAgPHRpdGxlPkNpdHlFdmVudHM8L3RpdGxlPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSIvc3R5bGVzLmNzcyIgLz4KICA8L2hlYWQ+CiAgPGJvZHk+CiAgICA8bWFpbiBjbGFzcz0iYXBwIj4KICAgICAgPGhlYWRlciBjbGFzcz0iaGVybyI+CiAgICAgICAgPGRpdj4KICAgICAgICAgIDxwIGNsYXNzPSJleWVicm93Ij5FdmVudHMgdGhhdCBmZWVsIGxvY2FsPC9wPgogICAgICAgICAgPGgxPkNpdHlFdmVudHM8L2gxPgogICAgICAgICAgPHAgY2xhc3M9InN1YmhlYWQiPkZhc3QsIGxpZ2h0d2VpZ2h0IGV2ZW50IHBpY2tzIHN0cmFpZ2h0IGZyb20gdHJ1c3RlZCBsb2NhbCBjYWxlbmRhcnMuPC9wPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImNvbnRyb2xzIj4KICAgICAgICAgIDxsYWJlbCBjbGFzcz0iY29udHJvbCI+CiAgICAgICAgICAgIDxzcGFuPkNhdGVnb3J5PC9zcGFuPgogICAgICAgICAgICA8c2VsZWN0IGlkPSJjYXRlZ29yeVNlbGVjdCI+PC9zZWxlY3Q+CiAgICAgICAgICA8L2xhYmVsPgogICAgICAgIDwvZGl2PgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJzdGF0dXMiIGlkPSJzdGF0dXMiPjwvc2VjdGlvbj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJjYXJkcyIgaWQ9ImNhcmRzIj48L3NlY3Rpb24+CiAgICA8L21haW4+CgogICAgPGZvb3RlciBjbGFzcz0iZm9vdGVyIj4KICAgICAgPHA+UG93ZXJlZCBieSBsb2NhbCBSU1MgZmVlZHMuIEJ1aWx0IGZvciBlYXN5IG1vYmlsZSBicm93c2luZy48L3A+CiAgICA8L2Zvb3Rlcj4KCiAgICA8c2NyaXB0IHR5cGU9Im1vZHVsZSIgc3JjPSIvYXBwLmpzIj48L3NjcmlwdD4KICA8L2JvZHk+CjwvaHRtbD4K',
+      base64Encoded: true
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:25:08.859Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '4',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/styles.css',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 259629.339,
+    wallTime: 1770269108.855,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:25:08.861Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '5',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/app.js',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 259629.34,
+    wallTime: 1770269108.856,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:25:12.998Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000004}
+---
+
+--- 2026-02-05T05:25:13.001Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000004, result: { id: '470c178e2700bc15' } }
+---
+
+--- 2026-02-05T05:25:18.453Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '6',
+    loaderId: '',
+    request: {
+      url: 'https://www.missoulaevents.net/rss/education/',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 259638.933,
+    wallTime: 1770269118.448,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:25:18.988Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.responseReceived',
+  params: {
+    requestId: '6',
+    timestamp: 259639.467,
+    type: 'XHR',
+    response: {
+      status: 200,
+      statusText: 'OK',
+      headers: [Object],
+      mimeType: 'text/xml',
+      connectionReused: false,
+      connectionId: 0,
+      remotePort: 0,
+      fromDiskCache: false,
+      fromServiceWorker: false,
+      encodedDataLength: 0,
+      protocol: 'http/1.1',
+      securityState: 'unknown'
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:25:18.991Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '6',
+    timestamp: 259639.467,
+    dataLength: 3467,
+    encodedDataLength: 3467
+  }
+}
+---
+
+--- 2026-02-05T05:25:18.992Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '6',
+    timestamp: 259639.467,
+    dataLength: 4096,
+    encodedDataLength: 4096
+  }
+}
+---
+
+--- 2026-02-05T05:25:19.070Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '6',
+    timestamp: 259639.548,
+    dataLength: 4096,
+    encodedDataLength: 4096
+  }
+}
+---
+
+--- 2026-02-05T05:25:19.073Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '6',
+    timestamp: 259639.549,
+    dataLength: 4096,
+    encodedDataLength: 4096
+  }
+}
+---
+
+--- 2026-02-05T05:25:19.077Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '6',
+    timestamp: 259639.549,
+    dataLength: 4096,
+    encodedDataLength: 4096
+  }
+}
+---
+
+--- 2026-02-05T05:25:19.078Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '6',
+    timestamp: 259639.549,
+    dataLength: 1946,
+    encodedDataLength: 1946
+  }
+}
+---
+
+--- 2026-02-05T05:25:19.079Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.loadingFinished',
+  params: {
+    requestId: '6',
+    timestamp: 259639.549,
+    encodedDataLength: 21797,
+    cfResponse: {
+      body: 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJzcyB2ZXJzaW9uPSIyLjAiIHhtbG5zOmF0b209Imh0dHA6Ly93d3cudzMub3JnLzIwMDUvQXRvbSI+CjxjaGFubmVsPgo8dGl0bGU+TWlzc291bGFFdmVudHMgRXZlbnRzPC90aXRsZT4KPGxpbms+aHR0cDovL3d3dy5taXNzb3VsYWV2ZW50cy5uZXQvPC9saW5rPgo8ZGVzY3JpcHRpb24+TWlzc291bGFFdmVudHMgRXZlbnQgUlNTIEZlZWQ8L2Rlc2NyaXB0aW9uPgo8YXRvbTpsaW5rIGhyZWY9Imh0dHA6Ly93d3cubWlzc291bGFldmVudHMubmV0L3Jzcy9lZHVjYXRpb24vIiByZWw9InNlbGYiIHR5cGU9ImFwcGxpY2F0aW9uL3Jzcyt4bWwiIC8+CjxsYXN0QnVpbGREYXRlPldlZCwgNCBGZWIgMjAyNiAyMjoyMTozMCBNU1Q8L2xhc3RCdWlsZERhdGU+CjxsYW5ndWFnZT5lbi11czwvbGFuZ3VhZ2U+CjxpdGVtPgoJCTx0aXRsZT48IVtDREFUQVtTcGljZSBJdCBVcDogTGlicmFyeSBTcGljZSBDbHViXV0+PC90aXRsZT4KCSAJPGxpbms+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAyLzA0LzIwMjYvc3BpY2UtaXQtdXAtbGlicmFyeS1zcGljZS1jbHViLzwvbGluaz4KCSAJPGltZz48L2ltZz4KCQk8Z3VpZD5odHRwczovL3d3dy5taXNzb3VsYWV2ZW50cy5uZXQvMDIvMDQvMjAyNi9zcGljZS1pdC11cC1saWJyYXJ5LXNwaWNlLWNsdWIvPC9ndWlkPgoJCTxwdWJEYXRlPldlZCwgNCBGZWIgMjAyNiAwOTowMDowMCBNU1Q8L3B1YkRhdGU+CgkJPGRlc2NyaXB0aW9uPjwhW0NEQVRBWzAyLzA0LzIwMjYgLSA5OjAwIEFNIC0gVmVudWU6IE1pc3NvdWxhIFB1YmxpYyBMaWJyYXJ5IF1dPjwvZGVzY3JpcHRpb24+CjwvaXRlbT4KPGl0ZW0+CgkJPHRpdGxlPjwhW0NEQVRBW011c2V1bSBPcGVuIEhvdXJzXV0+PC90aXRsZT4KCSAJPGxpbms+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAyLzA0LzIwMjYvbXVzZXVtLW9wZW4taG91cnMvPC9saW5rPgoJIAk8aW1nPjwvaW1nPgoJCTxndWlkPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L211c2V1bS1vcGVuLWhvdXJzLzwvZ3VpZD4KCQk8cHViRGF0ZT5XZWQsIDQgRmViIDIwMjYgMTA6MDA6MDAgTVNUPC9wdWJEYXRlPgoJCTxkZXNjcmlwdGlvbj48IVtDREFUQVswMi8wNC8yMDI2IC0gMTA6MDAgQU0gLSBWZW51ZTogc3BlY3RyVU0gRGlzY292ZXJ5IEFyZWEgXV0+PC9kZXNjcmlwdGlvbj4KPC9pdGVtPgo8aXRlbT4KCQk8dGl0bGU+PCFbQ0RBVEFbRW1Qb3dlciBQbGFjZSBPcGVuIFBsYXkgSG91cnNdXT48L3RpdGxlPgoJIAk8bGluaz5odHRwczovL3d3dy5taXNzb3VsYWV2ZW50cy5uZXQvMDIvMDQvMjAyNi9lbXBvd2VyLXBsYWNlLW9wZW4tcGxheS1ob3Vycy88L2xpbms+CgkgCTxpbWc+PC9pbWc+CgkJPGd1aWQ+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAyLzA0LzIwMjYvZW1wb3dlci1wbGFjZS1vcGVuLXBsYXktaG91cnMvPC9ndWlkPgoJCTxwdWJEYXRlPldlZCwgNCBGZWIgMjAyNiAxMDowMDowMCBNU1Q8L3B1YkRhdGU+CgkJPGRlc2NyaXB0aW9uPjwhW0NEQVRBWzAyLzA0LzIwMjYgLSAxMDowMCBBTSAtIFZlbnVlOiBNaXNzb3VsYSBGb29kIEJhbmsgJmFtcDsgQ29tbXVuaXR5IENlbnRlciBdXT48L2Rlc2NyaXB0aW9uPgo8L2l0ZW0+CjxpdGVtPgoJCTx0aXRsZT48IVtDREFUQVtUaW55IFRhbGVzIEBFbVBvd2VyIFBsYWNlXV0+PC90aXRsZT4KCSAJPGxpbms+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAyLzA0LzIwMjYvdGlueS10YWxlcy1lbXBvd2VyLXBsYWNlLzwvbGluaz4KCSAJPGltZz48L2ltZz4KCQk8Z3VpZD5odHRwczovL3d3dy5taXNzb3VsYWV2ZW50cy5uZXQvMDIvMDQvMjAyNi90aW55LXRhbGVzLWVtcG93ZXItcGxhY2UvPC9ndWlkPgoJCTxwdWJEYXRlPldlZCwgNCBGZWIgMjAyNiAxMDozMDowMCBNU1Q8L3B1YkRhdGU+CgkJPGRlc2NyaXB0aW9uPjwhW0NEQVRBWzAyLzA0LzIwMjYgLSAxMDozMCBBTSAtIFZlbnVlOiBNaXNzb3VsYSBGb29kIEJhbmsgJmFtcDsgQ29tbXVuaXR5IENlbnRlciBdXT48L2Rlc2NyaXB0aW9uPgo8L2l0ZW0+CjxpdGVtPgoJCTx0aXRsZT48IVtDREFUQVtSZXN0QWlyLShSZXN0b3JhdGl2ZSBBZXJpYWwgWW9nYSldXT48L3RpdGxlPgoJIAk8bGluaz5odHRwczovL3d3dy5taXNzb3VsYWV2ZW50cy5uZXQvMDIvMDQvMjAyNi9yZXN0YWlyLXJlc3RvcmF0aXZlLWFlcmlhbC15b2dhLzwvbGluaz4KCSAJPGltZz5odHRwOi8vZ2F0aGVyYm9hcmQtaW1hZ2VzLnMzLmFtYXpvbmF3cy5jb20vbWlzc291bGEtZXZlbnRzLzAxMDcyMDI1MjZQdXJ1c2FfTG9nb19FbWJsZW1Pbmx5LWxnLnBuZzwvaW1nPgoJCTxndWlkPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L3Jlc3RhaXItcmVzdG9yYXRpdmUtYWVyaWFsLXlvZ2EvPC9ndWlkPgoJCTxwdWJEYXRlPldlZCwgNCBGZWIgMjAyNiAxMjowMDowMCBNU1Q8L3B1YkRhdGU+CgkJPGRlc2NyaXB0aW9uPjwhW0NEQVRBWzAyLzA0LzIwMjYgLSAxMjowMCBQTSAtIFZlbnVlOiBQdXJ1c2EgWW9nYSBMTEMgXV0+PC9kZXNjcmlwdGlvbj4KPC9pdGVtPgo8aXRlbT4KCQk8dGl0bGU+PCFbQ0RBVEFbUmVzdG9yYXRpdmUgWW9nYV1dPjwvdGl0bGU+CgkgCTxsaW5rPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L3Jlc3RvcmF0aXZlLXlvZ2EvPC9saW5rPgoJIAk8aW1nPmh0dHA6Ly9nYXRoZXJib2FyZC1pbWFnZXMuczMuYW1hem9uYXdzLmNvbS9taXNzb3VsYS1ldmVudHMvMDEwNzIwMjU1OFB1cnVzYV9Mb2dvX0VtYmxlbU9ubHktbGcucG5nPC9pbWc+CgkJPGd1aWQ+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAyLzA0LzIwMjYvcmVzdG9yYXRpdmUteW9nYS88L2d1aWQ+CgkJPHB1YkRhdGU+V2VkLCA0IEZlYiAyMDI2IDEyOjAwOjAwIE1TVDwvcHViRGF0ZT4KCQk8ZGVzY3JpcHRpb24+PCFbQ0RBVEFbMDIvMDQvMjAyNiAtIDEyOjAwIFBNIC0gVmVudWU6IFB1cnVzYSBZb2dhIExMQyBdXT48L2Rlc2NyaXB0aW9uPgo8L2l0ZW0+CjxpdGVtPgoJCTx0aXRsZT48IVtDREFUQVtQYXJlbnQvR3VhcmRpYW4gQ29tbXVuaXR5IENpcmNsZV1dPjwvdGl0bGU+CgkgCTxsaW5rPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L3BhcmVudC1ndWFyZGlhbi1jb21tdW5pdHktY2lyY2xlLzwvbGluaz4KCSAJPGltZz5odHRwOi8vZ2F0aGVyYm9hcmQtaW1hZ2VzLnMzLmFtYXpvbmF3cy5jb20vbWlzc291bGEtZXZlbnRzL19QYXJlbnRHdWFyZGlhbkNvbW11bml0eUNpcmNsZTQyNEluc3RhZ3JhbVBvc3QtbGcucG5nPC9pbWc+CgkJPGd1aWQ+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAyLzA0LzIwMjYvcGFyZW50LWd1YXJkaWFuLWNvbW11bml0eS1jaXJjbGUvPC9ndWlkPgoJCTxwdWJEYXRlPldlZCwgNCBGZWIgMjAyNiAxMjowMDowMCBNU1Q8L3B1YkRhdGU+CgkJPGRlc2NyaXB0aW9uPjwhW0NEQVRBWzAyLzA0LzIwMjYgLSAxMjowMCBQTSAtIFZlbnVlOiBTdW1taXQgSW5kZXBlbmRlbnQgTGl2aW5nIF1dPjwvZGVzY3JpcHRpb24+CjwvaXRlbT4KPGl0ZW0+CgkJPHRpdGxlPjwhW0NEQVRBW05BTUkgQ29ubmVjdGlvbl1dPjwvdGl0bGU+CgkgCTxsaW5rPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L25hbWktY29ubmVjdGlvbi88L2xpbms+CgkgCTxpbWc+aHR0cDovL2dhdGhlcmJvYXJkLWltYWdlcy5zMy5hbWF6b25hd3MuY29tL21pc3NvdWxhLWV2ZW50cy8xMTIxMjAyMjQ5TG9nby1sZy5qcGc8L2ltZz4KCQk8Z3VpZD5odHRwczovL3d3dy5taXNzb3VsYWV2ZW50cy5uZXQvMDIvMDQvMjAyNi9uYW1pLWNvbm5lY3Rpb24vPC9ndWlkPgoJCTxwdWJEYXRlPldlZCwgNCBGZWIgMjAyNiAxMzowMDowMCBNU1Q8L3B1YkRhdGU+CgkJPGRlc2NyaXB0aW9uPjwhW0NEQVRBWzAyLzA0LzIwMjYgLSAxOjAwIFBNIC0gVmVudWU6IFN0LiBQYXVsIGNodXJjaCBhbm5leCBdXT48L2Rlc2NyaXB0aW9uPgo8L2l0ZW0+CjxpdGVtPgoJCTx0aXRsZT48IVtDREFUQVtIYW5kcy1PbiBTY2llbmNlOiBDb2xvcl1dPjwvdGl0bGU+CgkgCTxsaW5rPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L2hhbmRzLW9uLXNjaWVuY2UtY29sb3IvPC9saW5rPgoJIAk8aW1nPjwvaW1nPgoJCTxndWlkPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L2hhbmRzLW9uLXNjaWVuY2UtY29sb3IvPC9ndWlkPgoJCTxwdWJEYXRlPldlZCwgNCBGZWIgMjAyNiAxNDowMDowMCBNU1Q8L3B1YkRhdGU+CgkJPGRlc2NyaXB0aW9uPjwhW0NEQVRBWzAyLzA0LzIwMjYgLSAyOjAwIFBNIC0gVmVudWU6IHNwZWN0clVNIERpc2NvdmVyeSBBcmVhIF1dPjwvZGVzY3JpcHRpb24+CjwvaXRlbT4KPGl0ZW0+CgkJPHRpdGxlPjwhW0NEQVRBW01ha2VyU3BhY2U6IE9wZW4gSG91cnMvU2V3aW5nIERyb3AgSW5dXT48L3RpdGxlPgoJIAk8bGluaz5odHRwczovL3d3dy5taXNzb3VsYWV2ZW50cy5uZXQvMDIvMDQvMjAyNi9tYWtlcnNwYWNlLW9wZW4taG91cnMtc2V3aW5nLWRyb3AtaW4vPC9saW5rPgoJIAk8aW1nPjwvaW1nPgoJCTxndWlkPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L21ha2Vyc3BhY2Utb3Blbi1ob3Vycy1zZXdpbmctZHJvcC1pbi88L2d1aWQ+CgkJPHB1YkRhdGU+V2VkLCA0IEZlYiAyMDI2IDE0OjAwOjAwIE1TVDwvcHViRGF0ZT4KCQk8ZGVzY3JpcHRpb24+PCFbQ0RBVEFbMDIvMDQvMjAyNiAtIDI6MDAgUE0gLSBWZW51ZTogTWlzc291bGEgUHVibGljIExpYnJhcnkgXV0+PC9kZXNjcmlwdGlvbj4KPC9pdGVtPgo8aXRlbT4KCQk8dGl0bGU+PCFbQ0RBVEFbTWlkZGxlIFNjaG9vbCBXcml0ZXJzJnJzcXVvOyBHcm91cF1dPjwvdGl0bGU+CgkgCTxsaW5rPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L21pZGRsZS1zY2hvb2wtd3JpdGVycy1yc3F1by1ncm91cC88L2xpbms+CgkgCTxpbWc+PC9pbWc+CgkJPGd1aWQ+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAyLzA0LzIwMjYvbWlkZGxlLXNjaG9vbC13cml0ZXJzLXJzcXVvLWdyb3VwLzwvZ3VpZD4KCQk8cHViRGF0ZT5XZWQsIDQgRmViIDIwMjYgMTU6MzA6MDAgTVNUPC9wdWJEYXRlPgoJCTxkZXNjcmlwdGlvbj48IVtDREFUQVswMi8wNC8yMDI2IC0gMzozMCBQTSAtIFZlbnVlOiBNaXNzb3VsYSBQdWJsaWMgTGlicmFyeSBdXT48L2Rlc2NyaXB0aW9uPgo8L2l0ZW0+CjxpdGVtPgoJCTx0aXRsZT48IVtDREFUQVtQZWFjZWZ1bCBCcmFjZWxldCBNYWtpbmcgQ2x1Yl1dPjwvdGl0bGU+CgkgCTxsaW5rPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L3BlYWNlZnVsLWJyYWNlbGV0LW1ha2luZy1jbHViLzwvbGluaz4KCSAJPGltZz48L2ltZz4KCQk8Z3VpZD5odHRwczovL3d3dy5taXNzb3VsYWV2ZW50cy5uZXQvMDIvMDQvMjAyNi9wZWFjZWZ1bC1icmFjZWxldC1tYWtpbmctY2x1Yi88L2d1aWQ+CgkJPHB1YkRhdGU+V2VkLCA0IEZlYiAyMDI2IDE1OjMwOjAwIE1TVDwvcHViRGF0ZT4KCQk8ZGVzY3JpcHRpb24+PCFbQ0RBVEFbMDIvMDQvMjAyNiAtIDM6MzAgUE0gLSBWZW51ZTogTWlzc291bGEgUHVibGljIExpYnJhcnkgXV0+PC9kZXNjcmlwdGlvbj4KPC9pdGVtPgo8aXRlbT4KCQk8dGl0bGU+PCFbQ0RBVEFbQm9va21vYmlsZSBTdG9wOiBDbGludG9uIEZvb2QgUGFudHJ5XV0+PC90aXRsZT4KCSAJPGxpbms+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAyLzA0LzIwMjYvYm9va21vYmlsZS1zdG9wLWNsaW50b24tZm9vZC1wYW50cnkvPC9saW5rPgoJIAk8aW1nPjwvaW1nPgoJCTxndWlkPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L2Jvb2ttb2JpbGUtc3RvcC1jbGludG9uLWZvb2QtcGFudHJ5LzwvZ3VpZD4KCQk8cHViRGF0ZT5XZWQsIDQgRmViIDIwMjYgMTU6NDU6MDAgTVNUPC9wdWJEYXRlPgoJCTxkZXNjcmlwdGlvbj48IVtDREFUQVswMi8wNC8yMDI2IC0gMzo0NSBQTSAtIFZlbnVlOiBDbGludG9uIEZvb2QgUGFudHJ5IF1dPjwvZGVzY3JpcHRpb24+CjwvaXRlbT4KPGl0ZW0+CgkJPHRpdGxlPjwhW0NEQVRBW0JpZyBTa3kgV3JpdGVycyYjMDM5OyBHcm91cF1dPjwvdGl0bGU+CgkgCTxsaW5rPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L2JpZy1za3ktd3JpdGVycy0wMzktZ3JvdXAvPC9saW5rPgoJIAk8aW1nPjwvaW1nPgoJCTxndWlkPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L2JpZy1za3ktd3JpdGVycy0wMzktZ3JvdXAvPC9ndWlkPgoJCTxwdWJEYXRlPldlZCwgNCBGZWIgMjAyNiAxNjozMDowMCBNU1Q8L3B1YkRhdGU+CgkJPGRlc2NyaXB0aW9uPjwhW0NEQVRBWzAyLzA0LzIwMjYgLSA0OjMwIFBNIC0gVmVudWU6IEJpZyBTa3kgSGlnaCBTY2hvb2wgTGlicmFyeSBdXT48L2Rlc2NyaXB0aW9uPgo8L2l0ZW0+CjxpdGVtPgoJCTx0aXRsZT48IVtDREFUQVtGbHkgRmlzaGluZyAxMDFdXT48L3RpdGxlPgoJIAk8bGluaz5odHRwczovL3d3dy5taXNzb3VsYWV2ZW50cy5uZXQvMDIvMDQvMjAyNi9mbHktZmlzaGluZy0xMDEvPC9saW5rPgoJIAk8aW1nPjwvaW1nPgoJCTxndWlkPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L2ZseS1maXNoaW5nLTEwMS88L2d1aWQ+CgkJPHB1YkRhdGU+V2VkLCA0IEZlYiAyMDI2IDE3OjMwOjAwIE1TVDwvcHViRGF0ZT4KCQk8ZGVzY3JpcHRpb24+PCFbQ0RBVEFbMDIvMDQvMjAyNiAtIDU6MzAgUE0gLSBWZW51ZTogTGlmZWxvbmcgTGVhcm5pbmcgQ2VudGVyIF1dPjwvZGVzY3JpcHRpb24+CjwvaXRlbT4KPGl0ZW0+CgkJPHRpdGxlPjwhW0NEQVRBW0ludHJvZHVjdGlvbiB0byBDb21wdXRlciBQcm9ncmFtbWluZ11dPjwvdGl0bGU+CgkgCTxsaW5rPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L2ludHJvZHVjdGlvbi10by1jb21wdXRlci1wcm9ncmFtbWluZy88L2xpbms+CgkgCTxpbWc+PC9pbWc+CgkJPGd1aWQ+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAyLzA0LzIwMjYvaW50cm9kdWN0aW9uLXRvLWNvbXB1dGVyLXByb2dyYW1taW5nLzwvZ3VpZD4KCQk8cHViRGF0ZT5XZWQsIDQgRmViIDIwMjYgMTc6MzA6MDAgTVNUPC9wdWJEYXRlPgoJCTxkZXNjcmlwdGlvbj48IVtDREFUQVswMi8wNC8yMDI2IC0gNTozMCBQTSAtIFZlbnVlOiBMaWZlbG9uZyBMZWFybmluZyBDZW50ZXIgXV0+PC9kZXNjcmlwdGlvbj4KPC9pdGVtPgo8aXRlbT4KCQk8dGl0bGU+PCFbQ0RBVEFbUG9sZSBEZXZlbG9wbWVudF1dPjwvdGl0bGU+CgkgCTxsaW5rPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wNC8yMDI2L3BvbGUtZGV2ZWxvcG1lbnQvPC9saW5rPgoJIAk8aW1nPmh0dHA6Ly9nYXRoZXJib2FyZC1pbWFn'... 19064 more characters,
+      base64Encoded: true
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:25:22.999Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000005}
+---
+
+--- 2026-02-05T05:25:23.002Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000005, result: { id: '470c178e2700bc15' } }
+---
+
+--- 2026-02-05T05:25:32.998Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000006}
+---
+
+--- 2026-02-05T05:25:33.001Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000006, result: { id: '470c178e2700bc15' } }
+---
+
+--- 2026-02-05T05:25:42.998Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000007}
+---
+
+--- 2026-02-05T05:25:43.001Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000007, result: { id: '470c178e2700bc15' } }
+---
+
+--- 2026-02-05T05:25:52.999Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000008}
+---
+
+--- 2026-02-05T05:25:53.001Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000008, result: { id: '470c178e2700bc15' } }
+---
+
+--- 2026-02-05T05:26:02.231Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '7',
+    loaderId: '',
+    request: {
+      url: 'https://www.missoulaevents.net/rss/government/',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 259682.711,
+    wallTime: 1770269162.227,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:26:02.665Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.responseReceived',
+  params: {
+    requestId: '7',
+    timestamp: 259683.145,
+    type: 'XHR',
+    response: {
+      status: 200,
+      statusText: 'OK',
+      headers: [Object],
+      mimeType: 'text/xml',
+      connectionReused: false,
+      connectionId: 0,
+      remotePort: 0,
+      fromDiskCache: false,
+      fromServiceWorker: false,
+      encodedDataLength: 0,
+      protocol: 'http/1.1',
+      securityState: 'unknown'
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:26:02.669Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '7',
+    timestamp: 259683.145,
+    dataLength: 3479,
+    encodedDataLength: 3479
+  }
+}
+---
+
+--- 2026-02-05T05:26:02.670Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '7',
+    timestamp: 259683.145,
+    dataLength: 863,
+    encodedDataLength: 863
+  }
+}
+---
+
+--- 2026-02-05T05:26:02.672Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.loadingFinished',
+  params: {
+    requestId: '7',
+    timestamp: 259683.146,
+    encodedDataLength: 4342,
+    cfResponse: {
+      body: 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJzcyB2ZXJzaW9uPSIyLjAiIHhtbG5zOmF0b209Imh0dHA6Ly93d3cudzMub3JnLzIwMDUvQXRvbSI+CjxjaGFubmVsPgo8dGl0bGU+TWlzc291bGFFdmVudHMgRXZlbnRzPC90aXRsZT4KPGxpbms+aHR0cDovL3d3dy5taXNzb3VsYWV2ZW50cy5uZXQvPC9saW5rPgo8ZGVzY3JpcHRpb24+TWlzc291bGFFdmVudHMgRXZlbnQgUlNTIEZlZWQ8L2Rlc2NyaXB0aW9uPgo8YXRvbTpsaW5rIGhyZWY9Imh0dHA6Ly93d3cubWlzc291bGFldmVudHMubmV0L3Jzcy9nb3Zlcm5tZW50LyIgcmVsPSJzZWxmIiB0eXBlPSJhcHBsaWNhdGlvbi9yc3MreG1sIiAvPgo8bGFzdEJ1aWxkRGF0ZT5XZWQsIDQgRmViIDIwMjYgMjI6MjE6MzEgTVNUPC9sYXN0QnVpbGREYXRlPgo8bGFuZ3VhZ2U+ZW4tdXM8L2xhbmd1YWdlPgo8aXRlbT4KCQk8dGl0bGU+PCFbQ0RBVEFbVmlydHVhbCBDaXR5IENvdW5jaWwgTWVldGluZ11dPjwvdGl0bGU+CgkgCTxsaW5rPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wOS8yMDI2L3ZpcnR1YWwtY2l0eS1jb3VuY2lsLW1lZXRpbmcvPC9saW5rPgoJIAk8aW1nPmh0dHA6Ly9nYXRoZXJib2FyZC1pbWFnZXMuczMuYW1hem9uYXdzLmNvbS9taXNzb3VsYS1ldmVudHMvQ2l0eU1pc3NvdWxhLXRoLmpwZzwvaW1nPgoJCTxndWlkPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMi8wOS8yMDI2L3ZpcnR1YWwtY2l0eS1jb3VuY2lsLW1lZXRpbmcvPC9ndWlkPgoJCTxwdWJEYXRlPk1vbiwgOSBGZWIgMjAyNiAxODowMDowMCBNU1Q8L3B1YkRhdGU+CgkJPGRlc2NyaXB0aW9uPjwhW0NEQVRBWzAyLzA5LzIwMjYgLSA2OjAwIFBNIC0gVmVudWU6IENpdHkgQ291bmNpbCBDaGFtYmVycyBdXT48L2Rlc2NyaXB0aW9uPgo8L2l0ZW0+CjxpdGVtPgoJCTx0aXRsZT48IVtDREFUQVtWaXJ0dWFsIENpdHkgQ291bmNpbCBNZWV0aW5nXV0+PC90aXRsZT4KCSAJPGxpbms+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAyLzE2LzIwMjYvdmlydHVhbC1jaXR5LWNvdW5jaWwtbWVldGluZy88L2xpbms+CgkgCTxpbWc+aHR0cDovL2dhdGhlcmJvYXJkLWltYWdlcy5zMy5hbWF6b25hd3MuY29tL21pc3NvdWxhLWV2ZW50cy9DaXR5TWlzc291bGEtdGguanBnPC9pbWc+CgkJPGd1aWQ+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAyLzE2LzIwMjYvdmlydHVhbC1jaXR5LWNvdW5jaWwtbWVldGluZy88L2d1aWQ+CgkJPHB1YkRhdGU+TW9uLCAxNiBGZWIgMjAyNiAxODowMDowMCBNU1Q8L3B1YkRhdGU+CgkJPGRlc2NyaXB0aW9uPjwhW0NEQVRBWzAyLzE2LzIwMjYgLSA2OjAwIFBNIC0gVmVudWU6IENpdHkgQ291bmNpbCBDaGFtYmVycyBdXT48L2Rlc2NyaXB0aW9uPgo8L2l0ZW0+CjxpdGVtPgoJCTx0aXRsZT48IVtDREFUQVtWaXJ0dWFsIENpdHkgQ291bmNpbCBNZWV0aW5nXV0+PC90aXRsZT4KCSAJPGxpbms+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAyLzIzLzIwMjYvdmlydHVhbC1jaXR5LWNvdW5jaWwtbWVldGluZy88L2xpbms+CgkgCTxpbWc+aHR0cDovL2dhdGhlcmJvYXJkLWltYWdlcy5zMy5hbWF6b25hd3MuY29tL21pc3NvdWxhLWV2ZW50cy9DaXR5TWlzc291bGEtdGguanBnPC9pbWc+CgkJPGd1aWQ+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAyLzIzLzIwMjYvdmlydHVhbC1jaXR5LWNvdW5jaWwtbWVldGluZy88L2d1aWQ+CgkJPHB1YkRhdGU+TW9uLCAyMyBGZWIgMjAyNiAxODowMDowMCBNU1Q8L3B1YkRhdGU+CgkJPGRlc2NyaXB0aW9uPjwhW0NEQVRBWzAyLzIzLzIwMjYgLSA2OjAwIFBNIC0gVmVudWU6IENpdHkgQ291bmNpbCBDaGFtYmVycyBdXT48L2Rlc2NyaXB0aW9uPgo8L2l0ZW0+CjxpdGVtPgoJCTx0aXRsZT48IVtDREFUQVtWaXJ0dWFsIENpdHkgQ291bmNpbCBNZWV0aW5nXV0+PC90aXRsZT4KCSAJPGxpbms+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAzLzAyLzIwMjYvdmlydHVhbC1jaXR5LWNvdW5jaWwtbWVldGluZy88L2xpbms+CgkgCTxpbWc+aHR0cDovL2dhdGhlcmJvYXJkLWltYWdlcy5zMy5hbWF6b25hd3MuY29tL21pc3NvdWxhLWV2ZW50cy9DaXR5TWlzc291bGEtdGguanBnPC9pbWc+CgkJPGd1aWQ+aHR0cHM6Ly93d3cubWlzc291bGFldmVudHMubmV0LzAzLzAyLzIwMjYvdmlydHVhbC1jaXR5LWNvdW5jaWwtbWVldGluZy88L2d1aWQ+CgkJPHB1YkRhdGU+TW9uLCAyIE1hciAyMDI2IDE4OjAwOjAwIE1TVDwvcHViRGF0ZT4KCQk8ZGVzY3JpcHRpb24+PCFbQ0RBVEFbMDMvMDIvMjAyNiAtIDY6MDAgUE0gLSBWZW51ZTogQ2l0eSBDb3VuY2lsIENoYW1iZXJzIF1dPjwvZGVzY3JpcHRpb24+CjwvaXRlbT4KPGl0ZW0+CgkJPHRpdGxlPjwhW0NEQVRBW1ZpcnR1YWwgQ2l0eSBDb3VuY2lsIE1lZXRpbmddXT48L3RpdGxlPgoJIAk8bGluaz5odHRwczovL3d3dy5taXNzb3VsYWV2ZW50cy5uZXQvMDMvMDkvMjAyNi92aXJ0dWFsLWNpdHktY291bmNpbC1tZWV0aW5nLzwvbGluaz4KCSAJPGltZz5odHRwOi8vZ2F0aGVyYm9hcmQtaW1hZ2VzLnMzLmFtYXpvbmF3cy5jb20vbWlzc291bGEtZXZlbnRzL0NpdHlNaXNzb3VsYS10aC5qcGc8L2ltZz4KCQk8Z3VpZD5odHRwczovL3d3dy5taXNzb3VsYWV2ZW50cy5uZXQvMDMvMDkvMjAyNi92aXJ0dWFsLWNpdHktY291bmNpbC1tZWV0aW5nLzwvZ3VpZD4KCQk8cHViRGF0ZT5Nb24sIDkgTWFyIDIwMjYgMTg6MDA6MDAgTURUPC9wdWJEYXRlPgoJCTxkZXNjcmlwdGlvbj48IVtDREFUQVswMy8wOS8yMDI2IC0gNjowMCBQTSAtIFZlbnVlOiBDaXR5IENvdW5jaWwgQ2hhbWJlcnMgXV0+PC9kZXNjcmlwdGlvbj4KPC9pdGVtPgo8aXRlbT4KCQk8dGl0bGU+PCFbQ0RBVEFbVmlydHVhbCBDaXR5IENvdW5jaWwgTWVldGluZ11dPjwvdGl0bGU+CgkgCTxsaW5rPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMy8xNi8yMDI2L3ZpcnR1YWwtY2l0eS1jb3VuY2lsLW1lZXRpbmcvPC9saW5rPgoJIAk8aW1nPmh0dHA6Ly9nYXRoZXJib2FyZC1pbWFnZXMuczMuYW1hem9uYXdzLmNvbS9taXNzb3VsYS1ldmVudHMvQ2l0eU1pc3NvdWxhLXRoLmpwZzwvaW1nPgoJCTxndWlkPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMy8xNi8yMDI2L3ZpcnR1YWwtY2l0eS1jb3VuY2lsLW1lZXRpbmcvPC9ndWlkPgoJCTxwdWJEYXRlPk1vbiwgMTYgTWFyIDIwMjYgMTg6MDA6MDAgTURUPC9wdWJEYXRlPgoJCTxkZXNjcmlwdGlvbj48IVtDREFUQVswMy8xNi8yMDI2IC0gNjowMCBQTSAtIFZlbnVlOiBDaXR5IENvdW5jaWwgQ2hhbWJlcnMgXV0+PC9kZXNjcmlwdGlvbj4KPC9pdGVtPgo8aXRlbT4KCQk8dGl0bGU+PCFbQ0RBVEFbVmlydHVhbCBDaXR5IENvdW5jaWwgTWVldGluZ11dPjwvdGl0bGU+CgkgCTxsaW5rPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMy8yMy8yMDI2L3ZpcnR1YWwtY2l0eS1jb3VuY2lsLW1lZXRpbmcvPC9saW5rPgoJIAk8aW1nPmh0dHA6Ly9nYXRoZXJib2FyZC1pbWFnZXMuczMuYW1hem9uYXdzLmNvbS9taXNzb3VsYS1ldmVudHMvQ2l0eU1pc3NvdWxhLXRoLmpwZzwvaW1nPgoJCTxndWlkPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMy8yMy8yMDI2L3ZpcnR1YWwtY2l0eS1jb3VuY2lsLW1lZXRpbmcvPC9ndWlkPgoJCTxwdWJEYXRlPk1vbiwgMjMgTWFyIDIwMjYgMTg6MDA6MDAgTURUPC9wdWJEYXRlPgoJCTxkZXNjcmlwdGlvbj48IVtDREFUQVswMy8yMy8yMDI2IC0gNjowMCBQTSAtIFZlbnVlOiBDaXR5IENvdW5jaWwgQ2hhbWJlcnMgXV0+PC9kZXNjcmlwdGlvbj4KPC9pdGVtPgo8aXRlbT4KCQk8dGl0bGU+PCFbQ0RBVEFbVmlydHVhbCBDaXR5IENvdW5jaWwgTWVldGluZ11dPjwvdGl0bGU+CgkgCTxsaW5rPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMy8zMC8yMDI2L3ZpcnR1YWwtY2l0eS1jb3VuY2lsLW1lZXRpbmcvPC9saW5rPgoJIAk8aW1nPmh0dHA6Ly9nYXRoZXJib2FyZC1pbWFnZXMuczMuYW1hem9uYXdzLmNvbS9taXNzb3VsYS1ldmVudHMvQ2l0eU1pc3NvdWxhLXRoLmpwZzwvaW1nPgoJCTxndWlkPmh0dHBzOi8vd3d3Lm1pc3NvdWxhZXZlbnRzLm5ldC8wMy8zMC8yMDI2L3ZpcnR1YWwtY2l0eS1jb3VuY2lsLW1lZXRpbmcvPC9ndWlkPgoJCTxwdWJEYXRlPk1vbiwgMzAgTWFyIDIwMjYgMTg6MDA6MDAgTURUPC9wdWJEYXRlPgoJCTxkZXNjcmlwdGlvbj48IVtDREFUQVswMy8zMC8yMDI2IC0gNjowMCBQTSAtIFZlbnVlOiBDaXR5IENvdW5jaWwgQ2hhbWJlcnMgXV0+PC9kZXNjcmlwdGlvbj4KPC9pdGVtPgo8L2NoYW5uZWw+CjwvcnNzPg==',
+      base64Encoded: true
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:26:02.996Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000009}
+---
+
+--- 2026-02-05T05:26:02.998Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000009, result: { id: '470c178e2700bc15' } }
+---
+
+--- 2026-02-05T05:26:12.998Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000010}
+---
+
+--- 2026-02-05T05:26:13.001Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000010, result: { id: '470c178e2700bc15' } }
+---
+
+--- 2026-02-05T05:26:22.997Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000011}
+---
+
+--- 2026-02-05T05:26:23.001Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000011, result: { id: '470c178e2700bc15' } }
+---
+
+--- 2026-02-05T05:26:32.995Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000012}
+---
+
+--- 2026-02-05T05:26:32.996Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000012, result: { id: '470c178e2700bc15' } }
+---

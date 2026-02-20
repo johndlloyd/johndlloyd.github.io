@@ -1,0 +1,47 @@
+
+--- 2026-02-05T05:08:55.963Z debug
+🪵  Writing logs to "/Users/jlloyd/Codex/.wrangler/.wrangler/logs/wrangler-2026-02-05_05-08-55_892.log"
+---
+
+--- 2026-02-05T05:08:55.962Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command started","timestamp":1770268135962,"properties":{"amplitude_session_id":1770268135961,"amplitude_event_id":0,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":["noBundle"],"argsCombination":"noBundle","command":"wrangler pages dev","args":{}}}
+---
+
+--- 2026-02-05T05:08:55.969Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T05:08:56.005Z debug
+Metrics dispatcher: Failed to send request: fetch failed
+---
+
+--- 2026-02-05T05:08:56.005Z log
+
+ ⛅️ wrangler 3.114.17
+---------------------
+
+---
+
+--- 2026-02-05T05:08:56.009Z debug
+Compiling worker to "/Users/jlloyd/Codex/.wrangler/tmp/pages-MC4UbJ/functionsWorker-0.8045463859253531.mjs"...
+---
+
+--- 2026-02-05T05:08:56.032Z debug
+No experimental flag store instantiated
+---
+
+--- 2026-02-05T05:08:56.032Z debug
+Attempted to use flag "MULTIWORKER" which has not been instantiated
+---
+
+--- 2026-02-05T05:08:56.060Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-02-05T05:08:56.061Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"build pages functions","timestamp":1770268136061,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-05T05:08:56.146Z debug
+Metrics dispatcher: Failed to send request: fetch failed
+---

@@ -263,6 +263,54 @@ body {
   background: transparent;
 }
 
+.content-grid {
+  margin-top: 16px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.content-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.content-card h3 {
+  margin: 0 0 6px;
+  font-family: "Sora", "Avenir Next", sans-serif;
+  font-size: 1rem;
+}
+
+.content-card p {
+  margin: 0 0 8px;
+}
+
+.content-link {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-soft);
+  color: var(--ink);
+  font: inherit;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+.content-link:hover,
+.content-link:focus-visible {
+  border-color: var(--brand);
+  outline: none;
+}
+
+.content-link.secondary {
+  margin-bottom: 12px;
+}
+
+.markdown-body-inner p small {
+  color: var(--muted);
+}
+
 .markdown-body a {
   color: var(--brand);
   text-decoration: none;

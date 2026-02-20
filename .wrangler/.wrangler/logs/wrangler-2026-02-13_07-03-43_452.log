@@ -1,0 +1,680 @@
+
+--- 2026-02-13T07:03:43.541Z debug
+🪵  Writing logs to "/Users/jlloyd/Codex/.wrangler/.wrangler/logs/wrangler-2026-02-13_07-03-43_452.log"
+---
+
+--- 2026-02-13T07:03:43.541Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command started","timestamp":1770966223541,"properties":{"amplitude_session_id":1770966223539,"amplitude_event_id":0,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages dev","args":{}}}
+---
+
+--- 2026-02-13T07:03:43.548Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-13T07:03:44.867Z log
+
+ ⛅️ wrangler 3.114.17 (update available 4.65.0)
+-----------------------------------------------
+
+---
+
+--- 2026-02-13T07:03:44.914Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical errors.
+  Run `npm install --save-dev wrangler@4` to update to the latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2026-02-13T07:03:44.923Z debug
+Compiling worker to "/Users/jlloyd/Codex/.wrangler/tmp/pages-tp6Dd7/functionsWorker-0.01641789382028014.mjs"...
+---
+
+--- 2026-02-13T07:03:44.946Z debug
+No experimental flag store instantiated
+---
+
+--- 2026-02-13T07:03:44.946Z debug
+Attempted to use flag "MULTIWORKER" which has not been instantiated
+---
+
+--- 2026-02-13T07:03:44.965Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-02-13T07:03:44.966Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"build pages functions","timestamp":1770966224966,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-13T07:03:45.054Z debug
+.env file not found at ".dev.vars". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-13T07:03:45.055Z log
+No bindings found.
+---
+
+--- 2026-02-13T07:03:45.063Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"run pages dev","timestamp":1770966225063,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-13T07:03:45.099Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-13T07:03:45.099Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-02-13T07:03:45.099Z log
+⎔ Starting local server...
+---
+
+--- 2026-02-13T07:03:45.118Z error
+✘ [ERROR] *** Fatal uncaught kj::Exception: kj/async-io-unix.c++:945: failed: ::bind(sockfd, &addr.generic, addrlen): Address already in use; toString() = 127.0.0.1:8788
+
+
+---
+
+--- 2026-02-13T07:03:45.119Z error
+✘ [ERROR] stack: 10626b53f 10626b343 1040998f3 10409a19b 10409aac7 10409b393 1040318eb 106292933 106292c3b 106291683 1062913ef 104020803 187a72b97
+
+
+---
+
+--- 2026-02-13T07:03:45.122Z debug
+Error in ProxyController: Could not connect to InspectorProxyWorker
+ MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at #assembleAndUpdateConfig (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:17005:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Mutex.runWith (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:2504:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}
+---
+
+--- 2026-02-13T07:03:45.122Z debug
+=> Error contextual data: {
+  config: {
+    name: 'cityevents',
+    config: '/Users/jlloyd/Codex/wrangler.toml',
+    compatibilityDate: '2025-01-01',
+    compatibilityFlags: [],
+    entrypoint: '/Users/jlloyd/Codex/.wrangler/tmp/pages-tp6Dd7/functionsWorker-0.01641789382028014.mjs',
+    projectRoot: '/Users/jlloyd/Codex',
+    bindings: { ASSETS: [Object] },
+    migrations: [],
+    sendMetrics: undefined,
+    triggers: [],
+    env: undefined,
+    build: {
+      alias: undefined,
+      additionalModules: [],
+      processEntrypoint: true,
+      bundle: true,
+      findAdditionalModules: undefined,
+      moduleRoot: '/Users/jlloyd/Codex/.wrangler/tmp/pages-tp6Dd7',
+      moduleRules: [],
+      minify: undefined,
+      define: {},
+      custom: [Object],
+      format: 'modules',
+      nodejsCompatMode: null,
+      jsxFactory: 'React.createElement',
+      jsxFragment: 'React.Fragment',
+      tsconfig: undefined,
+      exports: [Array]
+    },
+    dev: {
+      auth: [AsyncFunction: auth],
+      remote: false,
+      server: [Object],
+      inspector: [Object],
+      origin: [Object],
+      liveReload: false,
+      testScheduled: false,
+      persist: '/Users/jlloyd/Codex/.wrangler/state',
+      registry: undefined,
+      bindVectorizeToProd: false,
+      multiworkerPrimary: undefined,
+      imagesLocalMode: false
+    },
+    legacy: {
+      site: undefined,
+      legacyAssets: undefined,
+      enableServiceEnvironments: false
+    },
+    unsafe: { capnp: undefined, metadata: undefined },
+    assets: undefined,
+    experimental: { tailLogs: true }
+  },
+  bundle: undefined
+}
+---
+
+--- 2026-02-13T07:03:45.131Z debug
+Error in ProxyController: Failed to start ProxyWorker or InspectorProxyWorker
+ MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at #assembleAndUpdateConfig (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:17005:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Mutex.runWith (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:2504:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}
+---
+
+--- 2026-02-13T07:03:45.131Z debug
+=> Error contextual data: {
+  config: {
+    name: 'cityevents',
+    config: '/Users/jlloyd/Codex/wrangler.toml',
+    compatibilityDate: '2025-01-01',
+    compatibilityFlags: [],
+    entrypoint: '/Users/jlloyd/Codex/.wrangler/tmp/pages-tp6Dd7/functionsWorker-0.01641789382028014.mjs',
+    projectRoot: '/Users/jlloyd/Codex',
+    bindings: { ASSETS: [Object] },
+    migrations: [],
+    sendMetrics: undefined,
+    triggers: [],
+    env: undefined,
+    build: {
+      alias: undefined,
+      additionalModules: [],
+      processEntrypoint: true,
+      bundle: true,
+      findAdditionalModules: undefined,
+      moduleRoot: '/Users/jlloyd/Codex/.wrangler/tmp/pages-tp6Dd7',
+      moduleRules: [],
+      minify: undefined,
+      define: {},
+      custom: [Object],
+      format: 'modules',
+      nodejsCompatMode: null,
+      jsxFactory: 'React.createElement',
+      jsxFragment: 'React.Fragment',
+      tsconfig: undefined,
+      exports: [Array]
+    },
+    dev: {
+      auth: [AsyncFunction: auth],
+      remote: false,
+      server: [Object],
+      inspector: [Object],
+      origin: [Object],
+      liveReload: false,
+      testScheduled: false,
+      persist: '/Users/jlloyd/Codex/.wrangler/state',
+      registry: undefined,
+      bindVectorizeToProd: false,
+      multiworkerPrimary: undefined,
+      imagesLocalMode: false
+    },
+    legacy: {
+      site: undefined,
+      legacyAssets: undefined,
+      enableServiceEnvironments: false
+    },
+    unsafe: { capnp: undefined, metadata: undefined },
+    assets: undefined,
+    experimental: { tailLogs: true }
+  },
+  bundle: undefined
+}
+---
+
+--- 2026-02-13T07:03:45.132Z debug
+Error in ProxyController: Failed to send message to InspectorProxyWorker: {"type":"reloadStart"}
+ MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at #assembleAndUpdateConfig (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:17005:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Mutex.runWith (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:2504:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}
+---
+
+--- 2026-02-13T07:03:45.132Z debug
+=> Error contextual data: {
+  config: {
+    name: 'cityevents',
+    config: '/Users/jlloyd/Codex/wrangler.toml',
+    compatibilityDate: '2025-01-01',
+    compatibilityFlags: [],
+    entrypoint: '/Users/jlloyd/Codex/.wrangler/tmp/pages-tp6Dd7/functionsWorker-0.01641789382028014.mjs',
+    projectRoot: '/Users/jlloyd/Codex',
+    bindings: { ASSETS: [Object] },
+    migrations: [],
+    sendMetrics: undefined,
+    triggers: [],
+    env: undefined,
+    build: {
+      alias: undefined,
+      additionalModules: [],
+      processEntrypoint: true,
+      bundle: true,
+      findAdditionalModules: undefined,
+      moduleRoot: '/Users/jlloyd/Codex/.wrangler/tmp/pages-tp6Dd7',
+      moduleRules: [],
+      minify: undefined,
+      define: {},
+      custom: [Object],
+      format: 'modules',
+      nodejsCompatMode: null,
+      jsxFactory: 'React.createElement',
+      jsxFragment: 'React.Fragment',
+      tsconfig: undefined,
+      exports: [Array]
+    },
+    dev: {
+      auth: [AsyncFunction: auth],
+      remote: false,
+      server: [Object],
+      inspector: [Object],
+      origin: [Object],
+      liveReload: false,
+      testScheduled: false,
+      persist: '/Users/jlloyd/Codex/.wrangler/state',
+      registry: undefined,
+      bindVectorizeToProd: false,
+      multiworkerPrimary: undefined,
+      imagesLocalMode: false
+    },
+    legacy: {
+      site: undefined,
+      legacyAssets: undefined,
+      enableServiceEnvironments: false
+    },
+    unsafe: { capnp: undefined, metadata: undefined },
+    assets: undefined,
+    experimental: { tailLogs: true }
+  },
+  bundle: undefined
+}
+---
+
+--- 2026-02-13T07:03:45.132Z log
+
+---
+
+--- 2026-02-13T07:03:45.133Z error
+✘ [ERROR] The Workers runtime failed to start. There is likely additional logging output above.
+
+
+---
+
+--- 2026-02-13T07:03:45.133Z debug
+MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at #assembleAndUpdateConfig (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:17005:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Mutex.runWith (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:2504:16)
+---
+
+--- 2026-02-13T07:03:45.133Z log
+If you think this is a bug then please create an issue at https://github.com/cloudflare/workers-sdk/issues/new/choose
+---
+
+--- 2026-02-13T07:03:45.133Z log
+Note that there is a newer version of Wrangler available (4.65.0). Consider checking whether upgrading resolves this error.
+---
+
+--- 2026-02-13T07:03:45.133Z log
+? Would you like to report this error to Cloudflare? Wrangler's output and the error details will be shared with the Wrangler team to help us diagnose and fix the issue.
+---
+
+--- 2026-02-13T07:03:45.133Z log
+🤖 Using fallback value in non-interactive context: no
+---
+
+--- 2026-02-13T07:03:45.133Z debug
+Sentry: Reporting disabled - would have sent MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above..
+---
+
+--- 2026-02-13T07:03:45.133Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command errored","timestamp":1770966225133,"properties":{"amplitude_session_id":1770966223539,"amplitude_event_id":1,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages dev","args":{},"durationMs":1609,"durationSeconds":1.609,"durationMinutes":0.026816666666666666}}
+---
+
+--- 2026-02-13T07:03:45.171Z debug
+Error in ProxyController: Failed to send message to InspectorProxyWorker: {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"64567"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"64565","pathname":"/core:user:cityevents"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"2014f2af-701b-4b60-a477-3f79badcf6aa"},"liveReload":false,"proxyLogsToController":false,"internalDurableObjects":[],"entrypointAddresses":{"__INTERNAL_WRANGLER_MIDDLEWARE__":{"host":"127.0.0.1","port":64568},"default":{"host":"127.0.0.1","port":64569}}}}
+ MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at #assembleAndUpdateConfig (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:17005:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Mutex.runWith (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:2504:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}
+---
+
+--- 2026-02-13T07:03:45.172Z debug
+=> Error contextual data: {
+  config: {
+    name: 'cityevents',
+    config: '/Users/jlloyd/Codex/wrangler.toml',
+    compatibilityDate: '2025-01-01',
+    compatibilityFlags: [],
+    entrypoint: '/Users/jlloyd/Codex/.wrangler/tmp/pages-tp6Dd7/functionsWorker-0.01641789382028014.mjs',
+    projectRoot: '/Users/jlloyd/Codex',
+    bindings: { ASSETS: [Object] },
+    migrations: [],
+    sendMetrics: undefined,
+    triggers: [],
+    env: undefined,
+    build: {
+      alias: undefined,
+      additionalModules: [],
+      processEntrypoint: true,
+      bundle: true,
+      findAdditionalModules: undefined,
+      moduleRoot: '/Users/jlloyd/Codex/.wrangler/tmp/pages-tp6Dd7',
+      moduleRules: [],
+      minify: undefined,
+      define: {},
+      custom: [Object],
+      format: 'modules',
+      nodejsCompatMode: null,
+      jsxFactory: 'React.createElement',
+      jsxFragment: 'React.Fragment',
+      tsconfig: undefined,
+      exports: [Array]
+    },
+    dev: {
+      auth: [AsyncFunction: auth],
+      remote: false,
+      server: [Object],
+      inspector: [Object],
+      origin: [Object],
+      liveReload: false,
+      testScheduled: false,
+      persist: '/Users/jlloyd/Codex/.wrangler/state',
+      registry: undefined,
+      bindVectorizeToProd: false,
+      multiworkerPrimary: undefined,
+      imagesLocalMode: false
+    },
+    legacy: {
+      site: undefined,
+      legacyAssets: undefined,
+      enableServiceEnvironments: false
+    },
+    unsafe: { capnp: undefined, metadata: undefined },
+    assets: undefined,
+    experimental: { tailLogs: true }
+  },
+  bundle: {
+    id: 0,
+    entry: {
+      file: '/Users/jlloyd/Codex/.wrangler/tmp/pages-tp6Dd7/functionsWorker-0.01641789382028014.mjs',
+      projectRoot: '/Users/jlloyd/Codex',
+      configPath: '/Users/jlloyd/Codex/wrangler.toml',
+      format: 'modules',
+      moduleRoot: '/Users/jlloyd/Codex/.wrangler/tmp/pages-tp6Dd7',
+      exports: [Array],
+      name: 'cityevents'
+    },
+    path: '/Users/jlloyd/Codex/.wrangler/tmp/dev-b8Qtpn/functionsWorker-0.01641789382028014.js',
+    type: 'esm',
+    modules: [],
+    dependencies: {
+      '.wrangler/tmp/bundle-kBwAz3/strip-cf-connecting-ip-header.js': [Object],
+      '.wrangler/tmp/pages-tp6Dd7/functionsWorker-0.01641789382028014.mjs': [Object],
+      'node_modules/wrangler/templates/middleware/middleware-ensure-req-body-drained.ts': [Object],
+      'node_modules/wrangler/templates/middleware/middleware-miniflare3-json-error.ts': [Object],
+      '.wrangler/tmp/bundle-kBwAz3/middleware-insertion-facade.js': [Object],
+      'node_modules/wrangler/templates/middleware/common.ts': [Object],
+      '.wrangler/tmp/bundle-kBwAz3/middleware-loader.entry.ts': [Object]
+    },
+    sourceMapPath: '.wrangler/tmp/dev-b8Qtpn/functionsWorker-0.01641789382028014.js.map',
+    sourceMapMetadata: {
+      tmpDir: '/Users/jlloyd/Codex/.wrangler/tmp/bundle-kBwAz3',
+      entryDirectory: '/Users/jlloyd/Codex'
+    },
+    entrypointSource: 'var __defProp = Object.defineProperty;\n' +
+      'var __name = (target, value) => __defProp(target, "name", { value, configurable: true });\n' +
+      '\n' +
+      '// .wrangler/tmp/bundle-kBwAz3/strip-cf-connecting-ip-header.js\n' +
+      'function stripCfConnectingIPHeader(input, init) {\n' +
+      '  const request = new Request(input, init);\n' +
+      '  request.headers.delete("CF-Connecting-IP");\n' +
+      '  return request;\n' +
+      '}\n' +
+      '__name(stripCfConnectingIPHeader, "stripCfConnectingIPHeader");\n' +
+      'globalThis.fetch = new Proxy(globalThis.fetch, {\n' +
+      '  apply(target, thisArg, argArray) {\n' +
+      '    return Reflect.apply(target, thisArg, [\n' +
+      '      stripCfConnectingIPHeader.apply(null, argArray)\n' +
+      '    ]);\n' +
+      '  }\n' +
+      '});\n' +
+      '\n' +
+      '// .wrangler/tmp/pages-tp6Dd7/functionsWorker-0.01641789382028014.mjs\n' +
+      'var __create = Object.create;\n' +
+      'var __defProp2 = Object.defineProperty;\n' +
+      'var __getOwnPropDesc = Object.getOwnPropertyDescriptor;\n' +
+      'var __getOwnPropNames = Object.getOwnPropertyNames;\n' +
+      'var __getProtoOf = Object.getPrototypeOf;\n' +
+      'var __hasOwnProp = Object.prototype.hasOwnProperty;\n' +
+      'var __name2 = /* @__PURE__ */ __name((target, value) => __defProp2(target, "name", { value, configurable: true }), "__name");\n' +
+      'var __esm = /* @__PURE__ */ __name((fn, res) => /* @__PURE__ */ __name(function __init() {\n' +
+      '  return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;\n' +
+      '}, "__init"), "__esm");\n' +
+      'var __commonJS = /* @__PURE__ */ __name((cb, mod) => /* @__PURE__ */ __name(function __require() {\n' +
+      '  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;\n' +
+      '}, "__require"), "__commonJS");\n' +
+      'var __copyProps = /* @__PURE__ */ __name((to, from, except, desc) => {\n' +
+      '  if (from && typeof from === "object" || typeof from === "function") {\n' +
+      '    for (let key of __getOwnPropNames(from))\n' +
+      '      if (!__hasOwnProp.call(to, key) && key !== except)\n' +
+      '        __defProp2(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });\n' +
+      '  }\n' +
+      '  return to;\n' +
+      '}, "__copyProps");\n' +
+      'var __toESM = /* @__PURE__ */ __name((mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(\n' +
+      '  // If the importer is in node compatibility mode or this is not an ESM\n' +
+      '  // file that has been converted to a CommonJS file using a Babel-\n' +
+      '  // compatible transform (i.e. "__esModule" has not been set), then set\n' +
+      '  // "default" to the CommonJS "module.exports" for node compatibility.\n' +
+      '  isNodeMode || !mod || !mod.__esModule ? __defProp2(target, "default", { value: mod, enumerable: true }) : target,\n' +
+      '  mod\n' +
+      ')), "__toESM");\n' +
+      'function stripCfConnectingIPHeader2(input, init) {\n' +
+      '  const request = new Request(input, init);\n' +
+      '  request.headers.delete("CF-Connecting-IP");\n' +
+      '  return request;\n' +
+      '}\n' +
+      '__name(stripCfConnectingIPHeader2, "stripCfConnectingIPHeader");\n' +
+      'var init_strip_cf_connecting_ip_header = __esm({\n' +
+      '  "../.wrangler/tmp/bundle-5sOOHh/strip-cf-connecting-ip-header.js"() {\n' +
+      '    __name2(stripCfConnectingIPHeader2, "stripCfConnectingIPHeader");\n' +
+      '    globalThis.fetch = new Proxy(globalThis.fetch, {\n' +
+      '      apply(target, thisArg, argArray) {\n' +
+      '        return Reflect.apply(target, thisArg, [\n' +
+      '          stripCfConnectingIPHeader2.apply(null, argArray)\n' +
+      '        ]);\n' +
+      '      }\n' +
+      '    });\n' +
+      '  }\n' +
+      '});\n' +
+      'function toCityResponse() {\n' +
+      '  return Object.entries(FEEDS).map(([key, value]) => ({\n' +
+      '    id: key,\n' +
+      '    label: value.label,\n' +
+      '    categories: ["today", "tomorrow", "combined"]\n' +
+      '  }));\n' +
+      '}\n' +
+      '__name(toCityResponse, "toCityResponse");\n' +
+      'var FEEDS;\n' +
+      'var onRequest;\n' +
+      'var init_cities = __esm({\n' +
+      '  "api/cities.ts"() {\n' +
+      '    init_functionsRoutes_0_04903743322861098();\n' +
+      '    init_strip_cf_connecting_ip_header();\n' +
+      '    FEEDS = {\n' +
+      '      missoula: {\n' +
+      '        label: "Missoula",\n' +
+      '        categories: {\n' +
+      '          combined: "https://www.missoulaevents.net/rss/blended/",\n' +
+      '          music: "https://www.missoulaevents.net/rss/music/",\n' +
+      '          "the-arts": "https://www.missoulaevents.net/rss/the-arts/",\n' +
+      '          "food-bev": "https://www.missoulaevents.net/rss/food-bev/",\n' +
+      '          "sports-rec": "https://www.missoulaevents.net/rss/sports-rec/",\n' +
+      '          education: "https://www.missoulaevents.net/rss/education/",\n' +
+      '          "special-events": "https://www.missoulaevents.net/rss/special-events/"\n' +
+      '        }\n' +
+      '      }\n' +
+      '    };\n' +
+      '    __name2(toCityResponse, "toCityResponse");\n' +
+      '    onRequest = /* @__PURE__ */ __name2(async () => {\n' +
+      '      return new Response(\n' +
+      '        JSON.stringify({\n' +
+      '          cities: toCityResponse(),\n' +
+      '          defaultCity: "missoula",\n' +
+      '          defaultCategory: "combined"\n' +
+      '        }),\n' +
+      '        {\n' +
+      '          headers: {\n' +
+      '            "content-type": "application/json; charset=utf-8",\n' +
+      '            "cache-control": "no-store"\n' +
+      '          }\n' +
+      '        }\n' +
+      '      );\n' +
+      '    }, "onRequest");\n' +
+      '  }\n' +
+      '});\n' +
+      'var require_util = __commonJS({\n' +
+      '  "../node_modules/fast-xml-parser/src/util.js"(exports) {\n' +
+      '    "use strict";\n' +
+      '    init_functionsRoutes_0_04903743322861098();\n' +
+      '    init_strip_cf_connecting_ip_header();\n' +
+      '    var nameStartChar = ":A-Za-z_\\\\u00C0-\\\\u00D6\\\\u00D8-\\\\u00F6\\\\u00F8-\\\\u02FF\\\\u0370-\\\\u037D\\\\u037F-\\\\u1FFF\\\\u200C-\\\\u200D\\\\u2070-\\\\u218F\\\\u2C00-\\\\u2FEF\\\\u3001-\\\\uD7FF\\\\uF900-\\\\uFDCF\\\\uFDF0-\\\\uFFFD";\n' +
+      '    var nameChar = nameStartChar + "\\\\-.\\\\d\\\\u00B7\\\\u0300-\\\\u036F\\\\u203F-\\\\u2040";\n' +
+      '    var nameRegexp = "[" + nameStartChar + "][" + nameChar + "]*";\n' +
+      '    var regexName = new RegExp("^" + nameRegexp + "$");\n' +
+      '    var getAllMatches = /* @__PURE__ */ __name2(function(string, regex) {\n' +
+      '      const matches = [];\n' +
+      '      let match2 = regex.exec(string);\n' +
+      '      while (match2) {\n' +
+      '        const allmatches = [];\n' +
+      '        allmatches.startIndex = regex.lastIndex - match2[0].length;\n' +
+      '        const len = match2.length;\n' +
+      '        for (let index = 0; index < len; index++) {\n' +
+      '          allmatches.push(match2[index]);\n' +
+      '        }\n' +
+      '        matches.push(allmatches);\n' +
+      '        match2 = regex.exec(string);\n' +
+      '      }\n' +
+      '      return matches;\n' +
+      '    }, "getAllMatches");\n' +
+      '    var isName = /* @__PURE__ */ __name2(function(string) {\n' +
+      '      const match2 = regexName.exec(string);\n' +
+      '      return !(match2 === null || typeof match2 === "undefined");\n' +
+      '    }, "isName");\n' +
+      '    exports.isExist = function(v) {\n' +
+      '      return typeof v !== "undefined";\n' +
+      '    };\n' +
+      '    exports.isEmptyObject = function(obj) {\n' +
+      '      return Object.keys(obj).length === 0;\n' +
+      '    };\n' +
+      '    exports.merge = function(target, a, arrayMode) {\n' +
+      '      if (a) {\n' +
+      '        const keys = Object.keys(a);\n' +
+      '        const len = keys.length;\n' +
+      '        for (let i = 0; i < len; i++) {\n' +
+      '          if (arrayMode === "strict") {\n' +
+      '            target[keys[i]] = [a[keys[i]]];\n' +
+      '          } else {\n' +
+      '            target[keys[i]] = a[keys[i]];\n' +
+      '          }\n' +
+      '        }\n' +
+      '      }\n' +
+      '    };\n' +
+      '    exports.getValue = function(v) {\n' +
+      '      if (exports.isExist(v)) {\n' +
+      '        return v;\n' +
+      '      } else {\n' +
+      '        return "";\n' +
+      '      }\n' +
+      '    };\n' +
+      '    exports.isName = isName;\n' +
+      '    exports.getAllMatches = getAllMatches;\n' +
+      '    exports.nameRegexp = nameRegexp;\n' +
+      '  }\n' +
+      '});\n' +
+      'var require_validator = __commonJS({\n' +
+      '  "../node_modules/fast-xml-parser/src/validator.js"(exports) {\n' +
+      '    "use strict";\n' +
+      '    init_functionsRoutes_0_04903743322861098();\n' +
+      '    init_strip_cf_connecting_ip_header();\n' +
+      '    var util = require_util();\n' +
+      '    var defaultOptions = {\n' +
+      '      allowBooleanAttributes: false,\n' +
+      '      //A tag can have attributes without any value\n' +
+      '      unpairedTags: []\n' +
+      '    };\n' +
+      '    exports.validate = function(xmlData, options) {\n' +
+      '      options = Object.assign({}, defaultOptions, options);\n' +
+      '      const tags = [];\n' +
+      '      let tagFound = false;\n' +
+      '      let reachedRoot = false;\n' +
+      '      if (xmlData[0] === "\\uFEFF") {\n' +
+      '        xmlData = xmlData.substr(1);\n' +
+      '      }\n' +
+      '      for (let i = 0; i < xmlData.length; i++) {\n' +
+      '        if (xmlData[i] === "<" && xmlData[i + 1] === "?") {\n' +
+      '          i += 2;\n' +
+      '          i = readPI(xmlData, i);\n' +
+      '          if (i.err)\n' +
+      '            return i;\n' +
+      '        } else if (xmlData[i] === "<") {\n' +
+      '          let tagStartPos = i;\n' +
+      '          i++;\n' +
+      '          if (xmlData[i] === "!") {\n' +
+      '            i = readCommentAndCDATA(xmlData, i);\n' +
+      '            continue;\n' +
+      '          } else {\n' +
+      '            let closingTag = false;\n' +
+      '            if (xmlData[i] === "/") {\n' +
+      '              closingTag = true;\n' +
+      '              i++;\n' +
+      '            }\n' +
+      '            let tagName = "";\n' +
+      '            for (; i < xmlData.length && xmlData[i] !== ">" && xmlData[i] !== " " && xmlData[i] !== "\t" && xmlData[i] !== "\\n" && xmlData[i] !== "\\r"; i++) {\n' +
+      '              tagName += xmlData[i];\n' +
+      '            }\n' +
+      '            tagName = tagName.trim();\n' +
+      '            if (tagName[tagName.length - 1] === "/") {\n' +
+      '              tagName = tagName.substring(0, tagName.length - 1);\n' +
+      '              i--;\n' +
+      '            }\n' +
+      '            if (!validateTagName(tagName)) {\n' +
+      '              let msg;\n' +
+      '              if (tagName.trim().length === 0) {\n' +
+      `                msg = "Invalid space after '<'.";\n` +
+      '              } else {\n' +
+      `                msg = "Tag '" + tagName + "' is an invalid name.";\n` +
+      '              }\n' +
+      '              return getErrorObject("InvalidTag", msg, getLineNumberForPosition(xmlData, i));\n' +
+      '            }\n' +
+      '            const result = readAttributeStr(xmlData, i);\n' +
+      '            if (result === false) {\n' +
+      `              return getErrorObject("InvalidAttr", "Attributes for '" + tagName + "' have open quote.", getLineNumberForPosition(xmlData, i));\n` +
+      '            }\n' +
+      '            let attrStr = result.value;\n' +
+      '            i = result.index;\n' +
+      '            if (attrStr[attrStr.length - 1] === "/") {\n' +
+      '              const attrStrStart = i - attrStr.length;\n' +
+      '              attrStr = attrStr.substring(0, attrStr.length - 1);\n' +
+      '              const isValid = validateAttributeString(attrStr, options);\n' +
+      '              if (isValid === true) {\n' +
+      '                tagFound = true;\n' +
+      '              } else {\n' +
+      '                return getErrorObject(isValid.err.code, isValid.err.msg, getLineNumberForPosition(xmlData, attrStrStart + isValid.err.line));\n' +
+      '              }\n' +
+      '            } else if (closingTag) {\n' +
+      '              if (!result.tagClosed) {\n' +
+      `                return getErrorObject("InvalidTag", "Closing tag '" + tagName + "' doesn't have proper closing.", getLineNumberForPosition(xmlData, i));\n` +
+      '              } else if (attrStr.trim().length > 0) {\n' +
+      `                return getErrorObject("InvalidTag", "Closing tag '" + tagName + "' can't have attributes or invalid starting.", getLineNumberForPosition(xmlData, tagStartPos`... 102807 more characters
+  }
+}
+---

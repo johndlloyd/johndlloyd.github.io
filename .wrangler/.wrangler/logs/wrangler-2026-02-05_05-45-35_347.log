@@ -1,0 +1,275 @@
+
+--- 2026-02-05T05:45:35.415Z debug
+🪵  Writing logs to "/Users/jlloyd/Codex/.wrangler/.wrangler/logs/wrangler-2026-02-05_05-45-35_347.log"
+---
+
+--- 2026-02-05T05:45:35.415Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command started","timestamp":1770270335415,"properties":{"amplitude_session_id":1770270335413,"amplitude_event_id":0,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages dev","args":{}}}
+---
+
+--- 2026-02-05T05:45:35.423Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T05:45:35.451Z log
+
+ ⛅️ wrangler 3.114.17 (update available 4.62.0)
+---------------------------------------------------------
+
+---
+
+--- 2026-02-05T05:45:35.487Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical errors.
+  Run `npm install --save-dev wrangler@4` to update to the latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2026-02-05T05:45:35.491Z debug
+Compiling worker to "/Users/jlloyd/Codex/.wrangler/tmp/pages-2WWN55/functionsWorker-0.8859020223233102.mjs"...
+---
+
+--- 2026-02-05T05:45:35.509Z debug
+No experimental flag store instantiated
+---
+
+--- 2026-02-05T05:45:35.509Z debug
+Attempted to use flag "MULTIWORKER" which has not been instantiated
+---
+
+--- 2026-02-05T05:45:35.526Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-02-05T05:45:35.527Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"build pages functions","timestamp":1770270335527,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-05T05:45:35.620Z debug
+.env file not found at ".dev.vars". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T05:45:35.621Z log
+No bindings found.
+---
+
+--- 2026-02-05T05:45:35.628Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"run pages dev","timestamp":1770270335628,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-05T05:45:35.663Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-05T05:45:35.663Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-02-05T05:45:35.664Z log
+⎔ Starting local server...
+---
+
+--- 2026-02-05T05:45:35.704Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-02-05T05:45:35.737Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"50228"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"50225","pathname":"/core:user:cityevents"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"8f7d7c5a-dfd7-4243-9e2e-bc67c34fda7d"},"liveReload":false,"proxyLogsToController":false,"internalDurableObjects":[],"entrypointAddresses":{"__INTERNAL_WRANGLER_MIDDLEWARE__":{"host":"127.0.0.1","port":50229},"default":{"host":"127.0.0.1","port":50230}}}}
+---
+
+--- 2026-02-05T05:45:35.738Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-02-05T05:45:35.738Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:50225/core:user:cityevents
+---
+
+--- 2026-02-05T05:45:35.739Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-02-05T05:45:35.741Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 381301601,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '-6653532350252221058.-3014415369777063062'
+    }
+  }
+}
+---
+
+--- 2026-02-05T05:45:35.742Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-02-05T05:45:35.743Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000001}
+---
+
+--- 2026-02-05T05:45:35.744Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Debugger.enable","id":100000002}
+---
+
+--- 2026-02-05T05:45:35.745Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Debugger.scriptParsed',
+  params: {
+    scriptId: '3',
+    url: 'file:///Users/jlloyd/Codex/.wrangler/tmp/dev-BVCUtX/functionsWorker-0.8859020223233102.js',
+    startLine: 0,
+    startColumn: 0,
+    endLine: 3033,
+    endColumn: 103,
+    executionContextId: 381301601,
+    hash: 'a3490f7435f6145a40035507f88454837fe187edf9fae0b1822f6793f88bd8cd',
+    buildId: '',
+    isLiveEdit: false,
+    sourceMapURL: 'functionsWorker-0.8859020223233102.js.map',
+    hasSourceURL: true,
+    isModule: true,
+    length: 112488,
+    scriptLanguage: 'JavaScript',
+    embedderName: 'functionsWorker-0.8859020223233102.js'
+  }
+}
+---
+
+--- 2026-02-05T05:45:35.745Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  id: 100000002,
+  result: { debuggerId: '8775139465710696576.8140496322510918522' }
+}
+---
+
+--- 2026-02-05T05:45:35.745Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000003, method: 'Network.enable', result: {} }
+---
+
+--- 2026-02-05T05:45:35.746Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Network.enable","id":100000003}
+---
+
+--- 2026-02-05T05:45:35.747Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000001, result: {} }
+---
+
+--- 2026-02-05T05:45:36.921Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '0',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 260857.402,
+    wallTime: 1770270336.918,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:45:36.957Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '1',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/app.js',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 260857.438,
+    wallTime: 1770270336.954,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:45:36.959Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '2',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/styles.css',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 260857.439,
+    wallTime: 1770270336.955,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-05T05:45:40.461Z debug
+DevEnv teardown beginning...
+---
+
+--- 2026-02-05T05:45:40.461Z debug
+ConfigController teardown beginning...
+---
+
+--- 2026-02-05T05:45:40.462Z debug
+BundlerController teardown beginning...
+---
+
+--- 2026-02-05T05:45:40.465Z debug
+LocalRuntimeController teardown beginning...
+---
+
+--- 2026-02-05T05:45:40.465Z log
+⎔ Shutting down local server...
+---
+
+--- 2026-02-05T05:45:40.465Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-05T05:45:40.465Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-02-05T05:45:40.465Z debug
+ProxyController teardown beginning...
+---
+
+--- 2026-02-05T05:45:40.465Z debug
+ConfigController teardown complete
+---
+
+--- 2026-02-05T05:45:40.476Z debug
+LocalRuntimeController teardown complete
+---
+
+--- 2026-02-05T05:45:40.478Z debug
+ProxyController teardown complete
+---

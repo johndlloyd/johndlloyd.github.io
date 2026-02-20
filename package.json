@@ -1,0 +1,22 @@
+{
+  "name": "cityevents",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "WRANGLER_HOME=.wrangler XDG_CONFIG_HOME=.wrangler XDG_CACHE_HOME=.wrangler WRANGLER_DISABLE_TELEMETRY=1 wrangler pages dev public --compatibility-date=2025-01-01 --inspector-port=0 --ip=127.0.0.1 --port=8788 --live-reload=false --log-level=debug",
+    "deploy": "wrangler pages deploy public",
+    "lint": "echo 'no lint configured'",
+    "nyt:redeem:once": "node scripts/nyt-redeem-bot.mjs --once",
+    "nyt:redeem:daily": "node scripts/nyt-redeem-bot.mjs",
+    "patagonia:check": "node scripts/patagonia-web-specials-tracker.mjs",
+    "patagonia:check:daily": "node scripts/patagonia-web-specials-tracker.mjs --daily"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.1",
+    "playwright": "^1.52.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}

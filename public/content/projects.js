@@ -9,26 +9,26 @@ export const PROJECTS = [
       "ReloRides is focused on connecting people who need vehicles moved with people who can move them. The project explores marketplace mechanics, trust and safety controls, pricing clarity, and streamlined operations.",
     link: "https://relorides.com",
   },
-  {
-    id: "book-it",
-    title: "Book It",
-    status: "Ongoing",
-    tags: ["Learning System", "Personal Ops"],
-    summary: "One book per month plus one practical artifact.",
-    detail:
-      "Book It is a personal cadence for continuous learning: each month includes one book and one output (template, script, write-up, or lightweight tool) inspired by what was learned.",
-    link: "",
-  },
-  {
-    id: "ai-workflows",
-    title: "AI Workflow Experiments",
-    status: "Active",
-    tags: ["AI", "Automation", "Productivity"],
-    summary: "Practical AI workflows for payments and business operations.",
-    detail:
-      "A growing set of experiments that test where AI provides measurable leverage in day-to-day business workflows. Focus is on quality, reliability, and repeatability over novelty.",
-    link: "",
-  },
+  // {
+  //   id: "book-it",
+  //   title: "Book It",
+  //   status: "Ongoing",
+  //   tags: ["Learning System", "Personal Ops"],
+  //   summary: "One book per month plus one practical artifact.",
+  //   detail:
+  //     "Book It is a personal cadence for continuous learning: each month includes one book and one output (template, script, write-up, or lightweight tool) inspired by what was learned.",
+  //   link: "",
+  // },
+  // {
+  //   id: "ai-workflows",
+  //   title: "AI Workflow Experiments",
+  //   status: "Active",
+  //   tags: ["AI", "Automation", "Productivity"],
+  //   summary: "Practical AI workflows for payments and business operations.",
+  //   detail:
+  //     "A growing set of experiments that test where AI provides measurable leverage in day-to-day business workflows. Focus is on quality, reliability, and repeatability over novelty.",
+  //   link: "",
+  // },
   {
     id: "icompris",
     title: "iCompris",
@@ -41,12 +41,12 @@ export const PROJECTS = [
   },
   {
     id: "monitor-the-situation",
-    title: "Monitor The Situation",
+    title: "Monitor The Skiuation",
     status: "Active",
     tags: ["AI", "Monitoring", "Web App"],
-    summary: "A lightweight app for tracking and summarizing important developments in one place.",
+    summary: "A command-center dashboard and CLI for monitoring MDT RWIS traffic cameras across Montana.",
     detail:
-      "Monitor The Situation is a focused monitoring app built to make it easier to follow fast-moving topics. The core idea is simple: reduce noise, keep signal high, and give a clear view of what changed and why it matters. We built it as a fast, modern web app with an emphasis on readability and quick scanning.",
+      "Inspired by and heavily based on Monitor the Situation by @scottew — originally built for Utah DOT cameras. Update for the state of Montana and added Ski Cams",
     link: "https://monitor-the-situation.vercel.app",
   },
 ];

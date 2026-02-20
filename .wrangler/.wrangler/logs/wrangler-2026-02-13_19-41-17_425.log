@@ -1,0 +1,710 @@
+
+--- 2026-02-13T19:41:17.466Z debug
+🪵  Writing logs to "/Users/jlloyd/Codex/.wrangler/.wrangler/logs/wrangler-2026-02-13_19-41-17_425.log"
+---
+
+--- 2026-02-13T19:41:17.466Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command started","timestamp":1771011677466,"properties":{"amplitude_session_id":1771011677464,"amplitude_event_id":0,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages dev","args":{}}}
+---
+
+--- 2026-02-13T19:41:17.470Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-13T19:41:17.488Z log
+
+ ⛅️ wrangler 3.114.17 (update available 4.65.0)
+---------------------------------------------------------
+
+---
+
+--- 2026-02-13T19:41:17.510Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical errors.
+  Run `npm install --save-dev wrangler@4` to update to the latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2026-02-13T19:41:17.512Z debug
+Compiling worker to "/Users/jlloyd/Codex/.wrangler/tmp/pages-hzJsaE/functionsWorker-0.4175907517615448.mjs"...
+---
+
+--- 2026-02-13T19:41:17.523Z debug
+No experimental flag store instantiated
+---
+
+--- 2026-02-13T19:41:17.523Z debug
+Attempted to use flag "MULTIWORKER" which has not been instantiated
+---
+
+--- 2026-02-13T19:41:17.534Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-02-13T19:41:17.535Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"build pages functions","timestamp":1771011677535,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-13T19:41:17.598Z debug
+.env file not found at ".dev.vars". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-13T19:41:17.598Z log
+No bindings found.
+---
+
+--- 2026-02-13T19:41:17.603Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"run pages dev","timestamp":1771011677603,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-13T19:41:17.626Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-13T19:41:17.626Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-02-13T19:41:17.627Z log
+⎔ Starting local server...
+---
+
+--- 2026-02-13T19:41:17.650Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-02-13T19:41:17.668Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"51152"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"51149","pathname":"/core:user:cityevents"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"508d75c6-67c1-40ad-a525-046a6a75ec98"},"liveReload":false,"proxyLogsToController":false,"internalDurableObjects":[],"entrypointAddresses":{"__INTERNAL_WRANGLER_MIDDLEWARE__":{"host":"127.0.0.1","port":51153},"default":{"host":"127.0.0.1","port":51154}}}}
+---
+
+--- 2026-02-13T19:41:17.668Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-02-13T19:41:17.668Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-02-13T19:41:17.669Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:51149/core:user:cityevents
+---
+
+--- 2026-02-13T19:41:17.670Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 135299329,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '1713234331809906540.5718994412439460633'
+    }
+  }
+}
+---
+
+--- 2026-02-13T19:41:17.670Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-02-13T19:41:17.670Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000001}
+---
+
+--- 2026-02-13T19:41:17.671Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Debugger.enable","id":100000002}
+---
+
+--- 2026-02-13T19:41:17.671Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Network.enable","id":100000003}
+---
+
+--- 2026-02-13T19:41:17.671Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000001, result: {} }
+---
+
+--- 2026-02-13T19:41:17.672Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Debugger.scriptParsed',
+  params: {
+    scriptId: '3',
+    url: 'file:///Users/jlloyd/Codex/.wrangler/tmp/dev-qVVDs4/functionsWorker-0.4175907517615448.js',
+    startLine: 0,
+    startColumn: 0,
+    endLine: 3042,
+    endColumn: 103,
+    executionContextId: 135299329,
+    hash: 'e991359d74064fa3f7df4f94eee39be1773852d76b63a54e731bf58effed8fa8',
+    buildId: '',
+    isLiveEdit: false,
+    sourceMapURL: 'functionsWorker-0.4175907517615448.js.map',
+    hasSourceURL: true,
+    isModule: true,
+    length: 112885,
+    scriptLanguage: 'JavaScript',
+    embedderName: 'functionsWorker-0.4175907517615448.js'
+  }
+}
+---
+
+--- 2026-02-13T19:41:17.672Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  id: 100000002,
+  result: { debuggerId: '7119082049421113563.1506918970351885016' }
+}
+---
+
+--- 2026-02-13T19:41:17.672Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000003, method: 'Network.enable', result: {} }
+---
+
+--- 2026-02-13T19:41:19.015Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '0',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 619336.673,
+    wallTime: 1771011679.014,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-13T19:41:19.024Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.responseReceived',
+  params: {
+    requestId: '0',
+    timestamp: 619336.682,
+    type: 'Document',
+    response: {
+      status: 200,
+      statusText: 'OK',
+      headers: [Object],
+      mimeType: 'text/html',
+      connectionReused: false,
+      connectionId: 0,
+      remotePort: 0,
+      fromDiskCache: false,
+      fromServiceWorker: false,
+      encodedDataLength: 0,
+      protocol: 'http/1.1',
+      securityState: 'unknown'
+    }
+  }
+}
+---
+
+--- 2026-02-13T19:41:19.024Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '0',
+    timestamp: 619336.682,
+    dataLength: 3390,
+    encodedDataLength: 3390
+  }
+}
+---
+
+--- 2026-02-13T19:41:19.026Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.loadingFinished',
+  params: {
+    requestId: '0',
+    timestamp: 619336.683,
+    encodedDataLength: 3390,
+    cfResponse: {
+      body: 'PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KICA8aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04IiAvPgogICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIiAvPgogICAgPHRpdGxlPkpvaG4gRC4gTGxveWQgfCBQYXBlciBUZXJtaW5hbCBQb3J0Zm9saW88L3RpdGxlPgogICAgPG1ldGEKICAgICAgbmFtZT0iZGVzY3JpcHRpb24iCiAgICAgIGNvbnRlbnQ9IkpvaG4gRC4gTGxveWQgcGVyc29uYWwgc2l0ZSBzdHlsZWQgYXMgYSBtb2Rlcm4gcGFwZXIgdGVybWluYWwgd2l0aCBBSSBza2lsbCBmb2xkZXIgbmF2aWdhdGlvbi4iCiAgICAvPgogICAgPG1ldGEgcHJvcGVydHk9Im9nOnRpdGxlIiBjb250ZW50PSJKb2huIEQuIExsb3lkIHwgUGFwZXIgVGVybWluYWwgUG9ydGZvbGlvIiAvPgogICAgPG1ldGEKICAgICAgcHJvcGVydHk9Im9nOmRlc2NyaXB0aW9uIgogICAgICBjb250ZW50PSJNb2Rlcm4gcGVyc29uYWwgd2Vic2l0ZSB0aGVtZWQgYWZ0ZXIgQUkgc2tpbGxzIGZvbGRlciBzdHJ1Y3R1cmVzIGFuZCBtYXJrZG93biBkb2NzIHdpdGggYSBwYXBlciB0ZXJtaW5hbCBhZXN0aGV0aWMuIgogICAgLz4KICAgIDxtZXRhIHByb3BlcnR5PSJvZzp0eXBlIiBjb250ZW50PSJ3ZWJzaXRlIiAvPgogICAgPG1ldGEgcHJvcGVydHk9Im9nOnVybCIgY29udGVudD0iaHR0cHM6Ly9qb2huZGxsb3lkLmNvbSIgLz4KICAgIDxtZXRhIG5hbWU9InR3aXR0ZXI6Y2FyZCIgY29udGVudD0ic3VtbWFyeV9sYXJnZV9pbWFnZSIgLz4KICAgIDxtZXRhIG5hbWU9InR3aXR0ZXI6dGl0bGUiIGNvbnRlbnQ9IkpvaG4gRC4gTGxveWQgfCBQYXBlciBUZXJtaW5hbCBQb3J0Zm9saW8iIC8+CiAgICA8bWV0YQogICAgICBuYW1lPSJ0d2l0dGVyOmRlc2NyaXB0aW9uIgogICAgICBjb250ZW50PSJFeHBsb3JlIEpvaG4ncyBwcm9maWxlIHRocm91Z2ggYSBtYXJrZG93bi1kcml2ZW4gZm9sZGVyIGludGVyZmFjZS4iCiAgICAvPgogICAgPGxpbmsgcmVsPSJwcmVjb25uZWN0IiBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tIiAvPgogICAgPGxpbmsgcmVsPSJwcmVjb25uZWN0IiBocmVmPSJodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tIiBjcm9zc29yaWdpbiAvPgogICAgPGxpbmsKICAgICAgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1KZXRCcmFpbnMrTW9ubzp3Z2h0QDQwMDs2MDA7NzAwJmZhbWlseT1Tb3JhOndnaHRANDAwOzYwMCZkaXNwbGF5PXN3YXAiCiAgICAgIHJlbD0ic3R5bGVzaGVldCIKICAgIC8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Ii9zdHlsZXMuY3NzIiAvPgogIDwvaGVhZD4KICA8Ym9keT4KICAgIDxkaXYgY2xhc3M9ImFtYmllbnQiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2Rpdj4KICAgIDxtYWluIGNsYXNzPSJmcmFtZSIgaWQ9InRvcCI+CiAgICAgIDxoZWFkZXIgY2xhc3M9InRpdGxlYmFyIHJldmVhbCI+CiAgICAgICAgPGRpdiBjbGFzcz0ibGlnaHRzIiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgICAgICAgICA8c3BhbiBjbGFzcz0ibGlnaHQgbGlnaHQtY2xvc2UiPjwvc3Bhbj4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJsaWdodCBsaWdodC1taW4iPjwvc3Bhbj4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJsaWdodCBsaWdodC1tYXgiPjwvc3Bhbj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8cCBjbGFzcz0id2luZG93LXRpdGxlIj5qb2huQHBvcnRmb2xpbzogfi9za2lsbHM8L3A+CiAgICAgICAgPHAgY2xhc3M9InJ1bnRpbWUiPjxzcGFuIGlkPSJydW50aW1lQ2xvY2siPi0tOi0tOi0tPC9zcGFuPiBsb2NhbDwvcD4KICAgICAgPC9oZWFkZXI+CgogICAgICA8c2VjdGlvbiBjbGFzcz0iY29uc29sZSByZXZlYWwiPgogICAgICAgIDxhc2lkZSBjbGFzcz0idHJlZS1wYW5lIiBhcmlhLWxhYmVsPSJTa2lsbCBmb2xkZXIgc3RydWN0dXJlIj4KICAgICAgICAgIDxwIGNsYXNzPSJwYW5lLXRpdGxlIj4vc2tpbGxzPC9wPgogICAgICAgICAgPHVsIGNsYXNzPSJ0cmVlIiBpZD0ic2tpbGxUcmVlIj4KICAgICAgICAgICAgPGxpPjxidXR0b24gY2xhc3M9InRyZWUtaXRlbSBhY3RpdmUiIGRhdGEtZG9jPSJyZWFkbWUiPlJFQURNRS5tZDwvYnV0dG9uPjwvbGk+CiAgICAgICAgICAgIDxsaT48YnV0dG9uIGNsYXNzPSJ0cmVlLWl0ZW0iIGRhdGEtZG9jPSJhYm91dCI+YWJvdXQvUFJPRklMRS5tZDwvYnV0dG9uPjwvbGk+CiAgICAgICAgICAgIDxsaT48YnV0dG9uIGNsYXNzPSJ0cmVlLWl0ZW0iIGRhdGEtZG9jPSJ3b3JrIj53b3JrL0VYUEVSSUVOQ0UubWQ8L2J1dHRvbj48L2xpPgogICAgICAgICAgICA8bGk+PGJ1dHRvbiBjbGFzcz0idHJlZS1pdGVtIiBkYXRhLWRvYz0icHJvamVjdHMiPnByb2plY3RzL0lOREVYLm1kPC9idXR0b24+PC9saT4KICAgICAgICAgICAgPGxpPjxidXR0b24gY2xhc3M9InRyZWUtaXRlbSIgZGF0YS1kb2M9ImNvbnRhY3QiPmNvbnRhY3QvQ09OTkVDVC5tZDwvYnV0dG9uPjwvbGk+CiAgICAgICAgICA8L3VsPgogICAgICAgIDwvYXNpZGU+CgogICAgICAgIDxhcnRpY2xlIGNsYXNzPSJkb2MtcGFuZSI+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJwcm9tcHQtbGluZSI+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJwcm9tcHQtdXNlciI+am9obkBwb3J0Zm9saW88L3NwYW4+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJwcm9tcHQtc3ltYm9sIj46PC9zcGFuPgogICAgICAgICAgICA8c3BhbiBjbGFzcz0icHJvbXB0LXBhdGgiPn4vc2tpbGxzPC9zcGFuPgogICAgICAgICAgICA8c3BhbiBjbGFzcz0icHJvbXB0LXN5bWJvbCI+JDwvc3Bhbj4KICAgICAgICAgICAgPHNwYW4gaWQ9InR5cGVkQ29tbWFuZCIgY2xhc3M9InR5cGVkIj48L3NwYW4+PHNwYW4gY2xhc3M9ImN1cnNvciIgYXJpYS1oaWRkZW49InRydWUiPjwvc3Bhbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBpZD0iZG9jQ29udGVudCIgY2xhc3M9Im1hcmtkb3duLWJvZHkiIGFyaWEtbGl2ZT0icG9saXRlIj48L2Rpdj4KICAgICAgICA8L2FydGljbGU+CiAgICAgIDwvc2VjdGlvbj4KCiAgICAgIDxmb290ZXIgY2xhc3M9InN0YXR1cyByZXZlYWwiPgogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9qb2huZGxsb3lkIiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub3JlZmVycmVyIj5MaW5rZWRJbjwvYT4KICAgICAgICA8c3Bhbj7CqSA8c3BhbiBpZD0ieWVhciI+PC9zcGFuPiBKb2huIEQuIExsb3lkPC9zcGFuPgogICAgICA8L2Zvb3Rlcj4KICAgIDwvbWFpbj4KCiAgICA8c2NyaXB0IHR5cGU9Im1vZHVsZSIgc3JjPSIvYXBwLmpzIj48L3NjcmlwdD4KICA8L2JvZHk+CjwvaHRtbD4K',
+      base64Encoded: true
+    }
+  }
+}
+---
+
+--- 2026-02-13T19:41:19.069Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '1',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/styles.css',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 619336.726,
+    wallTime: 1771011679.067,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-13T19:41:19.070Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '2',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/app.js',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 619336.727,
+    wallTime: 1771011679.068,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-13T19:41:19.081Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.requestWillBeSent',
+  params: {
+    requestId: '3',
+    loaderId: '',
+    request: {
+      url: 'http://127.0.0.1:8788/content/docs.js',
+      method: 'GET',
+      headers: [Object],
+      mixedContentType: 'blockable',
+      initialPriority: 'VeryLow',
+      referrerPolicy: 'unsafe-url',
+      isLinkPreload: false
+    },
+    timestamp: 619336.738,
+    wallTime: 1771011679.079,
+    initiator: { type: 'script', stack: [Object], lineNumber: 0 },
+    type: 'Fetch'
+  }
+}
+---
+
+--- 2026-02-13T19:41:19.081Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.responseReceived',
+  params: {
+    requestId: '3',
+    timestamp: 619336.74,
+    type: 'Script',
+    response: {
+      status: 200,
+      statusText: 'OK',
+      headers: [Object],
+      mimeType: 'application/javascript',
+      connectionReused: false,
+      connectionId: 0,
+      remotePort: 0,
+      fromDiskCache: false,
+      fromServiceWorker: false,
+      encodedDataLength: 0,
+      protocol: 'http/1.1',
+      securityState: 'unknown'
+    }
+  }
+}
+---
+
+--- 2026-02-13T19:41:19.083Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.dataReceived',
+  params: {
+    requestId: '3',
+    timestamp: 619336.74,
+    dataLength: 2921,
+    encodedDataLength: 2921
+  }
+}
+---
+
+--- 2026-02-13T19:41:19.085Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Network.loadingFinished',
+  params: {
+    requestId: '3',
+    timestamp: 619336.74,
+    encodedDataLength: 2921,
+    cfResponse: {
+      body: 'ZXhwb3J0IGNvbnN0IERPQ1MgPSB7CiAgcmVhZG1lOiB7CiAgICBjb21tYW5kOiAiY2F0IFJFQURNRS5tZCIsCiAgICBtYXJrZG93bjogYAojIEpvaG4gRC4gTGxveWQKSSBidWlsZCBwcm9kdWN0IGFuZCB0ZWNobm9sb2d5IGV4cGVyaWVuY2VzLgoKIyMgQWJvdXQgVGhpcyBTaXRlClRoaXMgaXMgaG9tZSBiYXNlIGZvciBteSBkaWdpdGFsIHByZXNlbmNlLiAKTm90ZTogSSBsaWtlIHRvIHRpbmtlciBhbmQgdGhpcyBzaXRlIGlzIG9mdGVuIG91dCBvZiBkYXRlIG9yIGJyb2tlbi4gCgojIyBDdXJyZW50IEZvY3VzCi0gSSdtIGV4cGVyaW1lbnRpbmcgd2l0aCBBaSBhbmQgaG93IGl0IGNhbiBoZWxwIGJ1c2luZXNzc2VzIHdpdGggdGhlaXIgcGF5bWVudHMuCmAsCiAgfSwKICBhYm91dDogewogICAgY29tbWFuZDogImNhdCBhYm91dC9QUk9GSUxFLm1kIiwKICAgIG1hcmtkb3duOiBgCiMgUFJPRklMRS5tZApJIGFtIGEgUHJvZHVjdCBNYW5hZ2VyIHdobyBsb3ZlcyB0ZWNobm9sb2d5IGFuZCBidWlsZGluZyB1c2VmdWwgcHJvZHVjdHMuCgojIyBDYXJlZXIgU3VtbWFyeQpJIGhhdmUgc3BlbnQgbXkgY2FyZWVyIHdvcmtpbmcgYWNyb3NzIHN0cmF0ZWd5LCBkaXNjb3ZlcnksIGRlbGl2ZXJ5LCBhbmQgcG9zdC1sYXVuY2ggaXRlcmF0aW9uLiBNb3N0IG9mIG15IHdvcmsgaGFzIGJlZW4gaW4gZmludGVjaCwgd2hlcmUgdHJ1c3QgYW5kIHJlbGlhYmlsaXR5IG1hdHRlciBhcyBtdWNoIGFzIHNwZWVkLgoKSSBlbmpveSB3b3JraW5nIHdpdGggY3Jvc3MtZnVuY3Rpb25hbCB0ZWFtcyB0byBtb3ZlIGZyb20gcm91Z2ggaWRlYXMgdG8gY2xlYXIgZGVjaXNpb25zIGFuZCBzaGlwcGVkIG91dGNvbWVzLiBJIGNhcmUgbW9zdCBhYm91dCB3b3JrIHRoYXQgaXMgdXNlZnVsLCBtZWFzdXJhYmxlLCBhbmQgZHVyYWJsZS4KCgpgLAogIH0sCiAgd29yazogewogICAgY29tbWFuZDogImNhdCB3b3JrL0VYUEVSSUVOQ0UubWQiLAogICAgbWFya2Rvd246IGAKIyBFWFBFUklFTkNFLm1kCiMjUHJvZmVzc2lvbmFsIEV4cGVyaWVuY2UKKipDbG92ZXIgKEZpc2VydikqKiB8IEZpbnRlY2ggLyBQYXltZW50cyB8IE93bnMgdGhlIHByb2R1Y3Qgcm9hZG1hcCBmb3IgZ2lmdCBjYXJkIGFuZCBwcmVwYWlkIHBsYXRmb3JtLiAKKipTaGFrZSBTaGFjayoqIHwgUVNSIC8gUGF5bWVudHMgfCBCdWlsdCBwYXltZW50IHBsYXRmb3JtIGluZnJhc3RydWN0dXJlIHBvd2VyaW5nIGtpb3NrLCBQT1MsIGFuZCBtb2JpbGUgb3JkZXJpbmcgYWNyb3NzIDUwMCsgbG9jYXRpb25zIHdpdGggbXVsdGktcHJvY2Vzc29yIGludGVncmF0aW9ucy4KKipTY2hvbGFzdGljKiogfCBFZFRlY2ggLyBQYXltZW50cyB8IE93bmVkIFBPUyBhbmQgcGF5bWVudCBwbGF0Zm9ybSBkZXBsb3llZCBhdCAxMDBLKyBhbm51YWwgcmV0YWlsIHBvcC11cCBldmVudHMsIGludGVncmF0aW5nIGxveWFsdHksIGVHaWZ0LCBhbmQgZVdhbGxldCBjYXBhYmlsaXRpZXMuCioqQW1wbGlmeSoqIHwgRWRUZWNoIHwgQnVpbHQgQW5kcm9pZCBtb2JpbGUgYXBwbGljYXRpb25zIG9uIGN1c3RvbSBoYXJkd2FyZSBmb3IgSy0xMiBTdHVkZW50cyBhbmQgRWR1Y2F0b3JzCioqV29yayBNYXJrZXQgKGFjcXVpcmVkIGJ5IEFEUCkqKiB8IE1hcmtldHBsYWNlIC8gV29ya2ZvcmNlIE1hbmFnZW1lbnQgfCBCdWlsdCBhbmQgbWFpbnRhaW5lZCB0ZXN0IGF1dG9tYXRpb24gZnJhbWV3b3JrcyBmb3Igd2ViIGFuZCBtb2JpbGUgYXBwbGljYXRpb25zLCBtYW5hZ2luZyBDSS9DRCBkZXBsb3ltZW50cyBmb3IgYW4gZW50ZXJwcmlzZSBTYWFTIHBsYXRmb3JtLgoqKkNvbHVtYmlhIFVuaXZlcnNpdHkqKiB8IEhpZ2hlciBFZHVjYXRpb24gLyBJVCB8IExlZCBhIDE1LXBlcnNvbiB0ZWNobmljYWwgdGVhbSBzdXBwb3J0aW5nIDIsNTAwKyB1c2VycyBpbiBhY2FkZW1pYyBjb21wdXRpbmcgYW5kIHJlc2VhcmNoLgoqKkxvd2UncyBDb21wYW5pZXMqKiB8IFN1cHBseSBDaGFpbiB8IERyb3ZlIHByb2Nlc3MgaW1wcm92ZW1lbnRzIGluIGRpc3RyaWJ1dGlvbiBvcGVyYXRpb25zIGFzIGFuIEluZHVzdHJpYWwgRW5naW5lZXIsIGluY2x1ZGluZyBlbmdpbmVlcmVkIHN0YW5kYXJkcyBhbmQgZmFjaWxpdHkgb3BlcmF0aW9ucy4KKipHRSoqIHwgSW5kdXN0cmlhbCBBdXRvbWF0aW9uIHwgRGVzaWduZWQgYW5kIHN1cHBvcnRlZCBpbmR1c3RyaWFsIGluc3RydW1lbnRhdGlvbiBhbmQgY29udHJvbCBzeXN0ZW1zIHdpdGhpbiBHRSdzIEF1dG9tYXRpb24gJiBDb250cm9scyBncm91cC4KCiMjRWR1Y2F0aW9uCioqVmlyZ2luaWEgVGVjaCoqIHwgSW5kdXN0cmlhbCBhbmQgU3lzdGVtcyBFbmdpbmVlcmluZwoKYCwKICB9LAogIHByb2plY3RzOiB7CiAgICBjb21tYW5kOiAiY2F0IHByb2plY3RzL0lOREVYLm1kIiwKICAgIG1hcmtkb3duOiBgCiMgSU5ERVgubWQKIyMgQ3VycmVudCBQcm9qZWN0cwotICoqQm9vayBJdDoqKiBSZWFkaW5nIGlzIG1hZ2ljLCBQaXp6YSBpcyBtb3RpdmF0aW5nLgotIFtSZWxvUmlkZXNdKGh0dHBzOi8vcmVsb3JpZGVzLmNvbSk6IFBlZXItdG8tUGVlciBWZWhpY2xlIFJlbG9jYXRpb24gTWFkZSBTaW1wbGUuCgoKXGBcYFxgdHh0CnNraWxscy8K4pSc4pSA4pSAIGFib3V0LwrilJzilIDilIAgd29yay8K4pSU4pSA4pSAIHByb2plY3RzLwpcYFxgXGAKYCwKICB9LAogIGNvbnRhY3Q6IHsKICAgIGNvbW1hbmQ6ICJjYXQgY29udGFjdC9DT05ORUNULm1kIiwKICAgIG1hcmtkb3duOiBgCiMgQ09OTkVDVC5tZAotIFg6IFtAam9obmRsbG95ZF0oaHR0cHM6Ly94LmNvbS9qb2huZGxsb3lkKQotIExpbmtlZEluOiBbbGlua2VkaW4uY29tL2luL2pvaG5kbGxveWRdKGh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9qb2huZGxsb3lkKQoKCiMjIFJlYWNoIE91dApQbGVhc2UgcmVhY2ggb3V0IHZpYSBMaW5rZWRJbi4KYCwKICB9LAp9Owo=',
+      base64Encoded: true
+    }
+  }
+}
+---
+
+--- 2026-02-13T19:41:27.672Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000004}
+---
+
+--- 2026-02-13T19:41:27.674Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000004, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:41:37.675Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000005}
+---
+
+--- 2026-02-13T19:41:37.678Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000005, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:41:47.670Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000006}
+---
+
+--- 2026-02-13T19:41:47.671Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000006, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:41:57.671Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000007}
+---
+
+--- 2026-02-13T19:41:57.675Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000007, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:42:07.670Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000008}
+---
+
+--- 2026-02-13T19:42:07.672Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000008, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:42:17.672Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000009}
+---
+
+--- 2026-02-13T19:42:17.675Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000009, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:42:27.672Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000010}
+---
+
+--- 2026-02-13T19:42:27.675Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000010, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:42:37.672Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000011}
+---
+
+--- 2026-02-13T19:42:37.675Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000011, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:42:47.672Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000012}
+---
+
+--- 2026-02-13T19:42:47.674Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000012, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:42:57.672Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000013}
+---
+
+--- 2026-02-13T19:42:57.674Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000013, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:43:07.672Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000014}
+---
+
+--- 2026-02-13T19:43:07.674Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000014, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:43:17.672Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000015}
+---
+
+--- 2026-02-13T19:43:17.674Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000015, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:43:27.672Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000016}
+---
+
+--- 2026-02-13T19:43:27.674Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000016, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:43:37.673Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000017}
+---
+
+--- 2026-02-13T19:43:37.674Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000017, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:43:47.672Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000018}
+---
+
+--- 2026-02-13T19:43:47.676Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000018, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:43:57.672Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000019}
+---
+
+--- 2026-02-13T19:43:57.674Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000019, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:44:07.620Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000020}
+---
+
+--- 2026-02-13T19:44:07.622Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000020, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:44:17.620Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000021}
+---
+
+--- 2026-02-13T19:44:17.621Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000021, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:44:27.620Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000022}
+---
+
+--- 2026-02-13T19:44:27.621Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000022, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:44:37.622Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000023}
+---
+
+--- 2026-02-13T19:44:37.623Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000023, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:44:47.622Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000024}
+---
+
+--- 2026-02-13T19:44:47.623Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000024, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:44:57.622Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000025}
+---
+
+--- 2026-02-13T19:44:57.623Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000025, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:45:07.621Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000026}
+---
+
+--- 2026-02-13T19:45:07.624Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000026, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:45:17.622Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000027}
+---
+
+--- 2026-02-13T19:45:17.624Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000027, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:45:27.621Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000028}
+---
+
+--- 2026-02-13T19:45:27.624Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000028, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:45:37.620Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000029}
+---
+
+--- 2026-02-13T19:45:37.622Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000029, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:45:47.623Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000030}
+---
+
+--- 2026-02-13T19:45:47.624Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000030, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:45:57.620Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000031}
+---
+
+--- 2026-02-13T19:45:57.622Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000031, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:46:07.621Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000032}
+---
+
+--- 2026-02-13T19:46:07.622Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000032, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:46:17.620Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000033}
+---
+
+--- 2026-02-13T19:46:17.622Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000033, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:46:27.622Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000034}
+---
+
+--- 2026-02-13T19:46:27.625Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000034, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:46:37.620Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000035}
+---
+
+--- 2026-02-13T19:46:37.621Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000035, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:46:47.622Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000036}
+---
+
+--- 2026-02-13T19:46:47.623Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000036, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:46:57.622Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000037}
+---
+
+--- 2026-02-13T19:46:57.624Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000037, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:47:07.620Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000038}
+---
+
+--- 2026-02-13T19:47:07.622Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000038, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:47:17.623Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000039}
+---
+
+--- 2026-02-13T19:47:17.625Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000039, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:47:27.622Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000040}
+---
+
+--- 2026-02-13T19:47:27.624Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000040, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:47:37.621Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000041}
+---
+
+--- 2026-02-13T19:47:37.623Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000041, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:47:47.623Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000042}
+---
+
+--- 2026-02-13T19:47:47.625Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000042, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:47:57.622Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000043}
+---
+
+--- 2026-02-13T19:47:57.624Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000043, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:48:07.620Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000044}
+---
+
+--- 2026-02-13T19:48:07.622Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000044, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:48:17.623Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000045}
+---
+
+--- 2026-02-13T19:48:17.625Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000045, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:48:27.619Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000046}
+---
+
+--- 2026-02-13T19:48:27.621Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000046, result: { id: '6e0908e1187339d1' } }
+---
+
+--- 2026-02-13T19:48:37.621Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000047}
+---
+
+--- 2026-02-13T19:48:37.623Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000047, result: { id: '6e0908e1187339d1' } }
+---

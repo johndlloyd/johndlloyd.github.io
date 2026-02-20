@@ -1,0 +1,198 @@
+
+--- 2026-02-12T23:09:57.644Z debug
+🪵  Writing logs to "/Users/jlloyd/Codex/.wrangler/.wrangler/logs/wrangler-2026-02-12_23-09-57_581.log"
+---
+
+--- 2026-02-12T23:09:57.644Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command started","timestamp":1770937797643,"properties":{"amplitude_session_id":1770937797642,"amplitude_event_id":0,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages dev","args":{}}}
+---
+
+--- 2026-02-12T23:09:57.648Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-12T23:09:58.520Z log
+
+ ⛅️ wrangler 3.114.17 (update available 4.65.0)
+-----------------------------------------------
+
+---
+
+--- 2026-02-12T23:09:58.956Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical errors.
+  Run `npm install --save-dev wrangler@4` to update to the latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2026-02-12T23:09:58.967Z debug
+Compiling worker to "/Users/jlloyd/Codex/.wrangler/tmp/pages-GraXK3/functionsWorker-0.3159990831268833.mjs"...
+---
+
+--- 2026-02-12T23:09:58.989Z debug
+No experimental flag store instantiated
+---
+
+--- 2026-02-12T23:09:58.989Z debug
+Attempted to use flag "MULTIWORKER" which has not been instantiated
+---
+
+--- 2026-02-12T23:09:59.006Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-02-12T23:09:59.007Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"build pages functions","timestamp":1770937799007,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-12T23:09:59.072Z debug
+.env file not found at ".dev.vars". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-12T23:09:59.073Z log
+No bindings found.
+---
+
+--- 2026-02-12T23:09:59.078Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"run pages dev","timestamp":1770937799078,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-12T23:09:59.102Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-12T23:09:59.102Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-02-12T23:09:59.103Z log
+⎔ Starting local server...
+---
+
+--- 2026-02-12T23:09:59.861Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-02-12T23:09:59.863Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Debugger.scriptParsed',
+  params: {
+    scriptId: '3',
+    url: 'file:///Users/jlloyd/Codex/.wrangler/tmp/dev-Iwz60E/functionsWorker-0.3159990831268833.js',
+    startLine: 0,
+    startColumn: 0,
+    endLine: 3042,
+    endColumn: 103,
+    executionContextId: 404012065,
+    hash: '73541b03d1bade3f542f1e6207f895f65e6d8a489efa723976e1bbe3030aa46d',
+    buildId: '',
+    isLiveEdit: false,
+    sourceMapURL: 'functionsWorker-0.3159990831268833.js.map',
+    hasSourceURL: true,
+    isModule: true,
+    length: 112885,
+    scriptLanguage: 'JavaScript',
+    embedderName: 'functionsWorker-0.3159990831268833.js'
+  }
+}
+---
+
+--- 2026-02-12T23:09:59.863Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"58369"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"58365","pathname":"/core:user:cityevents"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"2d5ba848-ca3f-4939-aeb8-9b5e7b806e20"},"liveReload":false,"proxyLogsToController":false,"internalDurableObjects":[],"entrypointAddresses":{"__INTERNAL_WRANGLER_MIDDLEWARE__":{"host":"127.0.0.1","port":58370},"default":{"host":"127.0.0.1","port":58371}}}}
+---
+
+--- 2026-02-12T23:09:59.864Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  id: 100000002,
+  result: { debuggerId: '4004387549434562562.1016733135311364221' }
+}
+---
+
+--- 2026-02-12T23:09:59.864Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-02-12T23:09:59.865Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:58365/core:user:cityevents
+---
+
+--- 2026-02-12T23:09:59.866Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-02-12T23:09:59.867Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-02-12T23:09:59.867Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000001}
+---
+
+--- 2026-02-12T23:09:59.868Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Debugger.enable","id":100000002}
+---
+
+--- 2026-02-12T23:09:59.868Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Network.enable","id":100000003}
+---
+
+--- 2026-02-12T23:09:59.869Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 404012065,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '7358477003144593868.3922892233966720205'
+    }
+  }
+}
+---
+
+--- 2026-02-12T23:09:59.869Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000001, result: {} }
+---
+
+--- 2026-02-12T23:09:59.871Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000003, method: 'Network.enable', result: {} }
+---
+
+--- 2026-02-12T23:10:09.863Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000004}
+---
+
+--- 2026-02-12T23:10:09.866Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000004, result: { id: '89dbf06290e96946' } }
+---
+
+--- 2026-02-12T23:10:16.425Z debug
+DevEnv teardown beginning...
+---
+
+--- 2026-02-12T23:10:16.426Z debug
+ConfigController teardown beginning...
+---
+
+--- 2026-02-12T23:10:16.428Z debug
+BundlerController teardown beginning...
+---
+
+--- 2026-02-12T23:10:16.431Z debug
+LocalRuntimeController teardown beginning...
+---
+
+--- 2026-02-12T23:10:16.431Z log
+⎔ Shutting down local server...
+---
+
+--- 2026-02-12T23:10:16.431Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-12T23:10:16.431Z debug
+RemoteRuntimeController teardown complete
+---

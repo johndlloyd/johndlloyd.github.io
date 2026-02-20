@@ -1,0 +1,143 @@
+
+--- 2026-02-05T05:14:32.954Z debug
+🪵  Writing logs to "/Users/jlloyd/Codex/.wrangler/.wrangler/logs/wrangler-2026-02-05_05-14-32_881.log"
+---
+
+--- 2026-02-05T05:14:32.954Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command started","timestamp":1770268472954,"properties":{"amplitude_session_id":1770268472951,"amplitude_event_id":0,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["noBundle"],"argsCombination":"noBundle","command":"wrangler pages dev","args":{}}}
+---
+
+--- 2026-02-05T05:14:32.961Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T05:14:32.990Z log
+
+ ⛅️ wrangler 3.114.17 (update available 4.62.0)
+---------------------------------------------------------
+
+---
+
+--- 2026-02-05T05:14:33.050Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical errors.
+  Run `npm install --save-dev wrangler@4` to update to the latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2026-02-05T05:14:33.057Z debug
+Compiling worker to "/Users/jlloyd/Codex/.wrangler/tmp/pages-h6ldVA/functionsWorker-0.6626761100649129.mjs"...
+---
+
+--- 2026-02-05T05:14:33.084Z debug
+No experimental flag store instantiated
+---
+
+--- 2026-02-05T05:14:33.085Z debug
+Attempted to use flag "MULTIWORKER" which has not been instantiated
+---
+
+--- 2026-02-05T05:14:33.103Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-02-05T05:14:33.104Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"build pages functions","timestamp":1770268473104,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-05T05:14:33.189Z debug
+.env file not found at ".dev.vars". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T05:14:33.189Z log
+No bindings found.
+---
+
+--- 2026-02-05T05:14:33.196Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"run pages dev","timestamp":1770268473196,"properties":{"category":"Workers","wranglerVersion":"3.114.17","os":"darwin:arm64"}}
+---
+
+--- 2026-02-05T05:14:33.217Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-05T05:14:33.217Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-02-05T05:14:33.218Z log
+⎔ Starting local server...
+---
+
+--- 2026-02-05T05:14:33.302Z error
+✘ [ERROR] service core:user:cityevents: Uncaught Error: No such module "wrangler:modules-watch".
+
+
+---
+
+--- 2026-02-05T05:14:33.303Z error
+✘ [ERROR]   imported from "functionsWorker-0.6626761100649129.js"
+
+
+---
+
+--- 2026-02-05T05:14:33.306Z debug
+Error in LocalRuntimeController: Error reloading local server
+ MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at #assembleAndUpdateConfig (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:17005:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Mutex.runWith (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:2504:16)
+    at async #waitForReady (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:17062:5)
+    at async #onBundleComplete (/Users/jlloyd/Codex/node_modules/wrangler/wrangler-dist/cli.js:95812:29)
+    at async Mutex.runWith (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:2504:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}
+---
+
+--- 2026-02-05T05:14:33.306Z debug
+=> Error contextual data: undefined
+---
+
+--- 2026-02-05T05:14:33.306Z log
+
+---
+
+--- 2026-02-05T05:14:33.306Z error
+✘ [ERROR] The Workers runtime failed to start. There is likely additional logging output above.
+
+
+---
+
+--- 2026-02-05T05:14:33.306Z debug
+MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at #assembleAndUpdateConfig (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:17005:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Mutex.runWith (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:2504:16)
+    at async #waitForReady (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:17062:5)
+    at async #onBundleComplete (/Users/jlloyd/Codex/node_modules/wrangler/wrangler-dist/cli.js:95812:29)
+    at async Mutex.runWith (/Users/jlloyd/Codex/node_modules/miniflare/dist/src/index.js:2504:16)
+---
+
+--- 2026-02-05T05:14:33.306Z log
+If you think this is a bug then please create an issue at https://github.com/cloudflare/workers-sdk/issues/new/choose
+---
+
+--- 2026-02-05T05:14:33.306Z log
+Note that there is a newer version of Wrangler available (4.62.0). Consider checking whether upgrading resolves this error.
+---
+
+--- 2026-02-05T05:14:33.369Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-02-05T05:15:06.461Z debug
+Sentry: Reporting disabled - would have sent MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above..
+---
+
+--- 2026-02-05T05:15:06.463Z debug
+Metrics dispatcher: Posting data {"deviceId":"932c7948-a82c-4427-a5a3-dedc87db15d3","event":"wrangler command errored","timestamp":1770268506463,"properties":{"amplitude_session_id":1770268472951,"amplitude_event_id":1,"wranglerVersion":"3.114.17","osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112","nodeVersion":25,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["noBundle"],"argsCombination":"noBundle","command":"wrangler pages dev","args":{},"durationMs":33525,"durationSeconds":33.525,"durationMinutes":0.55875}}
+---
