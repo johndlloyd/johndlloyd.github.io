@@ -53,7 +53,7 @@ Select a project below to view more detail.
     markdown: `
 # INDEX.md
 ## Articles
-Long-form writing now lives directly in this site (no Jekyll dependency).
+
 
 Select an article below to read it.
 `,
