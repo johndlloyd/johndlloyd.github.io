@@ -175,6 +175,10 @@ function setActiveNav(docKey) {
   });
 }
 
+function setHash(hash) {
+  history.replaceState(null, "", `#${hash}`);
+}
+
 function renderDocMarkdown(docKey) {
   const doc = DOCS[docKey];
   if (!doc || !docContent) return;
@@ -183,6 +187,7 @@ function renderDocMarkdown(docKey) {
 }
 
 function renderProjectsIndex() {
+  setHash("projects");
   const doc = DOCS.projects;
   if (!doc || !docContent) return;
   const cards = PROJECTS.map(
@@ -233,10 +238,12 @@ function renderProjectDetail(projectId) {
       <p>${actionHtml}</p>
     </div>
   `;
+  setHash(`projects/${project.id}`);
   typeCommand(`cat projects/${project.id}.md`);
 }
 
 function renderArticlesIndex() {
+  setHash("articles");
   const doc = DOCS.articles;
   if (!doc || !docContent) return;
   const cards = ARTICLES.map(
@@ -264,6 +271,7 @@ function renderArticleDetail(articleId) {
       <p><small>Published: ${escapeHtml(article.published)}</small></p>
     </div>
   `;
+  setHash(`articles/${article.id}`);
   typeCommand(`cat articles/${article.id}.md`);
 }
 
@@ -278,6 +286,7 @@ function setActiveDoc(docKey) {
     renderArticlesIndex();
     return;
   }
+  setHash(docKey);
   renderDocMarkdown(docKey);
 }
 
@@ -312,4 +321,27 @@ if (docContent) {
   });
 }
 
-setActiveDoc("readme");
+function routeFromHash() {
+  const hash = window.location.hash.slice(1);
+  if (!hash) {
+    setActiveDoc("readme");
+    return;
+  }
+  const [section, id] = hash.split("/");
+  if (section === "projects" && id) {
+    activeDocKey = "projects";
+    setActiveNav("projects");
+    renderProjectDetail(id);
+  } else if (section === "articles" && id) {
+    activeDocKey = "articles";
+    setActiveNav("articles");
+    renderArticleDetail(id);
+  } else if (DOCS[section]) {
+    setActiveDoc(section);
+  } else {
+    setActiveDoc("readme");
+  }
+}
+
+window.addEventListener("hashchange", routeFromHash);
+routeFromHash();
