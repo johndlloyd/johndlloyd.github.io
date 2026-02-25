@@ -1,5 +1,17 @@
 export const PROJECTS = [
   {
+    id: "clearance",
+    title: "Clearance",
+    status: "Live",
+    tags: ["macOS", "Networking", "Swift"],
+    summary: "A native macOS menu bar app for monitoring and managing your NextDNS activity.",
+    detail:
+      "Clearance is a lightweight macOS menu bar client for NextDNS — the DNS-based content filter I use to protect my home network. I wanted a way to see what was being blocked in real time and allowlist domains without opening a browser tab every time.\n\n**What it does:**\n\n- Shows the last 15 blocked domains in a floating monitoring window\n- One-click allow: adds a domain to your NextDNS allowlist instantly\n- Live mode: toggles between 30-second and 5-second refresh intervals\n- Tag/follow specific domains with a red border that persists across refreshes\n- Flush DNS cache with a single click (prompts for admin password)\n- Detects whether NextDNS is active on your network via scutil\n\nBuilt entirely in SwiftUI with no third-party dependencies. Uses `MenuBarExtra` with a `.menu` style scene plus a standalone floating `Window` scene.",
+    icon: "/images/clearance-icon.png",
+    screenshot: "/images/clearance-screenshot.png",
+    downloadLink: "https://johndeloyd.com/downloads/Clearance.dmg",
+  },
+  {
     id: "relorides",
     title: "ReloRides",
     status: "In Development",
@@ -21,12 +33,12 @@ export const PROJECTS = [
   },
   {
     id: "monitor-the-skituation",
-    title: "Monitor The Skituation",
+    title: "Monitor The Ski-tuation",
     status: "Live",
     tags: ["AI", "Monitoring", "Web App"],
-    summary: "A lightweight app for tracking and summarizing important weather developments in one place.",
+    summary: "A fun app for monitoring traffic cams and ski conditions across Montana.",
     detail:
-      "Monitor The Situation is a focused monitoring app built to make it easier to follow fast-moving topics. The core idea is simple: reduce noise, keep signal high, and give a clear view of what changed and why it matters. We built it as a fast, modern web app with an emphasis on readability and quick scanning.",
+      "Monitor The Ski-tuation is a focused dashboard for keeping tabs on Montana's mountains and roads. Whether you're planning a powder day or checking the pass before a drive, it pulls together live traffic cam feeds and current ski conditions into one place so you're not bouncing between a dozen different sites.",
     link: "https://monitor-the-situation.vercel.app",
   },
 ];

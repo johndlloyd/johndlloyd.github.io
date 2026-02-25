@@ -203,17 +203,34 @@ function renderProjectsIndex() {
 function renderProjectDetail(projectId) {
   const project = PROJECTS.find((item) => item.id === projectId);
   if (!project || !docContent) return;
-  const link = project.link
-    ? `<p><a href="${escapeHtml(project.link)}" target="_blank" rel="noreferrer">Visit project</a></p>`
+
+  const iconHtml = project.icon
+    ? `<img src="${escapeHtml(project.icon)}" alt="${escapeHtml(project.title)} icon" class="project-icon" />`
     : "";
+
+  const screenshotHtml = project.screenshot
+    ? `<img src="${escapeHtml(project.screenshot)}" alt="${escapeHtml(project.title)} screenshot" class="project-screenshot" />`
+    : "";
+
+  const actionHtml = project.downloadLink
+    ? `<a href="${escapeHtml(project.downloadLink)}" class="content-link" download>Download</a>`
+    : project.link
+    ? `<a href="${escapeHtml(project.link)}" target="_blank" rel="noreferrer" class="content-link">Visit project</a>`
+    : "";
+
   docContent.innerHTML = `
     <div class="markdown-body-inner">
       <button class="content-link secondary" data-action="back-projects">← Back to projects</button>
-      <h1>${escapeHtml(project.title)}</h1>
-      <p><strong>Status:</strong> ${escapeHtml(project.status)}</p>
-      <p><strong>Tags:</strong> ${escapeHtml(project.tags.join(", "))}</p>
-      <p>${escapeHtml(project.detail)}</p>
-      ${link}
+      <div class="project-header">
+        ${iconHtml}
+        <div>
+          <h1>${escapeHtml(project.title)}</h1>
+          <p><strong>Status:</strong> ${escapeHtml(project.status)} &nbsp;·&nbsp; <strong>Tags:</strong> ${escapeHtml(project.tags.join(", "))}</p>
+        </div>
+      </div>
+      ${markdownToHtml(project.detail)}
+      ${screenshotHtml}
+      <p>${actionHtml}</p>
     </div>
   `;
   typeCommand(`cat projects/${project.id}.md`);
