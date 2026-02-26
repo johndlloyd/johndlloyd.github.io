@@ -191,7 +191,7 @@ function renderProjectsIndex() {
         <h3>${escapeHtml(project.title)}</h3>
         <p>${escapeHtml(project.summary)}</p>
         <p><small>${escapeHtml(project.status)} • ${escapeHtml(project.tags.join(", "))}</small></p>
-        <button class="content-link" data-project-id="${escapeHtml(project.id)}">View Project</button>
+        <a class="content-link" href="#/projects/${escapeHtml(project.id)}">View Project</a>
       </article>
     `
   ).join("");
@@ -208,7 +208,7 @@ function renderProjectDetail(projectId) {
     : "";
   docContent.innerHTML = `
     <div class="markdown-body-inner">
-      <button class="content-link secondary" data-action="back-projects">← Back to projects</button>
+      <a class="content-link secondary" href="#/projects">← Back to projects</a>
       <h1>${escapeHtml(project.title)}</h1>
       <p><strong>Status:</strong> ${escapeHtml(project.status)}</p>
       <p><strong>Tags:</strong> ${escapeHtml(project.tags.join(", "))}</p>
@@ -228,7 +228,7 @@ function renderArticlesIndex() {
         <h3>${escapeHtml(article.title)}</h3>
         <p>${escapeHtml(article.summary)}</p>
         <p><small>${escapeHtml(article.published)}</small></p>
-        <button class="content-link" data-article-id="${escapeHtml(article.id)}">Read Article</button>
+        <a class="content-link" href="#/articles/${escapeHtml(article.id)}">Read Article</a>
       </article>
     `
   ).join("");
@@ -242,7 +242,7 @@ function renderArticleDetail(articleId) {
   if (!article || !docContent) return;
   docContent.innerHTML = `
     <div class="markdown-body-inner">
-      <button class="content-link secondary" data-action="back-articles">← Back to articles</button>
+      <a class="content-link secondary" href="#/articles">← Back to articles</a>
       ${markdownToHtml(article.markdown)}
       <p><small>Published: ${escapeHtml(article.published)}</small></p>
     </div>
@@ -250,9 +250,12 @@ function renderArticleDetail(articleId) {
   typeCommand(`cat articles/${article.id}.md`);
 }
 
-function setActiveDoc(docKey) {
+function setActiveDoc(docKey, updateHash = true) {
   activeDocKey = docKey;
   setActiveNav(docKey);
+  if (updateHash) {
+    window.location.hash = `/${docKey}`;
+  }
   if (docKey === "projects") {
     renderProjectsIndex();
     return;
@@ -265,34 +268,48 @@ function setActiveDoc(docKey) {
 }
 
 treeButtons.forEach((button) => {
-  button.addEventListener("click", () => setActiveDoc(button.dataset.doc));
+  button.addEventListener("click", () => setActiveDoc(button.dataset.doc, true));
 });
 
-if (docContent) {
-  docContent.addEventListener("click", (event) => {
-    const target = event.target;
-    if (!(target instanceof HTMLElement)) return;
+function renderFromRoute() {
+  const raw = window.location.hash.replace(/^#/, "").replace(/^\/+/, "");
+  if (!raw) {
+    setActiveDoc("readme", false);
+    return;
+  }
 
-    const projectId = target.dataset.projectId;
-    if (projectId) {
-      renderProjectDetail(projectId);
-      return;
-    }
+  const segments = raw.split("/").filter(Boolean);
+  const [root, slug] = segments;
 
-    const articleId = target.dataset.articleId;
-    if (articleId) {
-      renderArticleDetail(articleId);
-      return;
-    }
-
-    const action = target.dataset.action;
-    if (action === "back-projects" && activeDocKey === "projects") {
+  if (root === "projects") {
+    activeDocKey = "projects";
+    setActiveNav("projects");
+    if (slug) {
+      renderProjectDetail(slug);
+    } else {
       renderProjectsIndex();
     }
-    if (action === "back-articles" && activeDocKey === "articles") {
+    return;
+  }
+
+  if (root === "articles") {
+    activeDocKey = "articles";
+    setActiveNav("articles");
+    if (slug) {
+      renderArticleDetail(slug);
+    } else {
       renderArticlesIndex();
     }
-  });
+    return;
+  }
+
+  if (DOCS[root]) {
+    setActiveDoc(root, false);
+    return;
+  }
+
+  setActiveDoc("readme", false);
 }
 
-setActiveDoc("readme");
+window.addEventListener("hashchange", renderFromRoute);
+renderFromRoute();

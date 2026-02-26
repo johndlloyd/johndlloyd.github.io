@@ -292,9 +292,11 @@ body {
   border-radius: 8px;
   background: var(--panel-soft);
   color: var(--ink);
+  display: inline-block;
   font: inherit;
   padding: 7px 10px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .content-link:hover,
@@ -305,6 +307,10 @@ body {
 
 .content-link.secondary {
   margin-bottom: 12px;
+}
+
+.markdown-body .content-link {
+  color: var(--ink);
 }
 
 .markdown-body-inner p small {
