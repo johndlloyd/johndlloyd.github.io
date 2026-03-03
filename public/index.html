@@ -3,72 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>John D. Lloyd | Paper Terminal Portfolio</title>
+    <title>John D. Lloyd | Fintech Product Manager</title>
     <meta
       name="description"
-      content="John D. Lloyd personal site styled as a modern paper terminal with AI skill folder navigation."
+      content="John D. Lloyd is a tech-enabled fintech product manager focused on trust, growth, and execution quality."
     />
-    <meta property="og:title" content="John D. Lloyd | Paper Terminal Portfolio" />
+    <meta property="og:title" content="John D. Lloyd | Fintech Product Manager" />
     <meta
       property="og:description"
-      content="Modern personal website themed after AI skills folder structures and markdown docs with a paper terminal aesthetic."
+      content="Long-form profile and projects from John D. Lloyd: product strategy, delivery, and practical execution."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://johndlloyd.com" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="John D. Lloyd | Paper Terminal Portfolio" />
+    <meta name="twitter:title" content="John D. Lloyd | Fintech Product Manager" />
     <meta
       name="twitter:description"
-      content="Explore John's profile through a markdown-driven folder interface."
+      content="Long-form profile and project list from John D. Lloyd."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <div class="ambient" aria-hidden="true"></div>
-    <main class="frame" id="top">
-      <header class="titlebar reveal">
-        <div class="lights" aria-hidden="true">
-          <span class="light light-close"></span>
-          <span class="light light-min"></span>
-          <span class="light light-max"></span>
-        </div>
-        <p class="window-title">john@portfolio: ~/skills</p>
-        <p class="runtime"><span id="runtimeClock">--:--:--</span> local</p>
+    <main class="page">
+      <header class="intro" id="top">
+        <p class="eyebrow">John D. Lloyd / tech-enabled fintech product manager</p>
+        <h1>Build clearly. Ship reliably. Keep the product human.</h1>
+        <p class="lede">
+          I lead products where trust, growth, and execution quality all matter. My work spans strategy through
+          delivery, with practical collaboration across design, engineering, and operations.
+        </p>
+        <p class="jump-links">
+          <a href="#about">About</a> · <a href="#experience">Experience</a> · <a href="#projects">Projects</a>
+        </p>
       </header>
 
-      <section class="console reveal">
-        <aside class="tree-pane" aria-label="Skill folder structure">
-          <p class="pane-title">/skills</p>
-          <ul class="tree" id="skillTree">
-            <li><button class="tree-item active" data-doc="readme">README.md</button></li>
-            <li><button class="tree-item" data-doc="about">about/PROFILE.md</button></li>
-            <li><button class="tree-item" data-doc="work">work/EXPERIENCE.md</button></li>
-            <li><button class="tree-item" data-doc="projects">projects/INDEX.md</button></li>
-            <li><button class="tree-item" data-doc="articles">articles/INDEX.md</button></li>
-            <li><button class="tree-item" data-doc="contact">contact/CONNECT.md</button></li>
-          </ul>
-        </aside>
-
-        <article class="doc-pane">
-          <div class="prompt-line">
-            <span class="prompt-user">john@portfolio</span>
-            <span class="prompt-symbol">:</span>
-            <span class="prompt-path">~/skills</span>
-            <span class="prompt-symbol">$</span>
-            <span id="typedCommand" class="typed"></span><span class="cursor" aria-hidden="true"></span>
-          </div>
-          <div id="docContent" class="markdown-body" aria-live="polite"></div>
-        </article>
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          I have spent my career translating complex business and platform constraints into products that are useful,
+          measurable, and durable. Most of my work has been in regulated or high-trust environments where reliability
+          matters as much as speed.
+        </p>
+        <p>
+          My approach is direct: define the real problem, align teams around clear outcomes, ship in increments, and
+          keep learning loops tight. I stay close to implementation details so decisions are practical, but I keep the
+          narrative customer-first.
+        </p>
       </section>
 
-      <footer class="status reveal">
+      <section id="experience" class="section">
+        <h2>Career Snapshot</h2>
+        <ul class="experience-list">
+          <li><span class="org">Clover (Fiserv)</span> Owns the product roadmap for gift card and prepaid platform capabilities.</li>
+          <li>
+            <span class="org">Shake Shack</span> Built payment platform infrastructure powering kiosk, POS, and mobile ordering
+            across 500+ locations.
+          </li>
+          <li>
+            <span class="org">Scholastic</span> Owned POS and payment platform deployed at 100K+ annual retail pop-up events.
+          </li>
+          <li><span class="org">Amplify (acquired by NewsCorp)</span> Built Android applications for K-12 students and educators.</li>
+          <li>
+            <span class="org">Work Market (acquired by ADP)</span> Built web/mobile test automation and managed CI/CD delivery.
+          </li>
+          <li>
+            <span class="org">Columbia University</span> Led a 15-person technical team supporting 2,500+ users in academic
+            computing and research.
+          </li>
+          <li><span class="org">Virginia Tech</span> Industrial and Systems Engineering.</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <p class="section-intro">A running list of active work. Each project title links directly to the live app or repository.</p>
+        <div id="projectList" class="project-list" aria-live="polite"></div>
+      </section>
+
+      <footer class="footer">
         <a href="https://www.linkedin.com/in/johndlloyd" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://x.com/johndlloyd" target="_blank" rel="noreferrer">X</a>
         <span>© <span id="year"></span> John D. Lloyd</span>
       </footer>
     </main>

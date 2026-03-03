@@ -41,7 +41,7 @@ export const PROJECTS = [
   },
   {
     id: "monitor-the-situation",
-    title: "Monitor The Skiuation",
+    title: "Monitor The Ski-tuation",
     status: "Active",
     tags: ["AI", "Monitoring", "Web App"],
     summary: "A command-center dashboard and CLI for monitoring MDT RWIS traffic cameras across Montana.",
